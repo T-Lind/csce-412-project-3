@@ -1,0 +1,18 @@
+# Doxygen configuration for Bizaco Load Balancer (Project 3)
+# Generate with: doxygen Doxyfile
+# Open docs/html/index.html
+
+PROJECT_NAME           = "Bizaco Load Balancer"
+PROJECT_NUMBER         = "Project 3"
+PROJECT_BRIEF          = "Load-balancing web request simulation"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = include src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.cpp
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+QUIET                  = NO
+JAVADOC_AUTOBRIEF      = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES

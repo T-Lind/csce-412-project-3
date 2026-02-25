@@ -1,0 +1,19 @@
+# Build
+*.o
+*.obj
+*.exe
+loadbalancer
+*.out
+
+# Doxygen
+docs/html/
+
+
+# IDE / OS
+.vs/
+.vscode/
+*.suo
+.DS_Store
+Thumbs.db
+
+

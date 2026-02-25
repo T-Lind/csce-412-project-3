@@ -1,0 +1,2930 @@
+Run: 10 servers, runTime: 10000
+Starting queue size: 1000
+Task time range: [1, 50]
+Seed: 42
+ScaleCooldown: 50
+LowFactor: 50 HighFactor: 80
+IPRangesBlocked: []
+---
+[0000000] ASSIGN server=1 reqID=1 svc=40 job=P
+[0000000] ASSIGN server=2 reqID=2 svc=5 job=P
+[0000000] ASSIGN server=3 reqID=3 svc=3 job=P
+[0000000] ASSIGN server=4 reqID=4 svc=31 job=P
+[0000000] ASSIGN server=5 reqID=5 svc=20 job=S
+[0000000] ASSIGN server=6 reqID=6 svc=31 job=S
+[0000000] ASSIGN server=7 reqID=7 svc=35 job=S
+[0000000] ASSIGN server=8 reqID=8 svc=20 job=S
+[0000000] ASSIGN server=9 reqID=9 svc=31 job=P
+[0000000] ASSIGN server=10 reqID=10 svc=38 job=S
+[0000000] SCALE_UP newServers=11 queueSize=990
+[0000001] ASSIGN server=11 reqID=12 svc=17 job=S
+[0000003] COMPLETE server=3 reqID=3 queue=989
+[0000003] ASSIGN server=3 reqID=15 svc=20 job=S
+[0000005] COMPLETE server=2 reqID=2 queue=988
+[0000005] ASSIGN server=2 reqID=18 svc=34 job=P
+[0000018] COMPLETE server=11 reqID=12 queue=987
+[0000018] ASSIGN server=11 reqID=32 svc=30 job=P
+[0000020] COMPLETE server=5 reqID=5 queue=986
+[0000020] COMPLETE server=8 reqID=8 queue=986
+[0000020] ASSIGN server=5 reqID=35 svc=12 job=S
+[0000020] ASSIGN server=8 reqID=36 svc=48 job=P
+[0000023] COMPLETE server=3 reqID=15 queue=984
+[0000023] ASSIGN server=3 reqID=40 svc=36 job=P
+[0000031] COMPLETE server=4 reqID=4 queue=983
+[0000031] COMPLETE server=6 reqID=6 queue=983
+[0000031] COMPLETE server=9 reqID=9 queue=983
+[0000031] ASSIGN server=4 reqID=49 svc=24 job=S
+[0000031] ASSIGN server=6 reqID=50 svc=17 job=S
+[0000031] ASSIGN server=9 reqID=51 svc=16 job=P
+[0000032] COMPLETE server=5 reqID=35 queue=981
+[0000032] ASSIGN server=5 reqID=53 svc=34 job=S
+[0000035] COMPLETE server=7 reqID=7 queue=980
+[0000035] ASSIGN server=7 reqID=57 svc=45 job=S
+[0000038] COMPLETE server=10 reqID=10 queue=979
+[0000038] ASSIGN server=10 reqID=61 svc=10 job=P
+[0000039] COMPLETE server=2 reqID=18 queue=978
+[0000039] ASSIGN server=2 reqID=63 svc=38 job=P
+[0000040] COMPLETE server=1 reqID=1 queue=977
+[0000040] ASSIGN server=1 reqID=65 svc=5 job=S
+[0000045] COMPLETE server=1 reqID=65 queue=976
+[0000045] ASSIGN server=1 reqID=71 svc=26 job=S
+[0000047] COMPLETE server=9 reqID=51 queue=975
+[0000047] ASSIGN server=9 reqID=74 svc=42 job=P
+[0000048] COMPLETE server=6 reqID=50 queue=974
+[0000048] COMPLETE server=10 reqID=61 queue=974
+[0000048] COMPLETE server=11 reqID=32 queue=974
+[0000048] ASSIGN server=6 reqID=76 svc=20 job=P
+[0000048] ASSIGN server=10 reqID=77 svc=35 job=P
+[0000048] ASSIGN server=11 reqID=78 svc=49 job=S
+[0000050] SCALE_UP newServers=12 queueSize=971
+[0000051] ASSIGN server=12 reqID=82 svc=5 job=S
+[0000055] COMPLETE server=4 reqID=49 queue=970
+[0000055] ASSIGN server=4 reqID=87 svc=35 job=P
+[0000056] COMPLETE server=12 reqID=82 queue=969
+[0000056] ASSIGN server=12 reqID=89 svc=12 job=P
+[0000059] COMPLETE server=3 reqID=40 queue=968
+[0000059] ASSIGN server=3 reqID=93 svc=42 job=P
+[0000066] COMPLETE server=5 reqID=53 queue=967
+[0000066] ASSIGN server=5 reqID=101 svc=2 job=S
+[0000068] COMPLETE server=5 reqID=101 queue=966
+[0000068] COMPLETE server=6 reqID=76 queue=966
+[0000068] COMPLETE server=8 reqID=36 queue=966
+[0000068] COMPLETE server=12 reqID=89 queue=966
+[0000068] ASSIGN server=5 reqID=104 svc=21 job=P
+[0000068] ASSIGN server=6 reqID=105 svc=38 job=S
+[0000068] ASSIGN server=8 reqID=106 svc=2 job=P
+[0000068] ASSIGN server=12 reqID=107 svc=27 job=S
+[0000070] COMPLETE server=8 reqID=106 queue=962
+[0000070] ASSIGN server=8 reqID=110 svc=14 job=P
+[0000071] COMPLETE server=1 reqID=71 queue=961
+[0000071] ASSIGN server=1 reqID=112 svc=30 job=P
+[0000077] COMPLETE server=2 reqID=63 queue=960
+[0000077] ASSIGN server=2 reqID=119 svc=35 job=P
+[0000080] COMPLETE server=7 reqID=57 queue=960
+[0000080] ASSIGN server=7 reqID=123 svc=5 job=P
+[0000083] COMPLETE server=10 reqID=77 queue=959
+[0000083] ASSIGN server=10 reqID=127 svc=35 job=S
+[0000084] COMPLETE server=8 reqID=110 queue=958
+[0000084] ASSIGN server=8 reqID=129 svc=29 job=P
+[0000085] COMPLETE server=7 reqID=123 queue=957
+[0000085] ASSIGN server=7 reqID=131 svc=30 job=P
+[0000089] COMPLETE server=5 reqID=104 queue=956
+[0000089] COMPLETE server=9 reqID=74 queue=956
+[0000089] ASSIGN server=5 reqID=136 svc=50 job=S
+[0000089] ASSIGN server=9 reqID=137 svc=49 job=S
+[0000090] COMPLETE server=4 reqID=87 queue=954
+[0000090] ASSIGN server=4 reqID=139 svc=36 job=P
+[0000095] COMPLETE server=12 reqID=107 queue=953
+[0000095] ASSIGN server=12 reqID=145 svc=11 job=S
+[0000097] COMPLETE server=11 reqID=78 queue=952
+[0000097] ASSIGN server=11 reqID=148 svc=30 job=S
+[0000101] COMPLETE server=1 reqID=112 queue=951
+[0000101] COMPLETE server=3 reqID=93 queue=951
+[0000101] ASSIGN server=1 reqID=153 svc=38 job=P
+[0000101] ASSIGN server=3 reqID=154 svc=36 job=S
+[0000106] COMPLETE server=6 reqID=105 queue=949
+[0000106] COMPLETE server=12 reqID=145 queue=949
+[0000106] ASSIGN server=6 reqID=160 svc=30 job=S
+[0000106] ASSIGN server=12 reqID=161 svc=33 job=S
+[0000112] COMPLETE server=2 reqID=119 queue=948
+[0000112] ASSIGN server=2 reqID=168 svc=2 job=P
+[0000113] COMPLETE server=8 reqID=129 queue=947
+[0000113] ASSIGN server=8 reqID=170 svc=44 job=P
+[0000114] COMPLETE server=2 reqID=168 queue=946
+[0000114] ASSIGN server=2 reqID=172 svc=32 job=P
+[0000115] COMPLETE server=7 reqID=131 queue=945
+[0000115] ASSIGN server=7 reqID=174 svc=39 job=S
+[0000118] COMPLETE server=10 reqID=127 queue=944
+[0000118] ASSIGN server=10 reqID=178 svc=45 job=P
+[0000126] COMPLETE server=4 reqID=139 queue=943
+[0000126] ASSIGN server=4 reqID=187 svc=33 job=P
+[0000127] COMPLETE server=11 reqID=148 queue=942
+[0000127] ASSIGN server=11 reqID=189 svc=4 job=P
+[0000131] COMPLETE server=11 reqID=189 queue=941
+[0000131] ASSIGN server=11 reqID=194 svc=46 job=P
+[0000136] COMPLETE server=6 reqID=160 queue=940
+[0000136] ASSIGN server=6 reqID=200 svc=41 job=P
+[0000137] COMPLETE server=3 reqID=154 queue=939
+[0000137] ASSIGN server=3 reqID=202 svc=37 job=S
+[0000138] COMPLETE server=9 reqID=137 queue=938
+[0000138] ASSIGN server=9 reqID=204 svc=50 job=S
+[0000139] COMPLETE server=1 reqID=153 queue=937
+[0000139] COMPLETE server=5 reqID=136 queue=937
+[0000139] COMPLETE server=12 reqID=161 queue=937
+[0000139] ASSIGN server=1 reqID=206 svc=38 job=P
+[0000139] ASSIGN server=5 reqID=207 svc=33 job=P
+[0000139] ASSIGN server=12 reqID=208 svc=27 job=S
+[0000146] COMPLETE server=2 reqID=172 queue=934
+[0000146] ASSIGN server=2 reqID=216 svc=6 job=P
+[0000152] COMPLETE server=2 reqID=216 queue=934
+[0000152] ASSIGN server=2 reqID=223 svc=24 job=S
+[0000154] COMPLETE server=7 reqID=174 queue=933
+[0000154] ASSIGN server=7 reqID=226 svc=37 job=S
+[0000157] COMPLETE server=8 reqID=170 queue=932
+[0000157] ASSIGN server=8 reqID=230 svc=27 job=S
+[0000159] COMPLETE server=4 reqID=187 queue=932
+[0000159] ASSIGN server=4 reqID=233 svc=1 job=S
+[0000160] COMPLETE server=4 reqID=233 queue=931
+[0000160] ASSIGN server=4 reqID=235 svc=17 job=S
+[0000163] COMPLETE server=10 reqID=178 queue=930
+[0000163] ASSIGN server=10 reqID=239 svc=36 job=P
+[0000166] COMPLETE server=12 reqID=208 queue=929
+[0000166] ASSIGN server=12 reqID=243 svc=6 job=P
+[0000172] COMPLETE server=5 reqID=207 queue=928
+[0000172] COMPLETE server=12 reqID=243 queue=928
+[0000172] ASSIGN server=5 reqID=250 svc=40 job=S
+[0000172] ASSIGN server=12 reqID=251 svc=24 job=S
+[0000174] COMPLETE server=3 reqID=202 queue=926
+[0000174] ASSIGN server=3 reqID=254 svc=35 job=P
+[0000176] COMPLETE server=2 reqID=223 queue=925
+[0000176] ASSIGN server=2 reqID=257 svc=11 job=S
+[0000177] COMPLETE server=1 reqID=206 queue=924
+[0000177] COMPLETE server=4 reqID=235 queue=924
+[0000177] COMPLETE server=6 reqID=200 queue=924
+[0000177] COMPLETE server=11 reqID=194 queue=924
+[0000177] ASSIGN server=1 reqID=259 svc=17 job=P
+[0000177] ASSIGN server=4 reqID=260 svc=3 job=P
+[0000177] ASSIGN server=6 reqID=261 svc=30 job=P
+[0000177] ASSIGN server=11 reqID=262 svc=48 job=S
+[0000180] COMPLETE server=4 reqID=260 queue=920
+[0000180] ASSIGN server=4 reqID=266 svc=38 job=P
+[0000184] COMPLETE server=8 reqID=230 queue=919
+[0000184] ASSIGN server=8 reqID=271 svc=26 job=S
+[0000187] COMPLETE server=2 reqID=257 queue=918
+[0000187] ASSIGN server=2 reqID=275 svc=26 job=S
+[0000188] COMPLETE server=9 reqID=204 queue=917
+[0000188] ASSIGN server=9 reqID=277 svc=33 job=P
+[0000191] COMPLETE server=7 reqID=226 queue=916
+[0000191] ASSIGN server=7 reqID=281 svc=18 job=P
+[0000194] COMPLETE server=1 reqID=259 queue=915
+[0000194] ASSIGN server=1 reqID=285 svc=6 job=P
+[0000196] COMPLETE server=12 reqID=251 queue=914
+[0000196] ASSIGN server=12 reqID=288 svc=7 job=P
+[0000199] COMPLETE server=10 reqID=239 queue=913
+[0000199] ASSIGN server=10 reqID=292 svc=40 job=S
+[0000200] COMPLETE server=1 reqID=285 queue=912
+[0000200] ASSIGN server=1 reqID=294 svc=16 job=P
+[0000203] COMPLETE server=12 reqID=288 queue=911
+[0000203] ASSIGN server=12 reqID=298 svc=31 job=P
+[0000207] COMPLETE server=6 reqID=261 queue=910
+[0000207] ASSIGN server=6 reqID=303 svc=38 job=S
+[0000209] COMPLETE server=3 reqID=254 queue=909
+[0000209] COMPLETE server=7 reqID=281 queue=909
+[0000209] ASSIGN server=3 reqID=306 svc=27 job=P
+[0000209] ASSIGN server=7 reqID=307 svc=5 job=P
+[0000210] COMPLETE server=8 reqID=271 queue=907
+[0000210] ASSIGN server=8 reqID=309 svc=15 job=S
+[0000212] COMPLETE server=5 reqID=250 queue=906
+[0000212] ASSIGN server=5 reqID=312 svc=33 job=P
+[0000213] COMPLETE server=2 reqID=275 queue=905
+[0000213] ASSIGN server=2 reqID=314 svc=34 job=P
+[0000214] COMPLETE server=7 reqID=307 queue=904
+[0000214] ASSIGN server=7 reqID=316 svc=9 job=P
+[0000216] COMPLETE server=1 reqID=294 queue=904
+[0000216] ASSIGN server=1 reqID=319 svc=1 job=S
+[0000217] COMPLETE server=1 reqID=319 queue=903
+[0000217] ASSIGN server=1 reqID=321 svc=21 job=P
+[0000218] COMPLETE server=4 reqID=266 queue=902
+[0000218] ASSIGN server=4 reqID=323 svc=30 job=S
+[0000221] COMPLETE server=9 reqID=277 queue=901
+[0000221] ASSIGN server=9 reqID=327 svc=1 job=S
+[0000222] COMPLETE server=9 reqID=327 queue=900
+[0000222] ASSIGN server=9 reqID=329 svc=13 job=S
+[0000223] COMPLETE server=7 reqID=316 queue=900
+[0000223] ASSIGN server=7 reqID=331 svc=6 job=P
+[0000225] COMPLETE server=8 reqID=309 queue=899
+[0000225] COMPLETE server=11 reqID=262 queue=899
+[0000225] ASSIGN server=8 reqID=334 svc=20 job=S
+[0000225] ASSIGN server=11 reqID=335 svc=34 job=P
+[0000229] COMPLETE server=7 reqID=331 queue=897
+[0000229] ASSIGN server=7 reqID=340 svc=24 job=P
+[0000234] COMPLETE server=12 reqID=298 queue=896
+[0000234] ASSIGN server=12 reqID=346 svc=31 job=P
+[0000235] COMPLETE server=9 reqID=329 queue=895
+[0000235] ASSIGN server=9 reqID=348 svc=21 job=S
+[0000236] COMPLETE server=3 reqID=306 queue=894
+[0000236] ASSIGN server=3 reqID=350 svc=21 job=P
+[0000238] COMPLETE server=1 reqID=321 queue=893
+[0000238] ASSIGN server=1 reqID=353 svc=25 job=P
+[0000239] COMPLETE server=10 reqID=292 queue=892
+[0000239] ASSIGN server=10 reqID=355 svc=20 job=P
+[0000245] COMPLETE server=5 reqID=312 queue=891
+[0000245] COMPLETE server=6 reqID=303 queue=891
+[0000245] COMPLETE server=8 reqID=334 queue=891
+[0000245] ASSIGN server=5 reqID=362 svc=48 job=S
+[0000245] ASSIGN server=6 reqID=363 svc=42 job=S
+[0000245] ASSIGN server=8 reqID=364 svc=45 job=S
+[0000247] COMPLETE server=2 reqID=314 queue=888
+[0000247] ASSIGN server=2 reqID=367 svc=6 job=S
+[0000248] COMPLETE server=4 reqID=323 queue=887
+[0000248] ASSIGN server=4 reqID=369 svc=19 job=P
+[0000253] COMPLETE server=2 reqID=367 queue=887
+[0000253] COMPLETE server=7 reqID=340 queue=887
+[0000253] ASSIGN server=2 reqID=375 svc=49 job=S
+[0000253] ASSIGN server=7 reqID=376 svc=38 job=S
+[0000256] COMPLETE server=9 reqID=348 queue=885
+[0000256] ASSIGN server=9 reqID=380 svc=41 job=S
+[0000257] COMPLETE server=3 reqID=350 queue=884
+[0000257] ASSIGN server=3 reqID=382 svc=38 job=P
+[0000259] COMPLETE server=10 reqID=355 queue=883
+[0000259] COMPLETE server=11 reqID=335 queue=883
+[0000259] ASSIGN server=10 reqID=385 svc=9 job=S
+[0000259] ASSIGN server=11 reqID=386 svc=21 job=P
+[0000263] COMPLETE server=1 reqID=353 queue=881
+[0000263] ASSIGN server=1 reqID=391 svc=19 job=P
+[0000265] COMPLETE server=12 reqID=346 queue=881
+[0000265] ASSIGN server=12 reqID=394 svc=11 job=S
+[0000267] COMPLETE server=4 reqID=369 queue=880
+[0000267] ASSIGN server=4 reqID=397 svc=25 job=P
+[0000268] COMPLETE server=10 reqID=385 queue=879
+[0000268] ASSIGN server=10 reqID=399 svc=3 job=S
+[0000271] COMPLETE server=10 reqID=399 queue=878
+[0000271] ASSIGN server=10 reqID=403 svc=3 job=P
+[0000274] COMPLETE server=10 reqID=403 queue=877
+[0000274] ASSIGN server=10 reqID=407 svc=10 job=P
+[0000276] COMPLETE server=12 reqID=394 queue=876
+[0000276] ASSIGN server=12 reqID=410 svc=28 job=S
+[0000280] COMPLETE server=11 reqID=386 queue=875
+[0000280] ASSIGN server=11 reqID=415 svc=38 job=S
+[0000282] COMPLETE server=1 reqID=391 queue=874
+[0000282] ASSIGN server=1 reqID=418 svc=40 job=P
+[0000284] COMPLETE server=10 reqID=407 queue=873
+[0000284] ASSIGN server=10 reqID=421 svc=45 job=S
+[0000287] COMPLETE server=6 reqID=363 queue=872
+[0000287] ASSIGN server=6 reqID=425 svc=37 job=S
+[0000290] COMPLETE server=8 reqID=364 queue=871
+[0000290] ASSIGN server=8 reqID=429 svc=46 job=S
+[0000291] COMPLETE server=7 reqID=376 queue=870
+[0000291] ASSIGN server=7 reqID=431 svc=27 job=P
+[0000292] COMPLETE server=4 reqID=397 queue=869
+[0000292] ASSIGN server=4 reqID=433 svc=22 job=S
+[0000293] COMPLETE server=5 reqID=362 queue=868
+[0000293] ASSIGN server=5 reqID=435 svc=1 job=S
+[0000294] COMPLETE server=5 reqID=435 queue=867
+[0000294] ASSIGN server=5 reqID=437 svc=19 job=P
+[0000295] COMPLETE server=3 reqID=382 queue=866
+[0000295] ASSIGN server=3 reqID=439 svc=33 job=P
+[0000297] COMPLETE server=9 reqID=380 queue=865
+[0000297] ASSIGN server=9 reqID=442 svc=49 job=S
+[0000302] COMPLETE server=2 reqID=375 queue=865
+[0000302] ASSIGN server=2 reqID=448 svc=18 job=S
+[0000304] COMPLETE server=12 reqID=410 queue=864
+[0000304] ASSIGN server=12 reqID=451 svc=27 job=P
+[0000313] COMPLETE server=5 reqID=437 queue=864
+[0000313] ASSIGN server=5 reqID=461 svc=22 job=S
+[0000314] COMPLETE server=4 reqID=433 queue=863
+[0000314] ASSIGN server=4 reqID=463 svc=29 job=S
+[0000318] COMPLETE server=7 reqID=431 queue=862
+[0000318] COMPLETE server=11 reqID=415 queue=862
+[0000318] ASSIGN server=7 reqID=468 svc=41 job=P
+[0000318] ASSIGN server=11 reqID=469 svc=46 job=S
+[0000320] COMPLETE server=2 reqID=448 queue=860
+[0000320] ASSIGN server=2 reqID=472 svc=38 job=P
+[0000322] COMPLETE server=1 reqID=418 queue=859
+[0000322] ASSIGN server=1 reqID=475 svc=4 job=S
+[0000324] COMPLETE server=6 reqID=425 queue=858
+[0000324] ASSIGN server=6 reqID=478 svc=1 job=S
+[0000325] COMPLETE server=6 reqID=478 queue=857
+[0000325] ASSIGN server=6 reqID=480 svc=48 job=P
+[0000326] COMPLETE server=1 reqID=475 queue=856
+[0000326] ASSIGN server=1 reqID=482 svc=27 job=S
+[0000328] COMPLETE server=3 reqID=439 queue=855
+[0000328] ASSIGN server=3 reqID=485 svc=20 job=P
+[0000329] COMPLETE server=10 reqID=421 queue=854
+[0000329] ASSIGN server=10 reqID=487 svc=50 job=S
+[0000331] COMPLETE server=12 reqID=451 queue=853
+[0000331] ASSIGN server=12 reqID=490 svc=42 job=P
+[0000335] COMPLETE server=5 reqID=461 queue=852
+[0000335] ASSIGN server=5 reqID=495 svc=7 job=P
+[0000336] COMPLETE server=8 reqID=429 queue=851
+[0000336] ASSIGN server=8 reqID=497 svc=24 job=P
+[0000342] COMPLETE server=5 reqID=495 queue=850
+[0000342] ASSIGN server=5 reqID=504 svc=37 job=S
+[0000343] COMPLETE server=4 reqID=463 queue=849
+[0000343] ASSIGN server=4 reqID=506 svc=37 job=P
+[0000346] COMPLETE server=9 reqID=442 queue=848
+[0000346] ASSIGN server=9 reqID=510 svc=37 job=P
+[0000348] COMPLETE server=3 reqID=485 queue=848
+[0000348] ASSIGN server=3 reqID=513 svc=13 job=S
+[0000353] COMPLETE server=1 reqID=482 queue=848
+[0000353] ASSIGN server=1 reqID=519 svc=16 job=S
+[0000358] COMPLETE server=2 reqID=472 queue=847
+[0000358] ASSIGN server=2 reqID=525 svc=46 job=S
+[0000359] COMPLETE server=7 reqID=468 queue=846
+[0000359] ASSIGN server=7 reqID=527 svc=43 job=S
+[0000360] COMPLETE server=8 reqID=497 queue=845
+[0000360] ASSIGN server=8 reqID=529 svc=14 job=P
+[0000361] COMPLETE server=3 reqID=513 queue=844
+[0000361] ASSIGN server=3 reqID=531 svc=32 job=P
+[0000364] COMPLETE server=11 reqID=469 queue=843
+[0000364] ASSIGN server=11 reqID=535 svc=3 job=S
+[0000367] COMPLETE server=11 reqID=535 queue=842
+[0000367] ASSIGN server=11 reqID=539 svc=46 job=S
+[0000369] COMPLETE server=1 reqID=519 queue=841
+[0000369] ASSIGN server=1 reqID=542 svc=19 job=S
+[0000373] COMPLETE server=6 reqID=480 queue=840
+[0000373] COMPLETE server=12 reqID=490 queue=840
+[0000373] ASSIGN server=6 reqID=547 svc=3 job=S
+[0000373] ASSIGN server=12 reqID=548 svc=27 job=S
+[0000374] COMPLETE server=8 reqID=529 queue=838
+[0000374] ASSIGN server=8 reqID=550 svc=16 job=S
+[0000376] COMPLETE server=6 reqID=547 queue=837
+[0000376] ASSIGN server=6 reqID=553 svc=47 job=P
+[0000379] COMPLETE server=5 reqID=504 queue=836
+[0000379] COMPLETE server=10 reqID=487 queue=836
+[0000379] ASSIGN server=5 reqID=557 svc=34 job=P
+[0000379] ASSIGN server=10 reqID=558 svc=33 job=P
+[0000380] COMPLETE server=4 reqID=506 queue=834
+[0000380] ASSIGN server=4 reqID=560 svc=9 job=S
+[0000383] COMPLETE server=9 reqID=510 queue=833
+[0000383] ASSIGN server=9 reqID=564 svc=43 job=S
+[0000388] COMPLETE server=1 reqID=542 queue=833
+[0000388] ASSIGN server=1 reqID=570 svc=32 job=P
+[0000389] COMPLETE server=4 reqID=560 queue=832
+[0000389] ASSIGN server=4 reqID=572 svc=42 job=S
+[0000390] COMPLETE server=8 reqID=550 queue=831
+[0000390] ASSIGN server=8 reqID=574 svc=22 job=S
+[0000393] COMPLETE server=3 reqID=531 queue=830
+[0000393] ASSIGN server=3 reqID=578 svc=44 job=S
+[0000400] COMPLETE server=12 reqID=548 queue=829
+[0000400] ASSIGN server=12 reqID=586 svc=50 job=S
+[0000402] COMPLETE server=7 reqID=527 queue=828
+[0000402] ASSIGN server=7 reqID=589 svc=19 job=P
+[0000404] COMPLETE server=2 reqID=525 queue=827
+[0000404] ASSIGN server=2 reqID=592 svc=7 job=S
+[0000411] COMPLETE server=2 reqID=592 queue=827
+[0000411] ASSIGN server=2 reqID=600 svc=41 job=S
+[0000412] COMPLETE server=8 reqID=574 queue=826
+[0000412] COMPLETE server=10 reqID=558 queue=826
+[0000412] ASSIGN server=8 reqID=602 svc=50 job=S
+[0000412] ASSIGN server=10 reqID=603 svc=1 job=S
+[0000413] COMPLETE server=5 reqID=557 queue=824
+[0000413] COMPLETE server=10 reqID=603 queue=824
+[0000413] COMPLETE server=11 reqID=539 queue=824
+[0000413] ASSIGN server=5 reqID=605 svc=5 job=P
+[0000413] ASSIGN server=10 reqID=606 svc=20 job=P
+[0000413] ASSIGN server=11 reqID=607 svc=40 job=P
+[0000418] COMPLETE server=5 reqID=605 queue=821
+[0000418] ASSIGN server=5 reqID=613 svc=22 job=P
+[0000420] COMPLETE server=1 reqID=570 queue=820
+[0000420] ASSIGN server=1 reqID=616 svc=9 job=S
+[0000421] COMPLETE server=7 reqID=589 queue=819
+[0000421] ASSIGN server=7 reqID=618 svc=3 job=S
+[0000423] COMPLETE server=6 reqID=553 queue=818
+[0000423] ASSIGN server=6 reqID=621 svc=45 job=P
+[0000424] COMPLETE server=7 reqID=618 queue=817
+[0000424] ASSIGN server=7 reqID=623 svc=34 job=S
+[0000426] COMPLETE server=9 reqID=564 queue=816
+[0000426] ASSIGN server=9 reqID=626 svc=30 job=S
+[0000429] COMPLETE server=1 reqID=616 queue=815
+[0000429] ASSIGN server=1 reqID=630 svc=46 job=P
+[0000431] COMPLETE server=4 reqID=572 queue=814
+[0000431] ASSIGN server=4 reqID=633 svc=30 job=P
+[0000433] COMPLETE server=10 reqID=606 queue=813
+[0000433] ASSIGN server=10 reqID=636 svc=48 job=P
+[0000437] COMPLETE server=3 reqID=578 queue=813
+[0000437] ASSIGN server=3 reqID=641 svc=42 job=S
+[0000440] COMPLETE server=5 reqID=613 queue=813
+[0000440] ASSIGN server=5 reqID=645 svc=15 job=S
+[0000450] COMPLETE server=12 reqID=586 queue=812
+[0000450] ASSIGN server=12 reqID=656 svc=44 job=S
+[0000452] COMPLETE server=2 reqID=600 queue=811
+[0000452] ASSIGN server=2 reqID=659 svc=3 job=P
+[0000453] COMPLETE server=11 reqID=607 queue=810
+[0000453] ASSIGN server=11 reqID=661 svc=12 job=P
+[0000455] COMPLETE server=2 reqID=659 queue=809
+[0000455] COMPLETE server=5 reqID=645 queue=809
+[0000455] ASSIGN server=2 reqID=664 svc=43 job=S
+[0000455] ASSIGN server=5 reqID=665 svc=3 job=S
+[0000456] COMPLETE server=9 reqID=626 queue=807
+[0000456] ASSIGN server=9 reqID=667 svc=36 job=S
+[0000458] COMPLETE server=5 reqID=665 queue=806
+[0000458] COMPLETE server=7 reqID=623 queue=806
+[0000458] ASSIGN server=5 reqID=670 svc=36 job=S
+[0000458] ASSIGN server=7 reqID=671 svc=44 job=P
+[0000461] COMPLETE server=4 reqID=633 queue=804
+[0000461] ASSIGN server=4 reqID=675 svc=33 job=P
+[0000462] COMPLETE server=8 reqID=602 queue=803
+[0000462] ASSIGN server=8 reqID=677 svc=8 job=P
+[0000465] COMPLETE server=11 reqID=661 queue=802
+[0000465] ASSIGN server=11 reqID=681 svc=49 job=P
+[0000468] COMPLETE server=6 reqID=621 queue=801
+[0000468] ASSIGN server=6 reqID=685 svc=46 job=S
+[0000470] COMPLETE server=8 reqID=677 queue=800
+[0000470] ASSIGN server=8 reqID=688 svc=29 job=P
+[0000475] COMPLETE server=1 reqID=630 queue=799
+[0000475] ASSIGN server=1 reqID=694 svc=3 job=S
+[0000478] COMPLETE server=1 reqID=694 queue=798
+[0000478] ASSIGN server=1 reqID=698 svc=5 job=S
+[0000479] COMPLETE server=3 reqID=641 queue=797
+[0000479] ASSIGN server=3 reqID=700 svc=26 job=P
+[0000481] COMPLETE server=10 reqID=636 queue=796
+[0000481] ASSIGN server=10 reqID=703 svc=18 job=P
+[0000483] COMPLETE server=1 reqID=698 queue=795
+[0000483] ASSIGN server=1 reqID=706 svc=27 job=P
+[0000492] COMPLETE server=9 reqID=667 queue=794
+[0000492] ASSIGN server=9 reqID=716 svc=1 job=P
+[0000493] COMPLETE server=9 reqID=716 queue=793
+[0000493] ASSIGN server=9 reqID=718 svc=35 job=P
+[0000494] COMPLETE server=4 reqID=675 queue=792
+[0000494] COMPLETE server=5 reqID=670 queue=792
+[0000494] COMPLETE server=12 reqID=656 queue=792
+[0000494] ASSIGN server=4 reqID=720 svc=21 job=S
+[0000494] ASSIGN server=5 reqID=721 svc=7 job=P
+[0000494] ASSIGN server=12 reqID=722 svc=21 job=P
+[0000498] COMPLETE server=2 reqID=664 queue=789
+[0000498] ASSIGN server=2 reqID=727 svc=12 job=S
+[0000499] COMPLETE server=8 reqID=688 queue=788
+[0000499] COMPLETE server=10 reqID=703 queue=788
+[0000499] ASSIGN server=8 reqID=729 svc=40 job=P
+[0000499] ASSIGN server=10 reqID=730 svc=31 job=P
+[0000501] COMPLETE server=5 reqID=721 queue=786
+[0000501] ASSIGN server=5 reqID=733 svc=39 job=S
+[0000502] COMPLETE server=7 reqID=671 queue=785
+[0000502] ASSIGN server=7 reqID=735 svc=17 job=P
+[0000505] COMPLETE server=3 reqID=700 queue=784
+[0000505] ASSIGN server=3 reqID=739 svc=22 job=S
+[0000510] COMPLETE server=1 reqID=706 queue=784
+[0000510] COMPLETE server=2 reqID=727 queue=784
+[0000510] ASSIGN server=1 reqID=745 svc=50 job=P
+[0000510] ASSIGN server=2 reqID=746 svc=10 job=S
+[0000514] COMPLETE server=6 reqID=685 queue=783
+[0000514] COMPLETE server=11 reqID=681 queue=783
+[0000514] ASSIGN server=6 reqID=751 svc=38 job=S
+[0000514] ASSIGN server=11 reqID=752 svc=37 job=P
+[0000515] COMPLETE server=4 reqID=720 queue=781
+[0000515] COMPLETE server=12 reqID=722 queue=781
+[0000515] ASSIGN server=4 reqID=754 svc=7 job=P
+[0000515] ASSIGN server=12 reqID=755 svc=18 job=S
+[0000519] COMPLETE server=7 reqID=735 queue=779
+[0000519] ASSIGN server=7 reqID=760 svc=44 job=S
+[0000520] COMPLETE server=2 reqID=746 queue=778
+[0000520] ASSIGN server=2 reqID=762 svc=40 job=S
+[0000522] COMPLETE server=4 reqID=754 queue=777
+[0000522] ASSIGN server=4 reqID=765 svc=40 job=P
+[0000527] COMPLETE server=3 reqID=739 queue=776
+[0000527] ASSIGN server=3 reqID=771 svc=12 job=P
+[0000528] COMPLETE server=9 reqID=718 queue=775
+[0000528] ASSIGN server=9 reqID=773 svc=16 job=S
+[0000530] COMPLETE server=10 reqID=730 queue=774
+[0000530] ASSIGN server=10 reqID=776 svc=12 job=P
+[0000533] COMPLETE server=12 reqID=755 queue=773
+[0000533] ASSIGN server=12 reqID=780 svc=45 job=S
+[0000539] COMPLETE server=3 reqID=771 queue=772
+[0000539] COMPLETE server=8 reqID=729 queue=772
+[0000539] ASSIGN server=3 reqID=787 svc=10 job=S
+[0000539] ASSIGN server=8 reqID=788 svc=46 job=S
+[0000540] COMPLETE server=5 reqID=733 queue=770
+[0000540] ASSIGN server=5 reqID=790 svc=3 job=P
+[0000542] COMPLETE server=10 reqID=776 queue=769
+[0000542] ASSIGN server=10 reqID=793 svc=1 job=S
+[0000543] COMPLETE server=5 reqID=790 queue=768
+[0000543] COMPLETE server=10 reqID=793 queue=768
+[0000543] ASSIGN server=5 reqID=795 svc=1 job=S
+[0000543] ASSIGN server=10 reqID=796 svc=7 job=S
+[0000544] COMPLETE server=5 reqID=795 queue=766
+[0000544] COMPLETE server=9 reqID=773 queue=766
+[0000544] ASSIGN server=5 reqID=798 svc=5 job=S
+[0000544] ASSIGN server=9 reqID=799 svc=14 job=P
+[0000549] COMPLETE server=3 reqID=787 queue=765
+[0000549] COMPLETE server=5 reqID=798 queue=765
+[0000549] ASSIGN server=3 reqID=805 svc=33 job=P
+[0000549] ASSIGN server=5 reqID=806 svc=6 job=S
+[0000550] COMPLETE server=10 reqID=796 queue=763
+[0000550] ASSIGN server=10 reqID=808 svc=6 job=S
+[0000551] COMPLETE server=11 reqID=752 queue=762
+[0000551] ASSIGN server=11 reqID=810 svc=31 job=P
+[0000552] COMPLETE server=6 reqID=751 queue=761
+[0000552] ASSIGN server=6 reqID=812 svc=27 job=P
+[0000555] COMPLETE server=5 reqID=806 queue=760
+[0000555] ASSIGN server=5 reqID=816 svc=1 job=S
+[0000556] COMPLETE server=5 reqID=816 queue=759
+[0000556] COMPLETE server=10 reqID=808 queue=759
+[0000556] ASSIGN server=5 reqID=818 svc=33 job=P
+[0000556] ASSIGN server=10 reqID=819 svc=50 job=S
+[0000558] COMPLETE server=9 reqID=799 queue=757
+[0000558] ASSIGN server=9 reqID=822 svc=41 job=S
+[0000560] COMPLETE server=1 reqID=745 queue=756
+[0000560] COMPLETE server=2 reqID=762 queue=756
+[0000560] ASSIGN server=1 reqID=825 svc=37 job=P
+[0000560] ASSIGN server=2 reqID=826 svc=42 job=S
+[0000562] COMPLETE server=4 reqID=765 queue=754
+[0000562] ASSIGN server=4 reqID=829 svc=7 job=P
+[0000563] COMPLETE server=7 reqID=760 queue=753
+[0000563] ASSIGN server=7 reqID=831 svc=45 job=P
+[0000569] COMPLETE server=4 reqID=829 queue=753
+[0000569] ASSIGN server=4 reqID=838 svc=37 job=S
+[0000578] COMPLETE server=12 reqID=780 queue=752
+[0000578] ASSIGN server=12 reqID=848 svc=47 job=P
+[0000579] COMPLETE server=6 reqID=812 queue=751
+[0000579] ASSIGN server=6 reqID=850 svc=28 job=S
+[0000582] COMPLETE server=3 reqID=805 queue=750
+[0000582] COMPLETE server=11 reqID=810 queue=750
+[0000582] ASSIGN server=3 reqID=854 svc=23 job=P
+[0000582] ASSIGN server=11 reqID=855 svc=7 job=S
+[0000585] COMPLETE server=8 reqID=788 queue=748
+[0000585] ASSIGN server=8 reqID=859 svc=27 job=S
+[0000589] COMPLETE server=5 reqID=818 queue=747
+[0000589] COMPLETE server=11 reqID=855 queue=747
+[0000589] ASSIGN server=5 reqID=864 svc=20 job=P
+[0000589] ASSIGN server=11 reqID=865 svc=50 job=S
+[0000597] COMPLETE server=1 reqID=825 queue=745
+[0000597] ASSIGN server=1 reqID=874 svc=19 job=S
+[0000599] COMPLETE server=9 reqID=822 queue=744
+[0000599] ASSIGN server=9 reqID=877 svc=2 job=P
+[0000601] COMPLETE server=9 reqID=877 queue=743
+[0000601] ASSIGN server=9 reqID=880 svc=23 job=S
+[0000602] COMPLETE server=2 reqID=826 queue=742
+[0000602] ASSIGN server=2 reqID=882 svc=37 job=S
+[0000605] COMPLETE server=3 reqID=854 queue=741
+[0000605] ASSIGN server=3 reqID=886 svc=25 job=P
+[0000606] COMPLETE server=4 reqID=838 queue=740
+[0000606] COMPLETE server=10 reqID=819 queue=740
+[0000606] ASSIGN server=4 reqID=888 svc=32 job=P
+[0000606] ASSIGN server=10 reqID=889 svc=49 job=S
+[0000607] COMPLETE server=6 reqID=850 queue=738
+[0000607] ASSIGN server=6 reqID=891 svc=37 job=P
+[0000608] COMPLETE server=7 reqID=831 queue=737
+[0000608] ASSIGN server=7 reqID=893 svc=31 job=P
+[0000609] COMPLETE server=5 reqID=864 queue=736
+[0000609] ASSIGN server=5 reqID=895 svc=7 job=S
+[0000612] COMPLETE server=8 reqID=859 queue=735
+[0000612] ASSIGN server=8 reqID=899 svc=17 job=P
+[0000616] COMPLETE server=1 reqID=874 queue=734
+[0000616] COMPLETE server=5 reqID=895 queue=734
+[0000616] ASSIGN server=1 reqID=904 svc=7 job=P
+[0000616] ASSIGN server=5 reqID=905 svc=7 job=S
+[0000623] COMPLETE server=1 reqID=904 queue=734
+[0000623] COMPLETE server=5 reqID=905 queue=734
+[0000623] ASSIGN server=1 reqID=913 svc=11 job=S
+[0000623] ASSIGN server=5 reqID=914 svc=7 job=S
+[0000624] COMPLETE server=9 reqID=880 queue=732
+[0000624] ASSIGN server=9 reqID=916 svc=35 job=P
+[0000625] COMPLETE server=12 reqID=848 queue=731
+[0000625] ASSIGN server=12 reqID=918 svc=17 job=S
+[0000629] COMPLETE server=8 reqID=899 queue=731
+[0000629] ASSIGN server=8 reqID=923 svc=40 job=P
+[0000630] COMPLETE server=3 reqID=886 queue=730
+[0000630] COMPLETE server=5 reqID=914 queue=730
+[0000630] ASSIGN server=3 reqID=925 svc=40 job=S
+[0000630] ASSIGN server=5 reqID=926 svc=17 job=S
+[0000634] COMPLETE server=1 reqID=913 queue=728
+[0000634] ASSIGN server=1 reqID=931 svc=43 job=P
+[0000638] COMPLETE server=4 reqID=888 queue=728
+[0000638] ASSIGN server=4 reqID=936 svc=17 job=S
+[0000639] COMPLETE server=2 reqID=882 queue=727
+[0000639] COMPLETE server=7 reqID=893 queue=727
+[0000639] COMPLETE server=11 reqID=865 queue=727
+[0000639] ASSIGN server=2 reqID=938 svc=30 job=P
+[0000639] ASSIGN server=7 reqID=939 svc=13 job=P
+[0000639] ASSIGN server=11 reqID=940 svc=2 job=S
+[0000641] COMPLETE server=11 reqID=940 queue=724
+[0000641] ASSIGN server=11 reqID=943 svc=7 job=P
+[0000642] COMPLETE server=12 reqID=918 queue=723
+[0000642] ASSIGN server=12 reqID=945 svc=19 job=P
+[0000644] COMPLETE server=6 reqID=891 queue=722
+[0000644] ASSIGN server=6 reqID=948 svc=16 job=P
+[0000647] COMPLETE server=5 reqID=926 queue=721
+[0000647] ASSIGN server=5 reqID=952 svc=34 job=S
+[0000648] COMPLETE server=11 reqID=943 queue=720
+[0000648] ASSIGN server=11 reqID=954 svc=20 job=S
+[0000652] COMPLETE server=7 reqID=939 queue=719
+[0000652] ASSIGN server=7 reqID=959 svc=42 job=P
+[0000655] COMPLETE server=4 reqID=936 queue=718
+[0000655] COMPLETE server=10 reqID=889 queue=718
+[0000655] ASSIGN server=4 reqID=963 svc=23 job=P
+[0000655] ASSIGN server=10 reqID=964 svc=26 job=S
+[0000659] COMPLETE server=9 reqID=916 queue=717
+[0000659] ASSIGN server=9 reqID=969 svc=14 job=S
+[0000660] COMPLETE server=6 reqID=948 queue=716
+[0000660] ASSIGN server=6 reqID=971 svc=32 job=S
+[0000661] COMPLETE server=12 reqID=945 queue=715
+[0000661] ASSIGN server=12 reqID=973 svc=35 job=S
+[0000668] COMPLETE server=11 reqID=954 queue=714
+[0000668] ASSIGN server=11 reqID=981 svc=20 job=P
+[0000669] COMPLETE server=2 reqID=938 queue=713
+[0000669] COMPLETE server=8 reqID=923 queue=713
+[0000669] ASSIGN server=2 reqID=983 svc=15 job=S
+[0000669] ASSIGN server=8 reqID=984 svc=30 job=S
+[0000670] COMPLETE server=3 reqID=925 queue=711
+[0000670] ASSIGN server=3 reqID=986 svc=25 job=P
+[0000673] COMPLETE server=9 reqID=969 queue=710
+[0000673] ASSIGN server=9 reqID=990 svc=31 job=S
+[0000677] COMPLETE server=1 reqID=931 queue=710
+[0000677] ASSIGN server=1 reqID=995 svc=15 job=P
+[0000678] COMPLETE server=4 reqID=963 queue=710
+[0000678] ASSIGN server=4 reqID=997 svc=18 job=S
+[0000681] COMPLETE server=5 reqID=952 queue=709
+[0000681] COMPLETE server=10 reqID=964 queue=709
+[0000681] ASSIGN server=5 reqID=11 svc=43 job=S
+[0000681] ASSIGN server=10 reqID=13 svc=38 job=P
+[0000684] COMPLETE server=2 reqID=983 queue=707
+[0000684] ASSIGN server=2 reqID=19 svc=49 job=P
+[0000688] COMPLETE server=11 reqID=981 queue=706
+[0000688] ASSIGN server=11 reqID=24 svc=23 job=S
+[0000692] COMPLETE server=1 reqID=995 queue=705
+[0000692] COMPLETE server=6 reqID=971 queue=705
+[0000692] ASSIGN server=1 reqID=29 svc=13 job=S
+[0000692] ASSIGN server=6 reqID=30 svc=14 job=P
+[0000694] COMPLETE server=7 reqID=959 queue=703
+[0000694] ASSIGN server=7 reqID=34 svc=8 job=S
+[0000695] COMPLETE server=3 reqID=986 queue=702
+[0000695] ASSIGN server=3 reqID=38 svc=9 job=S
+[0000696] COMPLETE server=4 reqID=997 queue=701
+[0000696] COMPLETE server=12 reqID=973 queue=701
+[0000696] ASSIGN server=4 reqID=41 svc=43 job=S
+[0000696] ASSIGN server=12 reqID=42 svc=19 job=P
+[0000699] COMPLETE server=8 reqID=984 queue=699
+[0000699] ASSIGN server=8 reqID=46 svc=30 job=P
+[0000702] COMPLETE server=7 reqID=34 queue=698
+[0000702] ASSIGN server=7 reqID=1001 svc=17 job=S
+[0000704] COMPLETE server=3 reqID=38 queue=697
+[0000704] COMPLETE server=9 reqID=990 queue=697
+[0000704] ASSIGN server=3 reqID=56 svc=32 job=S
+[0000704] ASSIGN server=9 reqID=58 svc=17 job=P
+[0000705] COMPLETE server=1 reqID=29 queue=695
+[0000705] ASSIGN server=1 reqID=60 svc=42 job=S
+[0000706] COMPLETE server=6 reqID=30 queue=694
+[0000706] ASSIGN server=6 reqID=64 svc=35 job=S
+[0000711] COMPLETE server=11 reqID=24 queue=694
+[0000711] ASSIGN server=11 reqID=72 svc=48 job=S
+[0000715] COMPLETE server=12 reqID=42 queue=694
+[0000715] ASSIGN server=12 reqID=81 svc=19 job=P
+[0000719] COMPLETE server=7 reqID=1001 queue=693
+[0000719] COMPLETE server=10 reqID=13 queue=693
+[0000719] ASSIGN server=7 reqID=88 svc=12 job=S
+[0000719] ASSIGN server=10 reqID=90 svc=46 job=S
+[0000721] COMPLETE server=9 reqID=58 queue=691
+[0000721] ASSIGN server=9 reqID=94 svc=24 job=P
+[0000724] COMPLETE server=5 reqID=11 queue=690
+[0000724] ASSIGN server=5 reqID=98 svc=37 job=S
+[0000729] COMPLETE server=8 reqID=46 queue=689
+[0000729] ASSIGN server=8 reqID=109 svc=14 job=S
+[0000731] COMPLETE server=7 reqID=88 queue=688
+[0000731] ASSIGN server=7 reqID=114 svc=32 job=S
+[0000733] COMPLETE server=2 reqID=19 queue=687
+[0000733] ASSIGN server=2 reqID=117 svc=3 job=P
+[0000734] COMPLETE server=12 reqID=81 queue=686
+[0000734] ASSIGN server=12 reqID=120 svc=26 job=P
+[0000736] COMPLETE server=2 reqID=117 queue=685
+[0000736] COMPLETE server=3 reqID=56 queue=685
+[0000736] ASSIGN server=2 reqID=122 svc=18 job=P
+[0000736] ASSIGN server=3 reqID=124 svc=19 job=S
+[0000739] COMPLETE server=4 reqID=41 queue=684
+[0000739] ASSIGN server=4 reqID=130 svc=18 job=S
+[0000741] COMPLETE server=6 reqID=64 queue=684
+[0000741] ASSIGN server=6 reqID=134 svc=19 job=P
+[0000743] COMPLETE server=8 reqID=109 queue=683
+[0000743] ASSIGN server=8 reqID=140 svc=39 job=S
+[0000745] COMPLETE server=9 reqID=94 queue=682
+[0000745] ASSIGN server=9 reqID=143 svc=6 job=S
+[0000747] COMPLETE server=1 reqID=60 queue=681
+[0000747] ASSIGN server=1 reqID=147 svc=10 job=P
+[0000751] COMPLETE server=9 reqID=143 queue=680
+[0000751] ASSIGN server=9 reqID=155 svc=19 job=P
+[0000754] COMPLETE server=2 reqID=122 queue=679
+[0000754] ASSIGN server=2 reqID=159 svc=46 job=P
+[0000755] COMPLETE server=3 reqID=124 queue=678
+[0000755] ASSIGN server=3 reqID=163 svc=9 job=S
+[0000757] COMPLETE server=1 reqID=147 queue=677
+[0000757] COMPLETE server=4 reqID=130 queue=677
+[0000757] ASSIGN server=1 reqID=1003 svc=24 job=S
+[0000757] ASSIGN server=4 reqID=166 svc=47 job=S
+[0000759] COMPLETE server=11 reqID=72 queue=675
+[0000759] ASSIGN server=11 reqID=171 svc=20 job=P
+[0000760] COMPLETE server=6 reqID=134 queue=674
+[0000760] COMPLETE server=12 reqID=120 queue=674
+[0000760] ASSIGN server=6 reqID=175 svc=14 job=P
+[0000760] ASSIGN server=12 reqID=176 svc=42 job=P
+[0000761] COMPLETE server=5 reqID=98 queue=672
+[0000761] ASSIGN server=5 reqID=179 svc=31 job=S
+[0000763] COMPLETE server=7 reqID=114 queue=671
+[0000763] ASSIGN server=7 reqID=182 svc=46 job=S
+[0000764] COMPLETE server=3 reqID=163 queue=670
+[0000764] ASSIGN server=3 reqID=184 svc=44 job=P
+[0000765] COMPLETE server=10 reqID=90 queue=669
+[0000765] ASSIGN server=10 reqID=186 svc=26 job=P
+[0000770] COMPLETE server=9 reqID=155 queue=668
+[0000770] ASSIGN server=9 reqID=195 svc=48 job=S
+[0000774] COMPLETE server=6 reqID=175 queue=668
+[0000774] ASSIGN server=6 reqID=201 svc=5 job=P
+[0000779] COMPLETE server=6 reqID=201 queue=667
+[0000779] COMPLETE server=11 reqID=171 queue=667
+[0000779] ASSIGN server=6 reqID=212 svc=3 job=P
+[0000779] ASSIGN server=11 reqID=213 svc=14 job=S
+[0000781] COMPLETE server=1 reqID=1003 queue=665
+[0000781] ASSIGN server=1 reqID=217 svc=13 job=S
+[0000782] COMPLETE server=6 reqID=212 queue=664
+[0000782] COMPLETE server=8 reqID=140 queue=664
+[0000782] ASSIGN server=6 reqID=219 svc=42 job=S
+[0000782] ASSIGN server=8 reqID=220 svc=20 job=P
+[0000791] COMPLETE server=10 reqID=186 queue=662
+[0000791] ASSIGN server=10 reqID=1005 svc=23 job=S
+[0000792] COMPLETE server=5 reqID=179 queue=661
+[0000792] ASSIGN server=5 reqID=234 svc=28 job=S
+[0000793] COMPLETE server=11 reqID=213 queue=660
+[0000793] ASSIGN server=11 reqID=237 svc=43 job=S
+[0000794] COMPLETE server=1 reqID=217 queue=659
+[0000794] ASSIGN server=1 reqID=240 svc=50 job=S
+[0000800] COMPLETE server=2 reqID=159 queue=659
+[0000800] ASSIGN server=2 reqID=248 svc=29 job=P
+[0000802] COMPLETE server=8 reqID=220 queue=659
+[0000802] COMPLETE server=12 reqID=176 queue=659
+[0000802] ASSIGN server=8 reqID=253 svc=30 job=P
+[0000802] ASSIGN server=12 reqID=255 svc=38 job=S
+[0000804] COMPLETE server=4 reqID=166 queue=657
+[0000804] ASSIGN server=4 reqID=263 svc=34 job=P
+[0000808] COMPLETE server=3 reqID=184 queue=656
+[0000808] ASSIGN server=3 reqID=269 svc=43 job=P
+[0000809] COMPLETE server=7 reqID=182 queue=655
+[0000809] ASSIGN server=7 reqID=272 svc=30 job=S
+[0000814] COMPLETE server=10 reqID=1005 queue=655
+[0000814] ASSIGN server=10 reqID=280 svc=8 job=S
+[0000818] COMPLETE server=9 reqID=195 queue=654
+[0000818] ASSIGN server=9 reqID=287 svc=13 job=P
+[0000820] COMPLETE server=5 reqID=234 queue=653
+[0000820] ASSIGN server=5 reqID=291 svc=13 job=P
+[0000822] COMPLETE server=10 reqID=280 queue=652
+[0000822] ASSIGN server=10 reqID=296 svc=22 job=S
+[0000824] COMPLETE server=6 reqID=219 queue=651
+[0000824] ASSIGN server=6 reqID=300 svc=33 job=S
+[0000829] COMPLETE server=2 reqID=248 queue=650
+[0000829] ASSIGN server=2 reqID=310 svc=5 job=P
+[0000831] COMPLETE server=9 reqID=287 queue=649
+[0000831] ASSIGN server=9 reqID=315 svc=8 job=S
+[0000832] COMPLETE server=8 reqID=253 queue=648
+[0000832] ASSIGN server=8 reqID=318 svc=30 job=P
+[0000833] COMPLETE server=5 reqID=291 queue=647
+[0000833] ASSIGN server=5 reqID=320 svc=46 job=S
+[0000834] COMPLETE server=2 reqID=310 queue=646
+[0000834] ASSIGN server=2 reqID=324 svc=3 job=S
+[0000836] COMPLETE server=11 reqID=237 queue=645
+[0000836] ASSIGN server=11 reqID=328 svc=6 job=P
+[0000837] COMPLETE server=2 reqID=324 queue=644
+[0000837] ASSIGN server=2 reqID=1007 svc=38 job=S
+[0000838] COMPLETE server=4 reqID=263 queue=643
+[0000838] ASSIGN server=4 reqID=333 svc=44 job=S
+[0000839] COMPLETE server=7 reqID=272 queue=642
+[0000839] COMPLETE server=9 reqID=315 queue=642
+[0000839] ASSIGN server=7 reqID=337 svc=48 job=P
+[0000839] ASSIGN server=9 reqID=338 svc=16 job=S
+[0000840] COMPLETE server=12 reqID=255 queue=640
+[0000840] ASSIGN server=12 reqID=341 svc=7 job=S
+[0000842] COMPLETE server=11 reqID=328 queue=639
+[0000842] ASSIGN server=11 reqID=344 svc=38 job=S
+[0000844] COMPLETE server=1 reqID=240 queue=638
+[0000844] COMPLETE server=10 reqID=296 queue=638
+[0000844] ASSIGN server=1 reqID=349 svc=9 job=S
+[0000844] ASSIGN server=10 reqID=351 svc=31 job=S
+[0000847] COMPLETE server=12 reqID=341 queue=636
+[0000847] ASSIGN server=12 reqID=357 svc=13 job=P
+[0000851] COMPLETE server=3 reqID=269 queue=636
+[0000851] ASSIGN server=3 reqID=365 svc=1 job=P
+[0000852] COMPLETE server=3 reqID=365 queue=635
+[0000852] ASSIGN server=3 reqID=368 svc=8 job=S
+[0000853] COMPLETE server=1 reqID=349 queue=634
+[0000853] ASSIGN server=1 reqID=371 svc=34 job=P
+[0000855] COMPLETE server=9 reqID=338 queue=633
+[0000855] ASSIGN server=9 reqID=1008 svc=17 job=S
+[0000857] COMPLETE server=6 reqID=300 queue=632
+[0000857] ASSIGN server=6 reqID=378 svc=28 job=P
+[0000860] COMPLETE server=3 reqID=368 queue=631
+[0000860] COMPLETE server=12 reqID=357 queue=631
+[0000860] ASSIGN server=3 reqID=384 svc=40 job=S
+[0000860] ASSIGN server=12 reqID=387 svc=12 job=S
+[0000862] COMPLETE server=8 reqID=318 queue=629
+[0000862] ASSIGN server=8 reqID=390 svc=27 job=S
+[0000872] COMPLETE server=9 reqID=1008 queue=628
+[0000872] COMPLETE server=12 reqID=387 queue=628
+[0000872] ASSIGN server=9 reqID=405 svc=7 job=S
+[0000872] ASSIGN server=12 reqID=406 svc=32 job=P
+[0000875] COMPLETE server=2 reqID=1007 queue=627
+[0000875] COMPLETE server=10 reqID=351 queue=627
+[0000875] ASSIGN server=2 reqID=412 svc=5 job=S
+[0000875] ASSIGN server=10 reqID=413 svc=40 job=P
+[0000879] COMPLETE server=5 reqID=320 queue=625
+[0000879] COMPLETE server=9 reqID=405 queue=625
+[0000879] ASSIGN server=5 reqID=420 svc=38 job=S
+[0000879] ASSIGN server=9 reqID=422 svc=31 job=P
+[0000880] COMPLETE server=2 reqID=412 queue=623
+[0000880] COMPLETE server=11 reqID=344 queue=623
+[0000880] ASSIGN server=2 reqID=424 svc=16 job=P
+[0000880] ASSIGN server=11 reqID=426 svc=37 job=S
+[0000882] COMPLETE server=4 reqID=333 queue=621
+[0000882] ASSIGN server=4 reqID=430 svc=33 job=S
+[0000885] COMPLETE server=6 reqID=378 queue=620
+[0000885] ASSIGN server=6 reqID=438 svc=46 job=S
+[0000887] COMPLETE server=1 reqID=371 queue=619
+[0000887] COMPLETE server=7 reqID=337 queue=619
+[0000887] ASSIGN server=1 reqID=443 svc=35 job=S
+[0000887] ASSIGN server=7 reqID=444 svc=32 job=P
+[0000889] COMPLETE server=8 reqID=390 queue=617
+[0000889] ASSIGN server=8 reqID=446 svc=15 job=P
+[0000896] COMPLETE server=2 reqID=424 queue=617
+[0000896] ASSIGN server=2 reqID=455 svc=12 job=P
+[0000900] COMPLETE server=3 reqID=384 queue=616
+[0000900] ASSIGN server=3 reqID=460 svc=3 job=P
+[0000903] COMPLETE server=3 reqID=460 queue=616
+[0000903] ASSIGN server=3 reqID=466 svc=48 job=S
+[0000904] COMPLETE server=8 reqID=446 queue=615
+[0000904] COMPLETE server=12 reqID=406 queue=615
+[0000904] ASSIGN server=8 reqID=470 svc=33 job=S
+[0000904] ASSIGN server=12 reqID=471 svc=7 job=S
+[0000908] COMPLETE server=2 reqID=455 queue=613
+[0000908] ASSIGN server=2 reqID=479 svc=26 job=P
+[0000910] COMPLETE server=9 reqID=422 queue=612
+[0000910] ASSIGN server=9 reqID=484 svc=7 job=S
+[0000911] COMPLETE server=12 reqID=471 queue=611
+[0000911] ASSIGN server=12 reqID=488 svc=2 job=P
+[0000913] COMPLETE server=12 reqID=488 queue=610
+[0000913] ASSIGN server=12 reqID=492 svc=50 job=P
+[0000915] COMPLETE server=4 reqID=430 queue=609
+[0000915] COMPLETE server=10 reqID=413 queue=609
+[0000915] ASSIGN server=4 reqID=496 svc=2 job=S
+[0000915] ASSIGN server=10 reqID=498 svc=5 job=S
+[0000917] COMPLETE server=4 reqID=496 queue=607
+[0000917] COMPLETE server=5 reqID=420 queue=607
+[0000917] COMPLETE server=9 reqID=484 queue=607
+[0000917] COMPLETE server=11 reqID=426 queue=607
+[0000917] ASSIGN server=4 reqID=501 svc=31 job=S
+[0000917] ASSIGN server=5 reqID=502 svc=3 job=P
+[0000917] ASSIGN server=9 reqID=503 svc=16 job=P
+[0000917] ASSIGN server=11 reqID=505 svc=27 job=S
+[0000919] COMPLETE server=7 reqID=444 queue=603
+[0000919] ASSIGN server=7 reqID=509 svc=41 job=S
+[0000920] COMPLETE server=5 reqID=502 queue=602
+[0000920] COMPLETE server=10 reqID=498 queue=602
+[0000920] ASSIGN server=5 reqID=1012 svc=17 job=S
+[0000920] ASSIGN server=10 reqID=512 svc=6 job=S
+[0000922] COMPLETE server=1 reqID=443 queue=600
+[0000922] ASSIGN server=1 reqID=1013 svc=35 job=S
+[0000922] SCALE_DOWN newServers=12 queueSize=599
+[0000926] COMPLETE server=10 reqID=512 queue=599
+[0000926] ASSIGN server=10 reqID=521 svc=37 job=S
+[0000931] COMPLETE server=6 reqID=438 queue=598
+[0000931] ASSIGN server=6 reqID=530 svc=25 job=P
+[0000933] COMPLETE server=9 reqID=503 queue=597
+[0000933] ASSIGN server=9 reqID=534 svc=20 job=P
+[0000934] COMPLETE server=2 reqID=479 queue=596
+[0000934] ASSIGN server=2 reqID=537 svc=5 job=P
+[0000937] COMPLETE server=5 reqID=1012 queue=595
+[0000937] COMPLETE server=8 reqID=470 queue=595
+[0000937] ASSIGN server=5 reqID=543 svc=37 job=S
+[0000937] ASSIGN server=8 reqID=544 svc=34 job=P
+[0000939] COMPLETE server=2 reqID=537 queue=593
+[0000939] ASSIGN server=2 reqID=549 svc=11 job=P
+[0000944] COMPLETE server=11 reqID=505 queue=592
+[0000944] ASSIGN server=11 reqID=559 svc=48 job=S
+[0000948] COMPLETE server=4 reqID=501 queue=592
+[0000948] ASSIGN server=4 reqID=566 svc=26 job=S
+[0000950] COMPLETE server=2 reqID=549 queue=591
+[0000950] ASSIGN server=2 reqID=568 svc=48 job=S
+[0000951] COMPLETE server=3 reqID=466 queue=590
+[0000951] ASSIGN server=3 reqID=571 svc=43 job=S
+[0000953] COMPLETE server=9 reqID=534 queue=590
+[0000953] ASSIGN server=9 reqID=576 svc=45 job=P
+[0000956] COMPLETE server=6 reqID=530 queue=589
+[0000956] ASSIGN server=6 reqID=581 svc=28 job=P
+[0000957] COMPLETE server=1 reqID=1013 queue=588
+[0000957] ASSIGN server=1 reqID=583 svc=45 job=P
+[0000960] COMPLETE server=7 reqID=509 queue=587
+[0000960] ASSIGN server=7 reqID=588 svc=14 job=P
+[0000963] COMPLETE server=10 reqID=521 queue=586
+[0000963] COMPLETE server=12 reqID=492 queue=586
+[0000963] ASSIGN server=10 reqID=594 svc=39 job=S
+[0000963] ASSIGN server=12 reqID=595 svc=25 job=P
+[0000971] COMPLETE server=8 reqID=544 queue=584
+[0000971] ASSIGN server=8 reqID=609 svc=6 job=P
+[0000972] SCALE_DOWN newServers=12 queueSize=583
+[0000974] COMPLETE server=4 reqID=566 queue=583
+[0000974] COMPLETE server=5 reqID=543 queue=583
+[0000974] COMPLETE server=7 reqID=588 queue=583
+[0000974] ASSIGN server=4 reqID=614 svc=33 job=P
+[0000974] ASSIGN server=5 reqID=615 svc=34 job=S
+[0000974] ASSIGN server=7 reqID=617 svc=47 job=S
+[0000977] COMPLETE server=8 reqID=609 queue=581
+[0000977] ASSIGN server=8 reqID=624 svc=3 job=S
+[0000980] COMPLETE server=8 reqID=624 queue=580
+[0000980] ASSIGN server=8 reqID=629 svc=22 job=P
+[0000984] COMPLETE server=6 reqID=581 queue=579
+[0000984] ASSIGN server=6 reqID=637 svc=41 job=P
+[0000988] COMPLETE server=12 reqID=595 queue=578
+[0000988] ASSIGN server=12 reqID=642 svc=18 job=S
+[0000992] COMPLETE server=11 reqID=559 queue=577
+[0000992] ASSIGN server=11 reqID=647 svc=11 job=S
+[0000994] COMPLETE server=3 reqID=571 queue=576
+[0000994] ASSIGN server=3 reqID=650 svc=11 job=P
+[0000998] COMPLETE server=2 reqID=568 queue=575
+[0000998] COMPLETE server=9 reqID=576 queue=575
+[0000998] ASSIGN server=2 reqID=655 svc=45 job=P
+[0000998] ASSIGN server=9 reqID=657 svc=26 job=P
+[0001002] COMPLETE server=1 reqID=583 queue=573
+[0001002] COMPLETE server=8 reqID=629 queue=573
+[0001002] COMPLETE server=10 reqID=594 queue=573
+[0001002] ASSIGN server=1 reqID=666 svc=18 job=S
+[0001002] ASSIGN server=8 reqID=668 svc=8 job=S
+[0001002] ASSIGN server=10 reqID=669 svc=43 job=S
+[0001003] COMPLETE server=11 reqID=647 queue=570
+[0001003] ASSIGN server=11 reqID=673 svc=22 job=S
+[0001005] COMPLETE server=3 reqID=650 queue=569
+[0001005] ASSIGN server=3 reqID=678 svc=45 job=S
+[0001006] COMPLETE server=12 reqID=642 queue=568
+[0001006] ASSIGN server=12 reqID=680 svc=34 job=S
+[0001007] COMPLETE server=4 reqID=614 queue=567
+[0001007] ASSIGN server=4 reqID=683 svc=16 job=P
+[0001008] COMPLETE server=5 reqID=615 queue=566
+[0001008] ASSIGN server=5 reqID=686 svc=1 job=S
+[0001009] COMPLETE server=5 reqID=686 queue=565
+[0001009] ASSIGN server=5 reqID=689 svc=31 job=P
+[0001010] COMPLETE server=8 reqID=668 queue=564
+[0001010] ASSIGN server=8 reqID=691 svc=42 job=P
+[0001020] COMPLETE server=1 reqID=666 queue=563
+[0001020] ASSIGN server=1 reqID=707 svc=8 job=P
+[0001021] COMPLETE server=7 reqID=617 queue=562
+[0001021] ASSIGN server=7 reqID=709 svc=9 job=P
+[0001022] SCALE_DOWN newServers=12 queueSize=561
+[0001023] COMPLETE server=4 reqID=683 queue=561
+[0001023] ASSIGN server=4 reqID=712 svc=1 job=S
+[0001024] COMPLETE server=4 reqID=712 queue=560
+[0001024] COMPLETE server=9 reqID=657 queue=560
+[0001024] ASSIGN server=4 reqID=714 svc=18 job=S
+[0001024] ASSIGN server=9 reqID=715 svc=3 job=P
+[0001025] COMPLETE server=6 reqID=637 queue=558
+[0001025] COMPLETE server=11 reqID=673 queue=558
+[0001025] ASSIGN server=6 reqID=719 svc=41 job=S
+[0001025] ASSIGN server=11 reqID=723 svc=19 job=S
+[0001027] COMPLETE server=9 reqID=715 queue=556
+[0001027] ASSIGN server=9 reqID=726 svc=38 job=P
+[0001028] COMPLETE server=1 reqID=707 queue=555
+[0001028] ASSIGN server=1 reqID=731 svc=19 job=S
+[0001030] COMPLETE server=7 reqID=709 queue=554
+[0001030] ASSIGN server=7 reqID=736 svc=47 job=P
+[0001040] COMPLETE server=5 reqID=689 queue=553
+[0001040] COMPLETE server=12 reqID=680 queue=553
+[0001040] ASSIGN server=5 reqID=1019 svc=13 job=P
+[0001040] ASSIGN server=12 reqID=749 svc=15 job=S
+[0001042] COMPLETE server=4 reqID=714 queue=551
+[0001042] ASSIGN server=4 reqID=756 svc=6 job=S
+[0001043] COMPLETE server=2 reqID=655 queue=551
+[0001043] ASSIGN server=2 reqID=758 svc=5 job=P
+[0001044] COMPLETE server=11 reqID=723 queue=550
+[0001044] ASSIGN server=11 reqID=761 svc=29 job=P
+[0001045] COMPLETE server=10 reqID=669 queue=549
+[0001045] ASSIGN server=10 reqID=764 svc=35 job=S
+[0001047] COMPLETE server=1 reqID=731 queue=548
+[0001047] ASSIGN server=1 reqID=768 svc=11 job=P
+[0001048] COMPLETE server=2 reqID=758 queue=547
+[0001048] COMPLETE server=4 reqID=756 queue=547
+[0001048] ASSIGN server=2 reqID=770 svc=31 job=S
+[0001048] ASSIGN server=4 reqID=772 svc=33 job=P
+[0001050] COMPLETE server=3 reqID=678 queue=545
+[0001050] ASSIGN server=3 reqID=777 svc=49 job=S
+[0001052] COMPLETE server=8 reqID=691 queue=545
+[0001052] ASSIGN server=8 reqID=781 svc=6 job=P
+[0001053] COMPLETE server=5 reqID=1019 queue=544
+[0001053] ASSIGN server=5 reqID=783 svc=28 job=P
+[0001055] COMPLETE server=12 reqID=749 queue=543
+[0001055] ASSIGN server=12 reqID=786 svc=50 job=P
+[0001058] COMPLETE server=1 reqID=768 queue=542
+[0001058] COMPLETE server=8 reqID=781 queue=542
+[0001058] ASSIGN server=1 reqID=794 svc=16 job=S
+[0001058] ASSIGN server=8 reqID=797 svc=9 job=S
+[0001065] COMPLETE server=9 reqID=726 queue=540
+[0001065] ASSIGN server=9 reqID=809 svc=32 job=S
+[0001066] COMPLETE server=6 reqID=719 queue=539
+[0001066] ASSIGN server=6 reqID=813 svc=33 job=P
+[0001067] COMPLETE server=8 reqID=797 queue=538
+[0001067] ASSIGN server=8 reqID=815 svc=8 job=P
+[0001072] SCALE_DOWN newServers=12 queueSize=537
+[0001073] COMPLETE server=11 reqID=761 queue=537
+[0001073] ASSIGN server=11 reqID=828 svc=3 job=P
+[0001074] COMPLETE server=1 reqID=794 queue=536
+[0001074] ASSIGN server=1 reqID=832 svc=5 job=P
+[0001075] COMPLETE server=8 reqID=815 queue=535
+[0001075] ASSIGN server=8 reqID=834 svc=12 job=P
+[0001076] COMPLETE server=11 reqID=828 queue=534
+[0001076] ASSIGN server=11 reqID=835 svc=42 job=P
+[0001077] COMPLETE server=7 reqID=736 queue=533
+[0001077] ASSIGN server=7 reqID=837 svc=25 job=P
+[0001079] COMPLETE server=1 reqID=832 queue=532
+[0001079] COMPLETE server=2 reqID=770 queue=532
+[0001079] ASSIGN server=1 reqID=841 svc=12 job=S
+[0001079] ASSIGN server=2 reqID=842 svc=15 job=P
+[0001080] COMPLETE server=10 reqID=764 queue=530
+[0001080] ASSIGN server=10 reqID=844 svc=47 job=S
+[0001081] COMPLETE server=4 reqID=772 queue=529
+[0001081] COMPLETE server=5 reqID=783 queue=529
+[0001081] ASSIGN server=4 reqID=846 svc=45 job=S
+[0001081] ASSIGN server=5 reqID=847 svc=39 job=S
+[0001087] COMPLETE server=8 reqID=834 queue=527
+[0001087] ASSIGN server=8 reqID=858 svc=19 job=S
+[0001091] COMPLETE server=1 reqID=841 queue=527
+[0001091] ASSIGN server=1 reqID=866 svc=31 job=S
+[0001094] COMPLETE server=2 reqID=842 queue=526
+[0001094] ASSIGN server=2 reqID=870 svc=26 job=P
+[0001097] COMPLETE server=9 reqID=809 queue=525
+[0001097] ASSIGN server=9 reqID=875 svc=13 job=P
+[0001099] COMPLETE server=3 reqID=777 queue=524
+[0001099] COMPLETE server=6 reqID=813 queue=524
+[0001099] ASSIGN server=3 reqID=879 svc=46 job=P
+[0001099] ASSIGN server=6 reqID=881 svc=38 job=P
+[0001102] COMPLETE server=7 reqID=837 queue=522
+[0001102] ASSIGN server=7 reqID=887 svc=30 job=S
+[0001105] COMPLETE server=12 reqID=786 queue=521
+[0001105] ASSIGN server=12 reqID=896 svc=36 job=P
+[0001106] COMPLETE server=8 reqID=858 queue=520
+[0001106] ASSIGN server=8 reqID=898 svc=42 job=S
+[0001110] COMPLETE server=9 reqID=875 queue=520
+[0001110] ASSIGN server=9 reqID=906 svc=31 job=P
+[0001118] COMPLETE server=11 reqID=835 queue=519
+[0001118] ASSIGN server=11 reqID=915 svc=21 job=S
+[0001120] COMPLETE server=2 reqID=870 queue=518
+[0001120] COMPLETE server=5 reqID=847 queue=518
+[0001120] ASSIGN server=2 reqID=920 svc=16 job=S
+[0001120] ASSIGN server=5 reqID=1024 svc=43 job=S
+[0001122] COMPLETE server=1 reqID=866 queue=516
+[0001122] ASSIGN server=1 reqID=924 svc=30 job=P
+[0001122] SCALE_DOWN newServers=12 queueSize=515
+[0001126] COMPLETE server=4 reqID=846 queue=515
+[0001126] ASSIGN server=4 reqID=932 svc=42 job=P
+[0001127] COMPLETE server=10 reqID=844 queue=514
+[0001127] ASSIGN server=10 reqID=1025 svc=43 job=S
+[0001132] COMPLETE server=7 reqID=887 queue=513
+[0001132] ASSIGN server=7 reqID=944 svc=38 job=P
+[0001136] COMPLETE server=2 reqID=920 queue=512
+[0001136] ASSIGN server=2 reqID=951 svc=37 job=P
+[0001137] COMPLETE server=6 reqID=881 queue=511
+[0001137] ASSIGN server=6 reqID=955 svc=17 job=P
+[0001139] COMPLETE server=11 reqID=915 queue=510
+[0001139] ASSIGN server=11 reqID=958 svc=22 job=P
+[0001141] COMPLETE server=9 reqID=906 queue=509
+[0001141] COMPLETE server=12 reqID=896 queue=509
+[0001141] ASSIGN server=9 reqID=962 svc=6 job=S
+[0001141] ASSIGN server=12 reqID=965 svc=26 job=P
+[0001145] COMPLETE server=3 reqID=879 queue=507
+[0001145] ASSIGN server=3 reqID=970 svc=6 job=P
+[0001147] COMPLETE server=9 reqID=962 queue=506
+[0001147] ASSIGN server=9 reqID=975 svc=13 job=P
+[0001148] COMPLETE server=8 reqID=898 queue=505
+[0001148] ASSIGN server=8 reqID=977 svc=10 job=P
+[0001151] COMPLETE server=3 reqID=970 queue=504
+[0001151] ASSIGN server=3 reqID=982 svc=29 job=P
+[0001152] COMPLETE server=1 reqID=924 queue=503
+[0001152] ASSIGN server=1 reqID=987 svc=35 job=P
+[0001154] COMPLETE server=6 reqID=955 queue=502
+[0001154] ASSIGN server=6 reqID=991 svc=23 job=P
+[0001158] COMPLETE server=8 reqID=977 queue=502
+[0001158] ASSIGN server=8 reqID=996 svc=34 job=P
+[0001160] COMPLETE server=9 reqID=975 queue=501
+[0001160] ASSIGN server=9 reqID=999 svc=21 job=S
+[0001161] COMPLETE server=11 reqID=958 queue=500
+[0001161] ASSIGN server=11 reqID=14 svc=14 job=S
+[0001163] COMPLETE server=5 reqID=1024 queue=499
+[0001163] ASSIGN server=5 reqID=20 svc=3 job=P
+[0001166] COMPLETE server=5 reqID=20 queue=498
+[0001166] ASSIGN server=5 reqID=25 svc=7 job=S
+[0001167] COMPLETE server=12 reqID=965 queue=497
+[0001167] ASSIGN server=12 reqID=27 svc=25 job=P
+[0001168] COMPLETE server=4 reqID=932 queue=496
+[0001168] ASSIGN server=4 reqID=31 svc=32 job=S
+[0001170] COMPLETE server=7 reqID=944 queue=495
+[0001170] COMPLETE server=10 reqID=1025 queue=495
+[0001170] ASSIGN server=7 reqID=39 svc=49 job=P
+[0001170] ASSIGN server=10 reqID=43 svc=25 job=S
+[0001172] SCALE_DOWN newServers=12 queueSize=493
+[0001173] COMPLETE server=2 reqID=951 queue=493
+[0001173] COMPLETE server=5 reqID=25 queue=493
+[0001173] ASSIGN server=2 reqID=48 svc=25 job=S
+[0001173] ASSIGN server=5 reqID=52 svc=20 job=S
+[0001175] COMPLETE server=11 reqID=14 queue=491
+[0001175] ASSIGN server=11 reqID=59 svc=13 job=P
+[0001177] COMPLETE server=6 reqID=991 queue=490
+[0001177] ASSIGN server=6 reqID=1029 svc=14 job=P
+[0001180] COMPLETE server=3 reqID=982 queue=489
+[0001180] ASSIGN server=3 reqID=70 svc=48 job=S
+[0001181] COMPLETE server=9 reqID=999 queue=489
+[0001181] ASSIGN server=9 reqID=75 svc=19 job=P
+[0001187] COMPLETE server=1 reqID=987 queue=488
+[0001187] ASSIGN server=1 reqID=86 svc=3 job=S
+[0001188] COMPLETE server=11 reqID=59 queue=487
+[0001188] ASSIGN server=11 reqID=92 svc=13 job=P
+[0001190] COMPLETE server=1 reqID=86 queue=486
+[0001190] ASSIGN server=1 reqID=97 svc=11 job=S
+[0001191] COMPLETE server=6 reqID=1029 queue=485
+[0001191] ASSIGN server=6 reqID=100 svc=12 job=P
+[0001192] COMPLETE server=8 reqID=996 queue=484
+[0001192] COMPLETE server=12 reqID=27 queue=484
+[0001192] ASSIGN server=8 reqID=103 svc=46 job=S
+[0001192] ASSIGN server=12 reqID=108 svc=38 job=S
+[0001193] COMPLETE server=5 reqID=52 queue=482
+[0001193] ASSIGN server=5 reqID=113 svc=41 job=S
+[0001195] COMPLETE server=10 reqID=43 queue=482
+[0001195] ASSIGN server=10 reqID=118 svc=18 job=P
+[0001198] COMPLETE server=2 reqID=48 queue=481
+[0001198] ASSIGN server=2 reqID=126 svc=27 job=P
+[0001200] COMPLETE server=4 reqID=31 queue=480
+[0001200] COMPLETE server=9 reqID=75 queue=480
+[0001200] ASSIGN server=4 reqID=132 svc=19 job=P
+[0001200] ASSIGN server=9 reqID=1032 svc=32 job=S
+[0001201] COMPLETE server=1 reqID=97 queue=478
+[0001201] COMPLETE server=11 reqID=92 queue=478
+[0001201] ASSIGN server=1 reqID=135 svc=3 job=P
+[0001201] ASSIGN server=11 reqID=138 svc=27 job=S
+[0001203] COMPLETE server=6 reqID=100 queue=476
+[0001203] ASSIGN server=6 reqID=144 svc=43 job=S
+[0001204] COMPLETE server=1 reqID=135 queue=475
+[0001204] ASSIGN server=1 reqID=149 svc=32 job=P
+[0001213] COMPLETE server=10 reqID=118 queue=475
+[0001213] ASSIGN server=10 reqID=167 svc=2 job=P
+[0001215] COMPLETE server=10 reqID=167 queue=475
+[0001215] ASSIGN server=10 reqID=177 svc=10 job=P
+[0001219] COMPLETE server=4 reqID=132 queue=474
+[0001219] COMPLETE server=7 reqID=39 queue=474
+[0001219] ASSIGN server=4 reqID=188 svc=35 job=P
+[0001219] ASSIGN server=7 reqID=190 svc=8 job=P
+[0001222] SCALE_DOWN newServers=12 queueSize=472
+[0001225] COMPLETE server=2 reqID=126 queue=472
+[0001225] COMPLETE server=10 reqID=177 queue=472
+[0001225] ASSIGN server=2 reqID=199 svc=1 job=S
+[0001225] ASSIGN server=10 reqID=1033 svc=13 job=P
+[0001226] COMPLETE server=2 reqID=199 queue=470
+[0001226] ASSIGN server=2 reqID=205 svc=37 job=S
+[0001227] COMPLETE server=7 reqID=190 queue=469
+[0001227] ASSIGN server=7 reqID=210 svc=44 job=S
+[0001228] COMPLETE server=3 reqID=70 queue=468
+[0001228] COMPLETE server=11 reqID=138 queue=468
+[0001228] ASSIGN server=3 reqID=214 svc=37 job=S
+[0001228] ASSIGN server=11 reqID=215 svc=36 job=P
+[0001230] COMPLETE server=12 reqID=108 queue=466
+[0001230] ASSIGN server=12 reqID=221 svc=32 job=P
+[0001232] COMPLETE server=9 reqID=1032 queue=465
+[0001232] ASSIGN server=9 reqID=225 svc=3 job=S
+[0001234] COMPLETE server=5 reqID=113 queue=465
+[0001234] ASSIGN server=5 reqID=229 svc=29 job=S
+[0001235] COMPLETE server=9 reqID=225 queue=464
+[0001235] ASSIGN server=9 reqID=232 svc=10 job=S
+[0001236] COMPLETE server=1 reqID=149 queue=463
+[0001236] ASSIGN server=1 reqID=238 svc=9 job=S
+[0001238] COMPLETE server=8 reqID=103 queue=462
+[0001238] COMPLETE server=10 reqID=1033 queue=462
+[0001238] ASSIGN server=8 reqID=244 svc=42 job=P
+[0001238] ASSIGN server=10 reqID=245 svc=49 job=S
+[0001245] COMPLETE server=1 reqID=238 queue=460
+[0001245] COMPLETE server=9 reqID=232 queue=460
+[0001245] ASSIGN server=1 reqID=258 svc=27 job=S
+[0001245] ASSIGN server=9 reqID=264 svc=3 job=S
+[0001246] COMPLETE server=6 reqID=144 queue=458
+[0001246] ASSIGN server=6 reqID=267 svc=2 job=S
+[0001248] COMPLETE server=6 reqID=267 queue=457
+[0001248] COMPLETE server=9 reqID=264 queue=457
+[0001248] ASSIGN server=6 reqID=273 svc=18 job=S
+[0001248] ASSIGN server=9 reqID=1036 svc=19 job=P
+[0001254] COMPLETE server=4 reqID=188 queue=456
+[0001254] ASSIGN server=4 reqID=284 svc=3 job=S
+[0001257] COMPLETE server=4 reqID=284 queue=455
+[0001257] ASSIGN server=4 reqID=293 svc=34 job=P
+[0001262] COMPLETE server=12 reqID=221 queue=454
+[0001262] ASSIGN server=12 reqID=304 svc=45 job=P
+[0001263] COMPLETE server=2 reqID=205 queue=453
+[0001263] COMPLETE server=5 reqID=229 queue=453
+[0001263] ASSIGN server=2 reqID=308 svc=27 job=P
+[0001263] ASSIGN server=5 reqID=311 svc=1 job=S
+[0001264] COMPLETE server=5 reqID=311 queue=451
+[0001264] COMPLETE server=11 reqID=215 queue=451
+[0001264] ASSIGN server=5 reqID=317 svc=13 job=P
+[0001264] ASSIGN server=11 reqID=1006 svc=49 job=S
+[0001265] COMPLETE server=3 reqID=214 queue=449
+[0001265] ASSIGN server=3 reqID=325 svc=17 job=P
+[0001266] COMPLETE server=6 reqID=273 queue=448
+[0001266] ASSIGN server=6 reqID=330 svc=44 job=S
+[0001267] COMPLETE server=9 reqID=1036 queue=447
+[0001267] ASSIGN server=9 reqID=336 svc=41 job=P
+[0001271] COMPLETE server=7 reqID=210 queue=446
+[0001271] ASSIGN server=7 reqID=347 svc=9 job=P
+[0001272] COMPLETE server=1 reqID=258 queue=445
+[0001272] ASSIGN server=1 reqID=354 svc=13 job=P
+[0001272] SCALE_DOWN newServers=12 queueSize=444
+[0001277] COMPLETE server=5 reqID=317 queue=444
+[0001277] ASSIGN server=5 reqID=361 svc=26 job=S
+[0001280] COMPLETE server=7 reqID=347 queue=443
+[0001280] COMPLETE server=8 reqID=244 queue=443
+[0001280] ASSIGN server=7 reqID=373 svc=10 job=S
+[0001280] ASSIGN server=8 reqID=374 svc=27 job=S
+[0001282] COMPLETE server=3 reqID=325 queue=441
+[0001282] ASSIGN server=3 reqID=381 svc=27 job=S
+[0001285] COMPLETE server=1 reqID=354 queue=440
+[0001285] ASSIGN server=1 reqID=392 svc=15 job=S
+[0001287] COMPLETE server=10 reqID=245 queue=439
+[0001287] ASSIGN server=10 reqID=395 svc=30 job=P
+[0001290] COMPLETE server=2 reqID=308 queue=438
+[0001290] COMPLETE server=7 reqID=373 queue=438
+[0001290] ASSIGN server=2 reqID=401 svc=14 job=P
+[0001290] ASSIGN server=7 reqID=402 svc=22 job=S
+[0001291] COMPLETE server=4 reqID=293 queue=437
+[0001291] ASSIGN server=4 reqID=408 svc=10 job=P
+[0001300] COMPLETE server=1 reqID=392 queue=436
+[0001300] ASSIGN server=1 reqID=428 svc=11 job=S
+[0001301] COMPLETE server=4 reqID=408 queue=435
+[0001301] ASSIGN server=4 reqID=434 svc=13 job=S
+[0001303] COMPLETE server=5 reqID=361 queue=434
+[0001303] ASSIGN server=5 reqID=441 svc=41 job=S
+[0001304] COMPLETE server=2 reqID=401 queue=433
+[0001304] ASSIGN server=2 reqID=445 svc=7 job=S
+[0001307] COMPLETE server=8 reqID=374 queue=433
+[0001307] COMPLETE server=12 reqID=304 queue=433
+[0001307] ASSIGN server=8 reqID=452 svc=2 job=S
+[0001307] ASSIGN server=12 reqID=1011 svc=17 job=S
+[0001308] COMPLETE server=9 reqID=336 queue=431
+[0001308] ASSIGN server=9 reqID=454 svc=23 job=S
+[0001309] COMPLETE server=3 reqID=381 queue=430
+[0001309] COMPLETE server=8 reqID=452 queue=430
+[0001309] ASSIGN server=3 reqID=456 svc=24 job=S
+[0001309] ASSIGN server=8 reqID=457 svc=1 job=P
+[0001310] COMPLETE server=6 reqID=330 queue=428
+[0001310] COMPLETE server=8 reqID=457 queue=428
+[0001310] ASSIGN server=6 reqID=459 svc=23 job=S
+[0001310] ASSIGN server=8 reqID=462 svc=41 job=P
+[0001311] COMPLETE server=1 reqID=428 queue=426
+[0001311] COMPLETE server=2 reqID=445 queue=426
+[0001311] ASSIGN server=1 reqID=1040 svc=37 job=P
+[0001311] ASSIGN server=2 reqID=465 svc=34 job=S
+[0001312] COMPLETE server=7 reqID=402 queue=424
+[0001312] ASSIGN server=7 reqID=473 svc=35 job=P
+[0001313] COMPLETE server=11 reqID=1006 queue=423
+[0001313] ASSIGN server=11 reqID=476 svc=28 job=P
+[0001314] COMPLETE server=4 reqID=434 queue=422
+[0001314] ASSIGN server=4 reqID=481 svc=20 job=P
+[0001317] COMPLETE server=10 reqID=395 queue=421
+[0001317] ASSIGN server=10 reqID=491 svc=12 job=P
+[0001322] SCALE_DOWN newServers=12 queueSize=421
+[0001324] COMPLETE server=12 reqID=1011 queue=422
+[0001324] ASSIGN server=12 reqID=514 svc=11 job=P
+[0001329] COMPLETE server=10 reqID=491 queue=422
+[0001329] ASSIGN server=10 reqID=522 svc=40 job=S
+[0001331] COMPLETE server=9 reqID=454 queue=421
+[0001331] ASSIGN server=9 reqID=526 svc=34 job=S
+[0001333] COMPLETE server=3 reqID=456 queue=420
+[0001333] COMPLETE server=6 reqID=459 queue=420
+[0001333] ASSIGN server=3 reqID=533 svc=37 job=P
+[0001333] ASSIGN server=6 reqID=536 svc=3 job=P
+[0001334] COMPLETE server=4 reqID=481 queue=418
+[0001334] ASSIGN server=4 reqID=540 svc=20 job=S
+[0001335] COMPLETE server=12 reqID=514 queue=417
+[0001335] ASSIGN server=12 reqID=545 svc=42 job=S
+[0001336] COMPLETE server=6 reqID=536 queue=416
+[0001336] ASSIGN server=6 reqID=551 svc=9 job=P
+[0001341] COMPLETE server=11 reqID=476 queue=416
+[0001341] ASSIGN server=11 reqID=1041 svc=22 job=P
+[0001344] COMPLETE server=5 reqID=441 queue=415
+[0001344] ASSIGN server=5 reqID=1014 svc=37 job=P
+[0001345] COMPLETE server=2 reqID=465 queue=414
+[0001345] COMPLETE server=6 reqID=551 queue=414
+[0001345] ASSIGN server=2 reqID=569 svc=5 job=P
+[0001345] ASSIGN server=6 reqID=573 svc=34 job=S
+[0001347] COMPLETE server=7 reqID=473 queue=412
+[0001347] ASSIGN server=7 reqID=577 svc=30 job=P
+[0001348] COMPLETE server=1 reqID=1040 queue=411
+[0001348] ASSIGN server=1 reqID=580 svc=24 job=S
+[0001350] COMPLETE server=2 reqID=569 queue=410
+[0001350] ASSIGN server=2 reqID=585 svc=41 job=P
+[0001351] COMPLETE server=8 reqID=462 queue=409
+[0001351] ASSIGN server=8 reqID=590 svc=40 job=P
+[0001354] COMPLETE server=4 reqID=540 queue=409
+[0001354] ASSIGN server=4 reqID=597 svc=5 job=P
+[0001359] COMPLETE server=4 reqID=597 queue=409
+[0001359] ASSIGN server=4 reqID=608 svc=48 job=P
+[0001363] COMPLETE server=11 reqID=1041 queue=409
+[0001363] ASSIGN server=11 reqID=620 svc=11 job=S
+[0001365] COMPLETE server=9 reqID=526 queue=408
+[0001365] ASSIGN server=9 reqID=625 svc=4 job=P
+[0001369] COMPLETE server=9 reqID=625 queue=407
+[0001369] COMPLETE server=10 reqID=522 queue=407
+[0001369] ASSIGN server=9 reqID=634 svc=2 job=P
+[0001369] ASSIGN server=10 reqID=635 svc=21 job=S
+[0001370] COMPLETE server=3 reqID=533 queue=405
+[0001370] ASSIGN server=3 reqID=638 svc=13 job=S
+[0001371] COMPLETE server=9 reqID=634 queue=404
+[0001371] ASSIGN server=9 reqID=640 svc=14 job=S
+[0001372] COMPLETE server=1 reqID=580 queue=403
+[0001372] ASSIGN server=1 reqID=643 svc=23 job=P
+[0001372] SCALE_DOWN newServers=12 queueSize=402
+[0001374] COMPLETE server=11 reqID=620 queue=402
+[0001374] ASSIGN server=11 reqID=648 svc=17 job=P
+[0001377] COMPLETE server=7 reqID=577 queue=401
+[0001377] COMPLETE server=12 reqID=545 queue=401
+[0001377] ASSIGN server=7 reqID=653 svc=39 job=P
+[0001377] ASSIGN server=12 reqID=654 svc=34 job=P
+[0001379] COMPLETE server=6 reqID=573 queue=399
+[0001379] ASSIGN server=6 reqID=662 svc=37 job=P
+[0001381] COMPLETE server=5 reqID=1014 queue=398
+[0001381] ASSIGN server=5 reqID=674 svc=12 job=S
+[0001383] COMPLETE server=3 reqID=638 queue=397
+[0001383] ASSIGN server=3 reqID=682 svc=34 job=S
+[0001385] COMPLETE server=9 reqID=640 queue=396
+[0001385] ASSIGN server=9 reqID=690 svc=44 job=S
+[0001390] COMPLETE server=10 reqID=635 queue=396
+[0001390] ASSIGN server=10 reqID=699 svc=46 job=P
+[0001391] COMPLETE server=2 reqID=585 queue=395
+[0001391] COMPLETE server=8 reqID=590 queue=395
+[0001391] COMPLETE server=11 reqID=648 queue=395
+[0001391] ASSIGN server=2 reqID=702 svc=31 job=S
+[0001391] ASSIGN server=8 reqID=704 svc=16 job=S
+[0001391] ASSIGN server=11 reqID=705 svc=24 job=P
+[0001393] COMPLETE server=5 reqID=674 queue=392
+[0001393] ASSIGN server=5 reqID=711 svc=8 job=S
+[0001395] COMPLETE server=1 reqID=643 queue=391
+[0001395] ASSIGN server=1 reqID=724 svc=17 job=P
+[0001401] COMPLETE server=5 reqID=711 queue=390
+[0001401] ASSIGN server=5 reqID=740 svc=17 job=P
+[0001407] COMPLETE server=4 reqID=608 queue=391
+[0001407] COMPLETE server=8 reqID=704 queue=391
+[0001407] ASSIGN server=4 reqID=748 svc=4 job=P
+[0001407] ASSIGN server=8 reqID=750 svc=44 job=P
+[0001411] COMPLETE server=4 reqID=748 queue=389
+[0001411] COMPLETE server=12 reqID=654 queue=389
+[0001411] ASSIGN server=4 reqID=763 svc=27 job=S
+[0001411] ASSIGN server=12 reqID=766 svc=42 job=P
+[0001412] COMPLETE server=1 reqID=724 queue=387
+[0001412] ASSIGN server=1 reqID=769 svc=31 job=S
+[0001415] COMPLETE server=11 reqID=705 queue=386
+[0001415] ASSIGN server=11 reqID=1045 svc=24 job=S
+[0001416] COMPLETE server=6 reqID=662 queue=385
+[0001416] COMPLETE server=7 reqID=653 queue=385
+[0001416] ASSIGN server=6 reqID=782 svc=28 job=P
+[0001416] ASSIGN server=7 reqID=784 svc=12 job=P
+[0001417] COMPLETE server=3 reqID=682 queue=383
+[0001417] ASSIGN server=3 reqID=789 svc=40 job=S
+[0001418] COMPLETE server=5 reqID=740 queue=382
+[0001418] ASSIGN server=5 reqID=792 svc=14 job=S
+[0001422] COMPLETE server=2 reqID=702 queue=382
+[0001422] ASSIGN server=2 reqID=804 svc=18 job=P
+[0001422] SCALE_DOWN newServers=12 queueSize=381
+[0001428] COMPLETE server=7 reqID=784 queue=381
+[0001428] ASSIGN server=7 reqID=821 svc=39 job=S
+[0001429] COMPLETE server=9 reqID=690 queue=380
+[0001429] ASSIGN server=9 reqID=824 svc=41 job=P
+[0001432] COMPLETE server=5 reqID=792 queue=379
+[0001432] ASSIGN server=5 reqID=1021 svc=33 job=P
+[0001436] COMPLETE server=10 reqID=699 queue=378
+[0001436] ASSIGN server=10 reqID=845 svc=33 job=P
+[0001438] COMPLETE server=4 reqID=763 queue=377
+[0001438] ASSIGN server=4 reqID=852 svc=25 job=S
+[0001439] COMPLETE server=11 reqID=1045 queue=376
+[0001439] ASSIGN server=11 reqID=856 svc=6 job=S
+[0001440] COMPLETE server=2 reqID=804 queue=375
+[0001440] ASSIGN server=2 reqID=860 svc=44 job=P
+[0001443] COMPLETE server=1 reqID=769 queue=374
+[0001443] ASSIGN server=1 reqID=863 svc=10 job=P
+[0001444] COMPLETE server=6 reqID=782 queue=373
+[0001444] ASSIGN server=6 reqID=868 svc=7 job=P
+[0001445] COMPLETE server=11 reqID=856 queue=372
+[0001445] ASSIGN server=11 reqID=871 svc=23 job=S
+[0001451] COMPLETE server=6 reqID=868 queue=371
+[0001451] COMPLETE server=8 reqID=750 queue=371
+[0001451] ASSIGN server=6 reqID=885 svc=3 job=P
+[0001451] ASSIGN server=8 reqID=890 svc=31 job=S
+[0001453] COMPLETE server=1 reqID=863 queue=369
+[0001453] COMPLETE server=12 reqID=766 queue=369
+[0001453] ASSIGN server=1 reqID=897 svc=33 job=P
+[0001453] ASSIGN server=12 reqID=900 svc=7 job=S
+[0001454] COMPLETE server=6 reqID=885 queue=367
+[0001454] ASSIGN server=6 reqID=901 svc=35 job=S
+[0001457] COMPLETE server=3 reqID=789 queue=366
+[0001457] ASSIGN server=3 reqID=1022 svc=20 job=S
+[0001460] COMPLETE server=12 reqID=900 queue=365
+[0001460] ASSIGN server=12 reqID=1023 svc=39 job=P
+[0001463] COMPLETE server=4 reqID=852 queue=364
+[0001463] ASSIGN server=4 reqID=919 svc=32 job=S
+[0001465] COMPLETE server=5 reqID=1021 queue=363
+[0001465] ASSIGN server=5 reqID=927 svc=16 job=P
+[0001467] COMPLETE server=7 reqID=821 queue=362
+[0001467] ASSIGN server=7 reqID=930 svc=5 job=S
+[0001468] COMPLETE server=11 reqID=871 queue=361
+[0001468] ASSIGN server=11 reqID=934 svc=47 job=S
+[0001469] COMPLETE server=10 reqID=845 queue=360
+[0001469] ASSIGN server=10 reqID=937 svc=35 job=P
+[0001470] COMPLETE server=9 reqID=824 queue=359
+[0001470] ASSIGN server=9 reqID=942 svc=21 job=P
+[0001472] COMPLETE server=7 reqID=930 queue=358
+[0001472] ASSIGN server=7 reqID=949 svc=12 job=S
+[0001472] SCALE_DOWN newServers=12 queueSize=357
+[0001477] COMPLETE server=3 reqID=1022 queue=357
+[0001477] ASSIGN server=3 reqID=961 svc=17 job=P
+[0001481] COMPLETE server=5 reqID=927 queue=357
+[0001481] ASSIGN server=5 reqID=972 svc=32 job=P
+[0001482] COMPLETE server=8 reqID=890 queue=356
+[0001482] ASSIGN server=8 reqID=976 svc=47 job=S
+[0001484] COMPLETE server=2 reqID=860 queue=355
+[0001484] COMPLETE server=7 reqID=949 queue=355
+[0001484] ASSIGN server=2 reqID=980 svc=28 job=P
+[0001484] ASSIGN server=7 reqID=985 svc=26 job=S
+[0001486] COMPLETE server=1 reqID=897 queue=353
+[0001486] ASSIGN server=1 reqID=992 svc=24 job=S
+[0001489] COMPLETE server=6 reqID=901 queue=352
+[0001489] ASSIGN server=6 reqID=1027 svc=33 job=P
+[0001491] COMPLETE server=9 reqID=942 queue=351
+[0001491] ASSIGN server=9 reqID=1000 svc=9 job=S
+[0001494] COMPLETE server=3 reqID=961 queue=350
+[0001494] ASSIGN server=3 reqID=22 svc=31 job=P
+[0001495] COMPLETE server=4 reqID=919 queue=349
+[0001495] ASSIGN server=4 reqID=26 svc=1 job=P
+[0001496] COMPLETE server=4 reqID=26 queue=348
+[0001496] ASSIGN server=4 reqID=33 svc=24 job=P
+[0001499] COMPLETE server=12 reqID=1023 queue=348
+[0001499] ASSIGN server=12 reqID=47 svc=18 job=S
+[0001500] COMPLETE server=9 reqID=1000 queue=347
+[0001500] ASSIGN server=9 reqID=55 svc=21 job=S
+[0001504] COMPLETE server=10 reqID=937 queue=346
+[0001504] ASSIGN server=10 reqID=69 svc=41 job=P
+[0001510] COMPLETE server=1 reqID=992 queue=345
+[0001510] COMPLETE server=7 reqID=985 queue=345
+[0001510] ASSIGN server=1 reqID=84 svc=5 job=P
+[0001510] ASSIGN server=7 reqID=85 svc=40 job=S
+[0001512] COMPLETE server=2 reqID=980 queue=343
+[0001512] ASSIGN server=2 reqID=96 svc=46 job=S
+[0001513] COMPLETE server=5 reqID=972 queue=342
+[0001513] ASSIGN server=5 reqID=102 svc=7 job=P
+[0001515] COMPLETE server=1 reqID=84 queue=341
+[0001515] COMPLETE server=11 reqID=934 queue=341
+[0001515] ASSIGN server=1 reqID=116 svc=40 job=S
+[0001515] ASSIGN server=11 reqID=1050 svc=33 job=P
+[0001517] COMPLETE server=12 reqID=47 queue=339
+[0001517] ASSIGN server=12 reqID=125 svc=50 job=P
+[0001520] COMPLETE server=4 reqID=33 queue=338
+[0001520] COMPLETE server=5 reqID=102 queue=338
+[0001520] ASSIGN server=4 reqID=141 svc=30 job=S
+[0001520] ASSIGN server=5 reqID=142 svc=11 job=S
+[0001521] COMPLETE server=9 reqID=55 queue=336
+[0001521] ASSIGN server=9 reqID=150 svc=20 job=S
+[0001522] COMPLETE server=6 reqID=1027 queue=335
+[0001522] ASSIGN server=6 reqID=152 svc=44 job=S
+[0001522] SCALE_DOWN newServers=12 queueSize=334
+[0001525] COMPLETE server=3 reqID=22 queue=334
+[0001525] ASSIGN server=3 reqID=162 svc=6 job=S
+[0001529] COMPLETE server=8 reqID=976 queue=333
+[0001529] ASSIGN server=8 reqID=1052 svc=22 job=S
+[0001531] COMPLETE server=3 reqID=162 queue=332
+[0001531] COMPLETE server=5 reqID=142 queue=332
+[0001531] ASSIGN server=3 reqID=181 svc=43 job=P
+[0001531] ASSIGN server=5 reqID=183 svc=2 job=S
+[0001533] COMPLETE server=5 reqID=183 queue=330
+[0001533] ASSIGN server=5 reqID=192 svc=39 job=P
+[0001541] COMPLETE server=9 reqID=150 queue=330
+[0001541] ASSIGN server=9 reqID=1004 svc=3 job=P
+[0001544] COMPLETE server=9 reqID=1004 queue=330
+[0001544] ASSIGN server=9 reqID=1053 svc=28 job=S
+[0001545] COMPLETE server=10 reqID=69 queue=329
+[0001545] ASSIGN server=10 reqID=231 svc=17 job=S
+[0001548] COMPLETE server=11 reqID=1050 queue=328
+[0001548] ASSIGN server=11 reqID=246 svc=49 job=S
+[0001550] COMPLETE server=4 reqID=141 queue=327
+[0001550] COMPLETE server=7 reqID=85 queue=327
+[0001550] ASSIGN server=4 reqID=249 svc=5 job=S
+[0001550] ASSIGN server=7 reqID=1035 svc=5 job=P
+[0001551] COMPLETE server=8 reqID=1052 queue=325
+[0001551] ASSIGN server=8 reqID=256 svc=8 job=P
+[0001555] COMPLETE server=1 reqID=116 queue=324
+[0001555] COMPLETE server=4 reqID=249 queue=324
+[0001555] COMPLETE server=7 reqID=1035 queue=324
+[0001555] ASSIGN server=1 reqID=1054 svc=30 job=S
+[0001555] ASSIGN server=4 reqID=276 svc=21 job=S
+[0001555] ASSIGN server=7 reqID=278 svc=30 job=P
+[0001558] COMPLETE server=2 reqID=96 queue=322
+[0001558] ASSIGN server=2 reqID=286 svc=35 job=S
+[0001559] COMPLETE server=8 reqID=256 queue=321
+[0001559] ASSIGN server=8 reqID=290 svc=13 job=P
+[0001562] COMPLETE server=10 reqID=231 queue=320
+[0001562] ASSIGN server=10 reqID=301 svc=43 job=S
+[0001566] COMPLETE server=6 reqID=152 queue=319
+[0001566] ASSIGN server=6 reqID=326 svc=38 job=S
+[0001567] COMPLETE server=12 reqID=125 queue=318
+[0001567] ASSIGN server=12 reqID=339 svc=16 job=P
+[0001572] COMPLETE server=5 reqID=192 queue=317
+[0001572] COMPLETE server=8 reqID=290 queue=317
+[0001572] COMPLETE server=9 reqID=1053 queue=317
+[0001572] ASSIGN server=5 reqID=358 svc=23 job=S
+[0001572] ASSIGN server=8 reqID=1037 svc=30 job=P
+[0001572] ASSIGN server=9 reqID=359 svc=6 job=P
+[0001572] SCALE_DOWN newServers=12 queueSize=314
+[0001574] COMPLETE server=3 reqID=181 queue=315
+[0001574] ASSIGN server=3 reqID=370 svc=47 job=P
+[0001576] COMPLETE server=4 reqID=276 queue=314
+[0001576] ASSIGN server=4 reqID=379 svc=10 job=P
+[0001578] COMPLETE server=9 reqID=359 queue=313
+[0001578] ASSIGN server=9 reqID=389 svc=35 job=P
+[0001583] COMPLETE server=12 reqID=339 queue=314
+[0001583] ASSIGN server=12 reqID=404 svc=39 job=P
+[0001585] COMPLETE server=1 reqID=1054 queue=313
+[0001585] COMPLETE server=7 reqID=278 queue=313
+[0001585] ASSIGN server=1 reqID=411 svc=43 job=P
+[0001585] ASSIGN server=7 reqID=1038 svc=37 job=S
+[0001586] COMPLETE server=4 reqID=379 queue=311
+[0001586] ASSIGN server=4 reqID=416 svc=13 job=S
+[0001593] COMPLETE server=2 reqID=286 queue=310
+[0001593] ASSIGN server=2 reqID=1010 svc=12 job=S
+[0001595] COMPLETE server=5 reqID=358 queue=309
+[0001595] ASSIGN server=5 reqID=449 svc=15 job=S
+[0001597] COMPLETE server=11 reqID=246 queue=308
+[0001597] ASSIGN server=11 reqID=1039 svc=3 job=S
+[0001599] COMPLETE server=4 reqID=416 queue=307
+[0001599] ASSIGN server=4 reqID=467 svc=42 job=P
+[0001600] COMPLETE server=11 reqID=1039 queue=306
+[0001600] ASSIGN server=11 reqID=477 svc=23 job=S
+[0001602] COMPLETE server=8 reqID=1037 queue=306
+[0001602] ASSIGN server=8 reqID=489 svc=27 job=S
+[0001604] COMPLETE server=6 reqID=326 queue=305
+[0001604] ASSIGN server=6 reqID=1057 svc=11 job=P
+[0001605] COMPLETE server=2 reqID=1010 queue=304
+[0001605] COMPLETE server=10 reqID=301 queue=304
+[0001605] ASSIGN server=2 reqID=500 svc=19 job=P
+[0001605] ASSIGN server=10 reqID=507 svc=50 job=S
+[0001610] COMPLETE server=5 reqID=449 queue=303
+[0001610] ASSIGN server=5 reqID=517 svc=10 job=P
+[0001613] COMPLETE server=9 reqID=389 queue=302
+[0001613] ASSIGN server=9 reqID=523 svc=24 job=S
+[0001615] COMPLETE server=6 reqID=1057 queue=301
+[0001615] ASSIGN server=6 reqID=532 svc=28 job=P
+[0001620] COMPLETE server=5 reqID=517 queue=301
+[0001620] ASSIGN server=5 reqID=554 svc=16 job=S
+[0001621] COMPLETE server=3 reqID=370 queue=301
+[0001621] ASSIGN server=3 reqID=556 svc=23 job=P
+[0001622] COMPLETE server=7 reqID=1038 queue=300
+[0001622] COMPLETE server=12 reqID=404 queue=300
+[0001622] ASSIGN server=7 reqID=562 svc=49 job=S
+[0001622] ASSIGN server=12 reqID=563 svc=12 job=P
+[0001622] SCALE_DOWN newServers=12 queueSize=298
+[0001623] COMPLETE server=11 reqID=477 queue=298
+[0001623] ASSIGN server=11 reqID=567 svc=45 job=P
+[0001624] COMPLETE server=2 reqID=500 queue=297
+[0001624] ASSIGN server=2 reqID=1042 svc=25 job=S
+[0001628] COMPLETE server=1 reqID=411 queue=296
+[0001628] ASSIGN server=1 reqID=591 svc=8 job=S
+[0001629] COMPLETE server=8 reqID=489 queue=295
+[0001629] ASSIGN server=8 reqID=593 svc=8 job=P
+[0001634] COMPLETE server=12 reqID=563 queue=294
+[0001634] ASSIGN server=12 reqID=601 svc=26 job=S
+[0001636] COMPLETE server=1 reqID=591 queue=293
+[0001636] COMPLETE server=5 reqID=554 queue=293
+[0001636] ASSIGN server=1 reqID=1063 svc=28 job=S
+[0001636] ASSIGN server=5 reqID=611 svc=26 job=P
+[0001637] COMPLETE server=8 reqID=593 queue=291
+[0001637] COMPLETE server=9 reqID=523 queue=291
+[0001637] ASSIGN server=8 reqID=619 svc=47 job=P
+[0001637] ASSIGN server=9 reqID=622 svc=26 job=P
+[0001641] COMPLETE server=4 reqID=467 queue=289
+[0001641] ASSIGN server=4 reqID=632 svc=8 job=S
+[0001643] COMPLETE server=6 reqID=532 queue=288
+[0001643] ASSIGN server=6 reqID=1017 svc=40 job=P
+[0001644] COMPLETE server=3 reqID=556 queue=287
+[0001644] ASSIGN server=3 reqID=646 svc=45 job=S
+[0001649] COMPLETE server=2 reqID=1042 queue=288
+[0001649] COMPLETE server=4 reqID=632 queue=288
+[0001649] ASSIGN server=2 reqID=663 svc=3 job=S
+[0001649] ASSIGN server=4 reqID=672 svc=30 job=P
+[0001652] COMPLETE server=2 reqID=663 queue=286
+[0001652] ASSIGN server=2 reqID=687 svc=4 job=S
+[0001655] COMPLETE server=10 reqID=507 queue=286
+[0001655] ASSIGN server=10 reqID=696 svc=35 job=S
+[0001656] COMPLETE server=2 reqID=687 queue=285
+[0001656] ASSIGN server=2 reqID=697 svc=30 job=P
+[0001660] COMPLETE server=12 reqID=601 queue=284
+[0001660] ASSIGN server=12 reqID=717 svc=35 job=P
+[0001662] COMPLETE server=5 reqID=611 queue=283
+[0001662] ASSIGN server=5 reqID=732 svc=3 job=P
+[0001663] COMPLETE server=9 reqID=622 queue=282
+[0001663] ASSIGN server=9 reqID=737 svc=29 job=S
+[0001664] COMPLETE server=1 reqID=1063 queue=281
+[0001664] ASSIGN server=1 reqID=741 svc=33 job=S
+[0001665] COMPLETE server=5 reqID=732 queue=280
+[0001665] ASSIGN server=5 reqID=1065 svc=49 job=S
+[0001668] COMPLETE server=11 reqID=567 queue=279
+[0001668] ASSIGN server=11 reqID=747 svc=18 job=P
+[0001671] COMPLETE server=7 reqID=562 queue=278
+[0001671] ASSIGN server=7 reqID=1044 svc=6 job=P
+[0001672] SCALE_DOWN newServers=12 queueSize=277
+[0001677] COMPLETE server=7 reqID=1044 queue=279
+[0001677] ASSIGN server=7 reqID=785 svc=7 job=S
+[0001679] COMPLETE server=4 reqID=672 queue=278
+[0001679] ASSIGN server=4 reqID=801 svc=11 job=S
+[0001683] COMPLETE server=6 reqID=1017 queue=277
+[0001683] ASSIGN server=6 reqID=807 svc=2 job=S
+[0001684] COMPLETE server=7 reqID=785 queue=276
+[0001684] COMPLETE server=8 reqID=619 queue=276
+[0001684] ASSIGN server=7 reqID=814 svc=4 job=P
+[0001684] ASSIGN server=8 reqID=817 svc=48 job=S
+[0001685] COMPLETE server=6 reqID=807 queue=274
+[0001685] ASSIGN server=6 reqID=823 svc=2 job=S
+[0001686] COMPLETE server=2 reqID=697 queue=273
+[0001686] COMPLETE server=11 reqID=747 queue=273
+[0001686] ASSIGN server=2 reqID=830 svc=16 job=S
+[0001686] ASSIGN server=11 reqID=833 svc=28 job=S
+[0001687] COMPLETE server=6 reqID=823 queue=271
+[0001687] ASSIGN server=6 reqID=839 svc=41 job=S
+[0001688] COMPLETE server=7 reqID=814 queue=270
+[0001688] ASSIGN server=7 reqID=843 svc=49 job=P
+[0001689] COMPLETE server=3 reqID=646 queue=269
+[0001689] ASSIGN server=3 reqID=851 svc=41 job=P
+[0001690] COMPLETE server=4 reqID=801 queue=268
+[0001690] COMPLETE server=10 reqID=696 queue=268
+[0001690] ASSIGN server=4 reqID=857 svc=2 job=P
+[0001690] ASSIGN server=10 reqID=861 svc=27 job=P
+[0001692] COMPLETE server=4 reqID=857 queue=266
+[0001692] COMPLETE server=9 reqID=737 queue=266
+[0001692] ASSIGN server=4 reqID=867 svc=29 job=P
+[0001692] ASSIGN server=9 reqID=869 svc=42 job=P
+[0001695] COMPLETE server=12 reqID=717 queue=264
+[0001695] ASSIGN server=12 reqID=878 svc=13 job=S
+[0001697] COMPLETE server=1 reqID=741 queue=263
+[0001697] ASSIGN server=1 reqID=892 svc=48 job=P
+[0001702] COMPLETE server=2 reqID=830 queue=262
+[0001702] ASSIGN server=2 reqID=908 svc=30 job=S
+[0001708] COMPLETE server=12 reqID=878 queue=261
+[0001708] ASSIGN server=12 reqID=922 svc=39 job=S
+[0001714] COMPLETE server=5 reqID=1065 queue=260
+[0001714] COMPLETE server=11 reqID=833 queue=260
+[0001714] ASSIGN server=5 reqID=947 svc=37 job=P
+[0001714] ASSIGN server=11 reqID=950 svc=38 job=P
+[0001717] COMPLETE server=10 reqID=861 queue=258
+[0001717] ASSIGN server=10 reqID=960 svc=34 job=P
+[0001721] COMPLETE server=4 reqID=867 queue=257
+[0001721] ASSIGN server=4 reqID=1026 svc=26 job=P
+[0001722] SCALE_DOWN newServers=12 queueSize=256
+[0001728] COMPLETE server=6 reqID=839 queue=256
+[0001728] ASSIGN server=6 reqID=1048 svc=8 job=P
+[0001730] COMPLETE server=3 reqID=851 queue=255
+[0001730] ASSIGN server=3 reqID=16 svc=40 job=S
+[0001732] COMPLETE server=2 reqID=908 queue=254
+[0001732] COMPLETE server=8 reqID=817 queue=254
+[0001732] ASSIGN server=2 reqID=23 svc=35 job=P
+[0001732] ASSIGN server=8 reqID=28 svc=11 job=P
+[0001734] COMPLETE server=9 reqID=869 queue=252
+[0001734] ASSIGN server=9 reqID=1069 svc=21 job=P
+[0001736] COMPLETE server=6 reqID=1048 queue=251
+[0001736] ASSIGN server=6 reqID=62 svc=49 job=S
+[0001737] COMPLETE server=7 reqID=843 queue=250
+[0001737] ASSIGN server=7 reqID=67 svc=8 job=P
+[0001743] COMPLETE server=8 reqID=28 queue=249
+[0001743] ASSIGN server=8 reqID=83 svc=48 job=P
+[0001745] COMPLETE server=1 reqID=892 queue=248
+[0001745] COMPLETE server=7 reqID=67 queue=248
+[0001745] ASSIGN server=1 reqID=99 svc=6 job=P
+[0001745] ASSIGN server=7 reqID=111 svc=16 job=S
+[0001747] COMPLETE server=4 reqID=1026 queue=246
+[0001747] COMPLETE server=12 reqID=922 queue=246
+[0001747] ASSIGN server=4 reqID=1002 svc=13 job=S
+[0001747] ASSIGN server=12 reqID=128 svc=18 job=P
+[0001751] COMPLETE server=1 reqID=99 queue=244
+[0001751] COMPLETE server=5 reqID=947 queue=244
+[0001751] COMPLETE server=10 reqID=960 queue=244
+[0001751] ASSIGN server=1 reqID=156 svc=25 job=P
+[0001751] ASSIGN server=5 reqID=157 svc=29 job=S
+[0001751] ASSIGN server=10 reqID=158 svc=18 job=S
+[0001752] COMPLETE server=11 reqID=950 queue=241
+[0001752] ASSIGN server=11 reqID=164 svc=12 job=S
+[0001755] COMPLETE server=9 reqID=1069 queue=240
+[0001755] ASSIGN server=9 reqID=180 svc=21 job=P
+[0001760] COMPLETE server=4 reqID=1002 queue=240
+[0001760] ASSIGN server=4 reqID=197 svc=32 job=P
+[0001761] COMPLETE server=7 reqID=111 queue=239
+[0001761] ASSIGN server=7 reqID=203 svc=35 job=P
+[0001764] COMPLETE server=11 reqID=164 queue=239
+[0001764] ASSIGN server=11 reqID=222 svc=14 job=P
+[0001765] COMPLETE server=12 reqID=128 queue=238
+[0001765] ASSIGN server=12 reqID=227 svc=3 job=S
+[0001767] COMPLETE server=2 reqID=23 queue=237
+[0001767] ASSIGN server=2 reqID=236 svc=41 job=S
+[0001768] COMPLETE server=12 reqID=227 queue=236
+[0001768] ASSIGN server=12 reqID=242 svc=13 job=S
+[0001769] COMPLETE server=10 reqID=158 queue=235
+[0001769] ASSIGN server=10 reqID=1034 svc=35 job=S
+[0001770] COMPLETE server=3 reqID=16 queue=234
+[0001770] ASSIGN server=3 reqID=265 svc=33 job=P
+[0001772] SCALE_DOWN newServers=12 queueSize=233
+[0001776] COMPLETE server=1 reqID=156 queue=233
+[0001776] COMPLETE server=9 reqID=180 queue=233
+[0001776] ASSIGN server=1 reqID=1072 svc=6 job=S
+[0001776] ASSIGN server=9 reqID=289 svc=10 job=S
+[0001778] COMPLETE server=11 reqID=222 queue=232
+[0001778] ASSIGN server=11 reqID=299 svc=28 job=P
+[0001780] COMPLETE server=5 reqID=157 queue=231
+[0001780] ASSIGN server=5 reqID=313 svc=28 job=P
+[0001781] COMPLETE server=12 reqID=242 queue=230
+[0001781] ASSIGN server=12 reqID=332 svc=12 job=S
+[0001782] COMPLETE server=1 reqID=1072 queue=229
+[0001782] ASSIGN server=1 reqID=343 svc=20 job=P
+[0001785] COMPLETE server=6 reqID=62 queue=228
+[0001785] ASSIGN server=6 reqID=360 svc=38 job=P
+[0001786] COMPLETE server=9 reqID=289 queue=227
+[0001786] ASSIGN server=9 reqID=366 svc=24 job=S
+[0001791] COMPLETE server=8 reqID=83 queue=227
+[0001791] ASSIGN server=8 reqID=393 svc=35 job=P
+[0001792] COMPLETE server=4 reqID=197 queue=226
+[0001792] ASSIGN server=4 reqID=396 svc=3 job=S
+[0001793] COMPLETE server=12 reqID=332 queue=225
+[0001793] ASSIGN server=12 reqID=400 svc=24 job=S
+[0001795] COMPLETE server=4 reqID=396 queue=224
+[0001795] ASSIGN server=4 reqID=409 svc=35 job=S
+[0001796] COMPLETE server=7 reqID=203 queue=223
+[0001796] ASSIGN server=7 reqID=417 svc=28 job=P
+[0001802] COMPLETE server=1 reqID=343 queue=222
+[0001802] ASSIGN server=1 reqID=447 svc=30 job=S
+[0001803] COMPLETE server=3 reqID=265 queue=221
+[0001803] ASSIGN server=3 reqID=450 svc=33 job=S
+[0001804] COMPLETE server=10 reqID=1034 queue=220
+[0001804] ASSIGN server=10 reqID=458 svc=24 job=P
+[0001806] COMPLETE server=11 reqID=299 queue=219
+[0001806] ASSIGN server=11 reqID=483 svc=9 job=S
+[0001808] COMPLETE server=2 reqID=236 queue=218
+[0001808] COMPLETE server=5 reqID=313 queue=218
+[0001808] ASSIGN server=2 reqID=493 svc=37 job=S
+[0001808] ASSIGN server=5 reqID=494 svc=37 job=P
+[0001810] COMPLETE server=9 reqID=366 queue=216
+[0001810] ASSIGN server=9 reqID=511 svc=28 job=P
+[0001815] COMPLETE server=11 reqID=483 queue=215
+[0001815] ASSIGN server=11 reqID=518 svc=28 job=S
+[0001817] COMPLETE server=12 reqID=400 queue=214
+[0001817] ASSIGN server=12 reqID=528 svc=10 job=S
+[0001822] SCALE_DOWN newServers=12 queueSize=214
+[0001823] COMPLETE server=6 reqID=360 queue=214
+[0001823] ASSIGN server=6 reqID=555 svc=32 job=P
+[0001824] COMPLETE server=7 reqID=417 queue=213
+[0001824] ASSIGN server=7 reqID=561 svc=37 job=S
+[0001826] COMPLETE server=8 reqID=393 queue=212
+[0001826] ASSIGN server=8 reqID=579 svc=37 job=P
+[0001827] COMPLETE server=12 reqID=528 queue=211
+[0001827] ASSIGN server=12 reqID=584 svc=33 job=S
+[0001828] COMPLETE server=10 reqID=458 queue=210
+[0001828] ASSIGN server=10 reqID=1061 svc=8 job=S
+[0001830] COMPLETE server=4 reqID=409 queue=209
+[0001830] ASSIGN server=4 reqID=599 svc=49 job=P
+[0001832] COMPLETE server=1 reqID=447 queue=208
+[0001832] ASSIGN server=1 reqID=604 svc=22 job=P
+[0001836] COMPLETE server=3 reqID=450 queue=207
+[0001836] COMPLETE server=10 reqID=1061 queue=207
+[0001836] ASSIGN server=3 reqID=628 svc=26 job=S
+[0001836] ASSIGN server=10 reqID=631 svc=44 job=S
+[0001838] COMPLETE server=9 reqID=511 queue=205
+[0001838] ASSIGN server=9 reqID=644 svc=22 job=P
+[0001843] COMPLETE server=11 reqID=518 queue=204
+[0001843] ASSIGN server=11 reqID=660 svc=28 job=P
+[0001845] COMPLETE server=2 reqID=493 queue=203
+[0001845] COMPLETE server=5 reqID=494 queue=203
+[0001845] ASSIGN server=2 reqID=679 svc=22 job=P
+[0001845] ASSIGN server=5 reqID=684 svc=1 job=S
+[0001846] COMPLETE server=5 reqID=684 queue=201
+[0001846] ASSIGN server=5 reqID=1082 svc=26 job=S
+[0001854] COMPLETE server=1 reqID=604 queue=200
+[0001854] ASSIGN server=1 reqID=728 svc=12 job=P
+[0001855] COMPLETE server=6 reqID=555 queue=199
+[0001855] ASSIGN server=6 reqID=738 svc=42 job=S
+[0001860] COMPLETE server=9 reqID=644 queue=199
+[0001860] COMPLETE server=12 reqID=584 queue=199
+[0001860] ASSIGN server=9 reqID=753 svc=9 job=P
+[0001860] ASSIGN server=12 reqID=757 svc=29 job=P
+[0001861] COMPLETE server=7 reqID=561 queue=197
+[0001861] ASSIGN server=7 reqID=767 svc=7 job=P
+[0001862] COMPLETE server=3 reqID=628 queue=196
+[0001862] ASSIGN server=3 reqID=775 svc=15 job=P
+[0001863] COMPLETE server=8 reqID=579 queue=195
+[0001863] ASSIGN server=8 reqID=778 svc=24 job=S
+[0001866] COMPLETE server=1 reqID=728 queue=195
+[0001866] ASSIGN server=1 reqID=800 svc=37 job=P
+[0001867] COMPLETE server=2 reqID=679 queue=194
+[0001867] ASSIGN server=2 reqID=1067 svc=15 job=P
+[0001868] COMPLETE server=7 reqID=767 queue=193
+[0001868] ASSIGN server=7 reqID=1020 svc=45 job=P
+[0001869] COMPLETE server=9 reqID=753 queue=192
+[0001869] ASSIGN server=9 reqID=820 svc=2 job=P
+[0001871] COMPLETE server=9 reqID=820 queue=191
+[0001871] COMPLETE server=11 reqID=660 queue=191
+[0001871] ASSIGN server=9 reqID=840 svc=34 job=P
+[0001871] ASSIGN server=11 reqID=849 svc=32 job=S
+[0001872] COMPLETE server=5 reqID=1082 queue=189
+[0001872] ASSIGN server=5 reqID=1046 svc=9 job=S
+[0001872] SCALE_DOWN newServers=12 queueSize=188
+[0001877] COMPLETE server=3 reqID=775 queue=188
+[0001877] ASSIGN server=3 reqID=884 svc=21 job=P
+[0001879] COMPLETE server=4 reqID=599 queue=187
+[0001879] ASSIGN server=4 reqID=902 svc=13 job=P
+[0001880] COMPLETE server=10 reqID=631 queue=186
+[0001880] ASSIGN server=10 reqID=907 svc=10 job=P
+[0001881] COMPLETE server=5 reqID=1046 queue=185
+[0001881] ASSIGN server=5 reqID=910 svc=31 job=S
+[0001882] COMPLETE server=2 reqID=1067 queue=184
+[0001882] ASSIGN server=2 reqID=912 svc=41 job=S
+[0001887] COMPLETE server=8 reqID=778 queue=183
+[0001887] ASSIGN server=8 reqID=935 svc=8 job=P
+[0001889] COMPLETE server=12 reqID=757 queue=182
+[0001889] ASSIGN server=12 reqID=953 svc=17 job=P
+[0001890] COMPLETE server=10 reqID=907 queue=181
+[0001890] ASSIGN server=10 reqID=957 svc=10 job=P
+[0001892] COMPLETE server=4 reqID=902 queue=180
+[0001892] ASSIGN server=4 reqID=968 svc=40 job=P
+[0001895] COMPLETE server=8 reqID=935 queue=179
+[0001895] ASSIGN server=8 reqID=979 svc=43 job=P
+[0001897] COMPLETE server=6 reqID=738 queue=178
+[0001897] ASSIGN server=6 reqID=993 svc=6 job=S
+[0001898] COMPLETE server=3 reqID=884 queue=177
+[0001898] ASSIGN server=3 reqID=1028 svc=21 job=S
+[0001900] COMPLETE server=10 reqID=957 queue=176
+[0001900] ASSIGN server=10 reqID=21 svc=45 job=P
+[0001903] COMPLETE server=1 reqID=800 queue=176
+[0001903] COMPLETE server=6 reqID=993 queue=176
+[0001903] COMPLETE server=11 reqID=849 queue=176
+[0001903] ASSIGN server=1 reqID=54 svc=43 job=S
+[0001903] ASSIGN server=6 reqID=66 svc=33 job=S
+[0001903] ASSIGN server=11 reqID=68 svc=16 job=P
+[0001905] COMPLETE server=9 reqID=840 queue=173
+[0001905] ASSIGN server=9 reqID=1030 svc=23 job=P
+[0001906] COMPLETE server=12 reqID=953 queue=172
+[0001906] ASSIGN server=12 reqID=80 svc=29 job=S
+[0001912] COMPLETE server=5 reqID=910 queue=171
+[0001912] ASSIGN server=5 reqID=146 svc=40 job=S
+[0001913] COMPLETE server=7 reqID=1020 queue=170
+[0001913] ASSIGN server=7 reqID=1051 svc=35 job=P
+[0001919] COMPLETE server=3 reqID=1028 queue=169
+[0001919] COMPLETE server=11 reqID=68 queue=169
+[0001919] ASSIGN server=3 reqID=196 svc=9 job=P
+[0001919] ASSIGN server=11 reqID=1085 svc=36 job=S
+[0001922] SCALE_DOWN newServers=12 queueSize=167
+[0001923] COMPLETE server=2 reqID=912 queue=167
+[0001923] ASSIGN server=2 reqID=1086 svc=19 job=P
+[0001928] COMPLETE server=3 reqID=196 queue=166
+[0001928] COMPLETE server=9 reqID=1030 queue=166
+[0001928] ASSIGN server=3 reqID=247 svc=37 job=S
+[0001928] ASSIGN server=9 reqID=252 svc=28 job=P
+[0001932] COMPLETE server=4 reqID=968 queue=164
+[0001932] ASSIGN server=4 reqID=282 svc=40 job=P
+[0001935] COMPLETE server=12 reqID=80 queue=163
+[0001935] ASSIGN server=12 reqID=1087 svc=31 job=S
+[0001936] COMPLETE server=6 reqID=66 queue=162
+[0001936] ASSIGN server=6 reqID=305 svc=10 job=P
+[0001938] COMPLETE server=8 reqID=979 queue=161
+[0001938] ASSIGN server=8 reqID=345 svc=4 job=P
+[0001942] COMPLETE server=2 reqID=1086 queue=160
+[0001942] COMPLETE server=8 reqID=345 queue=160
+[0001942] ASSIGN server=2 reqID=377 svc=5 job=S
+[0001942] ASSIGN server=8 reqID=383 svc=24 job=P
+[0001945] COMPLETE server=10 reqID=21 queue=158
+[0001945] ASSIGN server=10 reqID=1074 svc=38 job=P
+[0001946] COMPLETE server=1 reqID=54 queue=157
+[0001946] COMPLETE server=6 reqID=305 queue=157
+[0001946] ASSIGN server=1 reqID=1075 svc=37 job=P
+[0001946] ASSIGN server=6 reqID=1055 svc=43 job=S
+[0001947] COMPLETE server=2 reqID=377 queue=155
+[0001947] ASSIGN server=2 reqID=419 svc=23 job=S
+[0001948] COMPLETE server=7 reqID=1051 queue=154
+[0001948] ASSIGN server=7 reqID=427 svc=7 job=P
+[0001952] COMPLETE server=5 reqID=146 queue=153
+[0001952] ASSIGN server=5 reqID=453 svc=7 job=S
+[0001955] COMPLETE server=7 reqID=427 queue=152
+[0001955] COMPLETE server=11 reqID=1085 queue=152
+[0001955] ASSIGN server=7 reqID=486 svc=42 job=S
+[0001955] ASSIGN server=11 reqID=499 svc=27 job=P
+[0001956] COMPLETE server=9 reqID=252 queue=150
+[0001956] ASSIGN server=9 reqID=1058 svc=35 job=S
+[0001959] COMPLETE server=5 reqID=453 queue=149
+[0001959] ASSIGN server=5 reqID=1059 svc=7 job=P
+[0001965] COMPLETE server=3 reqID=247 queue=149
+[0001965] ASSIGN server=3 reqID=546 svc=45 job=P
+[0001966] COMPLETE server=5 reqID=1059 queue=148
+[0001966] COMPLETE server=8 reqID=383 queue=148
+[0001966] COMPLETE server=12 reqID=1087 queue=148
+[0001966] ASSIGN server=5 reqID=1060 svc=5 job=P
+[0001966] ASSIGN server=8 reqID=1079 svc=45 job=P
+[0001966] ASSIGN server=12 reqID=565 svc=28 job=S
+[0001970] COMPLETE server=2 reqID=419 queue=145
+[0001970] ASSIGN server=2 reqID=598 svc=28 job=S
+[0001971] COMPLETE server=5 reqID=1060 queue=145
+[0001971] ASSIGN server=5 reqID=1015 svc=4 job=P
+[0001972] COMPLETE server=4 reqID=282 queue=144
+[0001972] ASSIGN server=4 reqID=612 svc=8 job=S
+[0001972] SCALE_DOWN newServers=12 queueSize=143
+[0001975] COMPLETE server=5 reqID=1015 queue=143
+[0001975] ASSIGN server=5 reqID=639 svc=11 job=P
+[0001980] COMPLETE server=4 reqID=612 queue=143
+[0001980] ASSIGN server=4 reqID=1081 svc=9 job=S
+[0001982] COMPLETE server=11 reqID=499 queue=142
+[0001982] ASSIGN server=11 reqID=693 svc=28 job=P
+[0001983] COMPLETE server=1 reqID=1075 queue=141
+[0001983] COMPLETE server=10 reqID=1074 queue=141
+[0001983] ASSIGN server=1 reqID=1064 svc=6 job=S
+[0001983] ASSIGN server=10 reqID=701 svc=45 job=P
+[0001986] COMPLETE server=5 reqID=639 queue=139
+[0001986] ASSIGN server=5 reqID=725 svc=2 job=S
+[0001988] COMPLETE server=5 reqID=725 queue=138
+[0001988] ASSIGN server=5 reqID=1018 svc=41 job=S
+[0001989] COMPLETE server=1 reqID=1064 queue=137
+[0001989] COMPLETE server=4 reqID=1081 queue=137
+[0001989] COMPLETE server=6 reqID=1055 queue=137
+[0001989] ASSIGN server=1 reqID=744 svc=14 job=P
+[0001989] ASSIGN server=4 reqID=1066 svc=31 job=P
+[0001989] ASSIGN server=6 reqID=1090 svc=38 job=S
+[0001991] COMPLETE server=9 reqID=1058 queue=134
+[0001991] ASSIGN server=9 reqID=1083 svc=5 job=S
+[0001994] COMPLETE server=12 reqID=565 queue=133
+[0001994] ASSIGN server=12 reqID=791 svc=42 job=P
+[0001996] COMPLETE server=9 reqID=1083 queue=132
+[0001996] ASSIGN server=9 reqID=811 svc=22 job=S
+[0001997] COMPLETE server=7 reqID=486 queue=131
+[0001997] ASSIGN server=7 reqID=836 svc=45 job=S
+[0001998] COMPLETE server=2 reqID=598 queue=130
+[0001998] ASSIGN server=2 reqID=862 svc=16 job=P
+[0002003] COMPLETE server=1 reqID=744 queue=129
+[0002003] ASSIGN server=1 reqID=1047 svc=29 job=P
+[0002010] COMPLETE server=3 reqID=546 queue=128
+[0002010] COMPLETE server=11 reqID=693 queue=128
+[0002010] ASSIGN server=3 reqID=933 svc=16 job=S
+[0002010] ASSIGN server=11 reqID=941 svc=24 job=P
+[0002011] COMPLETE server=8 reqID=1079 queue=126
+[0002011] ASSIGN server=8 reqID=956 svc=4 job=S
+[0002014] COMPLETE server=2 reqID=862 queue=125
+[0002014] ASSIGN server=2 reqID=974 svc=47 job=S
+[0002015] COMPLETE server=8 reqID=956 queue=124
+[0002015] ASSIGN server=8 reqID=988 svc=46 job=P
+[0002018] COMPLETE server=9 reqID=811 queue=124
+[0002018] ASSIGN server=9 reqID=17 svc=43 job=S
+[0002020] COMPLETE server=4 reqID=1066 queue=123
+[0002020] ASSIGN server=4 reqID=45 svc=16 job=S
+[0002022] SCALE_DOWN newServers=12 queueSize=122
+[0002026] COMPLETE server=3 reqID=933 queue=122
+[0002026] ASSIGN server=3 reqID=115 svc=23 job=S
+[0002027] COMPLETE server=6 reqID=1090 queue=121
+[0002027] ASSIGN server=6 reqID=1031 svc=25 job=S
+[0002028] COMPLETE server=10 reqID=701 queue=120
+[0002028] ASSIGN server=10 reqID=151 svc=22 job=P
+[0002029] COMPLETE server=5 reqID=1018 queue=119
+[0002029] ASSIGN server=5 reqID=169 svc=11 job=P
+[0002032] COMPLETE server=1 reqID=1047 queue=118
+[0002032] ASSIGN server=1 reqID=193 svc=5 job=P
+[0002034] COMPLETE server=11 reqID=941 queue=118
+[0002034] ASSIGN server=11 reqID=209 svc=27 job=S
+[0002036] COMPLETE server=4 reqID=45 queue=118
+[0002036] COMPLETE server=12 reqID=791 queue=118
+[0002036] ASSIGN server=4 reqID=224 svc=44 job=S
+[0002036] ASSIGN server=12 reqID=1071 svc=50 job=P
+[0002037] COMPLETE server=1 reqID=193 queue=116
+[0002037] ASSIGN server=1 reqID=241 svc=20 job=S
+[0002040] COMPLETE server=5 reqID=169 queue=115
+[0002040] ASSIGN server=5 reqID=279 svc=45 job=P
+[0002042] COMPLETE server=7 reqID=836 queue=114
+[0002042] ASSIGN server=7 reqID=297 svc=19 job=S
+[0002049] COMPLETE server=3 reqID=115 queue=114
+[0002049] ASSIGN server=3 reqID=388 svc=31 job=S
+[0002050] COMPLETE server=10 reqID=151 queue=113
+[0002050] ASSIGN server=10 reqID=1009 svc=2 job=P
+[0002052] COMPLETE server=6 reqID=1031 queue=112
+[0002052] COMPLETE server=10 reqID=1009 queue=112
+[0002052] ASSIGN server=6 reqID=423 svc=30 job=P
+[0002052] ASSIGN server=10 reqID=432 svc=22 job=P
+[0002057] COMPLETE server=1 reqID=241 queue=110
+[0002057] ASSIGN server=1 reqID=1076 svc=45 job=S
+[0002061] COMPLETE server=2 reqID=974 queue=109
+[0002061] COMPLETE server=7 reqID=297 queue=109
+[0002061] COMPLETE server=8 reqID=988 queue=109
+[0002061] COMPLETE server=9 reqID=17 queue=109
+[0002061] COMPLETE server=11 reqID=209 queue=109
+[0002061] ASSIGN server=2 reqID=520 svc=37 job=S
+[0002061] ASSIGN server=7 reqID=524 svc=42 job=P
+[0002061] ASSIGN server=8 reqID=538 svc=36 job=P
+[0002061] ASSIGN server=9 reqID=1093 svc=37 job=P
+[0002061] ASSIGN server=11 reqID=541 svc=7 job=S
+[0002068] COMPLETE server=11 reqID=541 queue=106
+[0002068] ASSIGN server=11 reqID=1062 svc=8 job=S
+[0002072] SCALE_DOWN newServers=12 queueSize=105
+[0002074] COMPLETE server=10 reqID=432 queue=105
+[0002074] ASSIGN server=10 reqID=1095 svc=18 job=S
+[0002076] COMPLETE server=11 reqID=1062 queue=104
+[0002076] ASSIGN server=11 reqID=1080 svc=40 job=P
+[0002080] COMPLETE server=3 reqID=388 queue=103
+[0002080] COMPLETE server=4 reqID=224 queue=103
+[0002080] ASSIGN server=3 reqID=708 svc=42 job=P
+[0002080] ASSIGN server=4 reqID=710 svc=14 job=P
+[0002082] COMPLETE server=6 reqID=423 queue=101
+[0002082] ASSIGN server=6 reqID=742 svc=26 job=S
+[0002085] COMPLETE server=5 reqID=279 queue=100
+[0002085] ASSIGN server=5 reqID=1084 svc=21 job=P
+[0002086] COMPLETE server=12 reqID=1071 queue=99
+[0002086] ASSIGN server=12 reqID=779 svc=16 job=S
+[0002092] COMPLETE server=10 reqID=1095 queue=98
+[0002092] ASSIGN server=10 reqID=876 svc=45 job=P
+[0002094] COMPLETE server=4 reqID=710 queue=97
+[0002094] ASSIGN server=4 reqID=903 svc=29 job=P
+[0002097] COMPLETE server=8 reqID=538 queue=97
+[0002097] ASSIGN server=8 reqID=921 svc=47 job=P
+[0002098] COMPLETE server=2 reqID=520 queue=96
+[0002098] COMPLETE server=9 reqID=1093 queue=96
+[0002098] ASSIGN server=2 reqID=929 svc=15 job=S
+[0002098] ASSIGN server=9 reqID=946 svc=28 job=P
+[0002102] COMPLETE server=1 reqID=1076 queue=94
+[0002102] COMPLETE server=12 reqID=779 queue=94
+[0002102] ASSIGN server=1 reqID=989 svc=37 job=P
+[0002102] ASSIGN server=12 reqID=1096 svc=10 job=S
+[0002103] COMPLETE server=7 reqID=524 queue=92
+[0002103] ASSIGN server=7 reqID=998 svc=43 job=P
+[0002106] COMPLETE server=5 reqID=1084 queue=91
+[0002106] ASSIGN server=5 reqID=73 svc=29 job=P
+[0002108] COMPLETE server=6 reqID=742 queue=90
+[0002108] ASSIGN server=6 reqID=91 svc=19 job=S
+[0002112] COMPLETE server=12 reqID=1096 queue=89
+[0002112] ASSIGN server=12 reqID=173 svc=36 job=S
+[0002113] COMPLETE server=2 reqID=929 queue=88
+[0002113] ASSIGN server=2 reqID=191 svc=32 job=S
+[0002116] COMPLETE server=11 reqID=1080 queue=87
+[0002116] ASSIGN server=11 reqID=211 svc=10 job=S
+[0002122] COMPLETE server=3 reqID=708 queue=87
+[0002122] ASSIGN server=3 reqID=283 svc=27 job=P
+[0002122] SCALE_DOWN newServers=12 queueSize=86
+[0002123] COMPLETE server=4 reqID=903 queue=86
+[0002123] ASSIGN server=4 reqID=302 svc=27 job=P
+[0002126] COMPLETE server=9 reqID=946 queue=85
+[0002126] COMPLETE server=11 reqID=211 queue=85
+[0002126] ASSIGN server=9 reqID=352 svc=4 job=S
+[0002126] ASSIGN server=11 reqID=356 svc=48 job=P
+[0002127] COMPLETE server=6 reqID=91 queue=83
+[0002127] ASSIGN server=6 reqID=372 svc=32 job=P
+[0002130] COMPLETE server=9 reqID=352 queue=82
+[0002130] ASSIGN server=9 reqID=436 svc=4 job=S
+[0002134] COMPLETE server=9 reqID=436 queue=81
+[0002134] ASSIGN server=9 reqID=508 svc=32 job=S
+[0002135] COMPLETE server=5 reqID=73 queue=80
+[0002135] ASSIGN server=5 reqID=515 svc=14 job=P
+[0002137] COMPLETE server=10 reqID=876 queue=79
+[0002137] ASSIGN server=10 reqID=1100 svc=42 job=S
+[0002139] COMPLETE server=1 reqID=989 queue=78
+[0002139] ASSIGN server=1 reqID=575 svc=46 job=S
+[0002144] COMPLETE server=8 reqID=921 queue=78
+[0002144] ASSIGN server=8 reqID=610 svc=30 job=S
+[0002145] COMPLETE server=2 reqID=191 queue=77
+[0002145] ASSIGN server=2 reqID=627 svc=20 job=S
+[0002146] COMPLETE server=7 reqID=998 queue=76
+[0002146] ASSIGN server=7 reqID=649 svc=38 job=P
+[0002148] COMPLETE server=12 reqID=173 queue=75
+[0002148] ASSIGN server=12 reqID=658 svc=21 job=P
+[0002149] COMPLETE server=3 reqID=283 queue=74
+[0002149] COMPLETE server=5 reqID=515 queue=74
+[0002149] ASSIGN server=3 reqID=692 svc=32 job=P
+[0002149] ASSIGN server=5 reqID=695 svc=35 job=P
+[0002150] COMPLETE server=4 reqID=302 queue=72
+[0002150] ASSIGN server=4 reqID=734 svc=47 job=P
+[0002159] COMPLETE server=6 reqID=372 queue=72
+[0002159] ASSIGN server=6 reqID=873 svc=42 job=P
+[0002165] COMPLETE server=2 reqID=627 queue=71
+[0002165] ASSIGN server=2 reqID=928 svc=5 job=S
+[0002166] COMPLETE server=9 reqID=508 queue=70
+[0002166] ASSIGN server=9 reqID=967 svc=33 job=S
+[0002169] COMPLETE server=12 reqID=658 queue=69
+[0002169] ASSIGN server=12 reqID=37 svc=37 job=P
+[0002170] COMPLETE server=2 reqID=928 queue=68
+[0002170] ASSIGN server=2 reqID=1092 svc=21 job=P
+[0002172] SCALE_DOWN newServers=12 queueSize=67
+[0002174] COMPLETE server=8 reqID=610 queue=67
+[0002174] COMPLETE server=11 reqID=356 queue=67
+[0002174] ASSIGN server=8 reqID=133 svc=25 job=P
+[0002174] ASSIGN server=11 reqID=165 svc=40 job=S
+[0002179] COMPLETE server=10 reqID=1100 queue=66
+[0002179] ASSIGN server=10 reqID=1098 svc=5 job=P
+[0002181] COMPLETE server=3 reqID=692 queue=65
+[0002181] ASSIGN server=3 reqID=270 svc=32 job=P
+[0002184] COMPLETE server=5 reqID=695 queue=64
+[0002184] COMPLETE server=7 reqID=649 queue=64
+[0002184] COMPLETE server=10 reqID=1098 queue=64
+[0002184] ASSIGN server=5 reqID=322 svc=42 job=S
+[0002184] ASSIGN server=7 reqID=342 svc=43 job=P
+[0002184] ASSIGN server=10 reqID=1099 svc=5 job=S
+[0002185] COMPLETE server=1 reqID=575 queue=61
+[0002185] ASSIGN server=1 reqID=1088 svc=36 job=S
+[0002189] COMPLETE server=10 reqID=1099 queue=60
+[0002189] ASSIGN server=10 reqID=464 svc=47 job=P
+[0002191] COMPLETE server=2 reqID=1092 queue=59
+[0002191] ASSIGN server=2 reqID=516 svc=11 job=S
+[0002197] COMPLETE server=4 reqID=734 queue=58
+[0002197] ASSIGN server=4 reqID=596 svc=40 job=P
+[0002199] COMPLETE server=8 reqID=133 queue=57
+[0002199] COMPLETE server=9 reqID=967 queue=57
+[0002199] ASSIGN server=8 reqID=1043 svc=50 job=P
+[0002199] ASSIGN server=9 reqID=1016 svc=2 job=P
+[0002201] COMPLETE server=6 reqID=873 queue=55
+[0002201] COMPLETE server=9 reqID=1016 queue=55
+[0002201] ASSIGN server=6 reqID=676 svc=24 job=S
+[0002201] ASSIGN server=9 reqID=713 svc=20 job=P
+[0002202] COMPLETE server=2 reqID=516 queue=53
+[0002202] ASSIGN server=2 reqID=759 svc=12 job=P
+[0002206] COMPLETE server=12 reqID=37 queue=52
+[0002206] ASSIGN server=12 reqID=803 svc=30 job=P
+[0002213] COMPLETE server=3 reqID=270 queue=51
+[0002213] ASSIGN server=3 reqID=1102 svc=39 job=P
+[0002214] COMPLETE server=2 reqID=759 queue=50
+[0002214] COMPLETE server=11 reqID=165 queue=50
+[0002214] ASSIGN server=2 reqID=966 svc=30 job=P
+[0002214] ASSIGN server=11 reqID=1068 svc=17 job=S
+[0002221] COMPLETE server=1 reqID=1088 queue=48
+[0002221] COMPLETE server=9 reqID=713 queue=48
+[0002221] ASSIGN server=1 reqID=185 svc=29 job=S
+[0002221] ASSIGN server=9 reqID=1070 svc=7 job=S
+[0002222] SCALE_DOWN newServers=12 queueSize=46
+[0002225] COMPLETE server=6 reqID=676 queue=46
+[0002225] ASSIGN server=6 reqID=228 svc=50 job=P
+[0002226] COMPLETE server=5 reqID=322 queue=45
+[0002226] ASSIGN server=5 reqID=274 svc=39 job=P
+[0002227] COMPLETE server=7 reqID=342 queue=44
+[0002227] ASSIGN server=7 reqID=295 svc=15 job=S
+[0002228] COMPLETE server=9 reqID=1070 queue=43
+[0002228] ASSIGN server=9 reqID=398 svc=3 job=P
+[0002231] COMPLETE server=9 reqID=398 queue=42
+[0002231] COMPLETE server=11 reqID=1068 queue=42
+[0002231] ASSIGN server=9 reqID=474 svc=46 job=P
+[0002231] ASSIGN server=11 reqID=1077 svc=41 job=P
+[0002236] COMPLETE server=10 reqID=464 queue=40
+[0002236] COMPLETE server=12 reqID=803 queue=40
+[0002236] ASSIGN server=10 reqID=587 svc=8 job=S
+[0002236] ASSIGN server=12 reqID=1094 svc=5 job=S
+[0002237] COMPLETE server=4 reqID=596 queue=38
+[0002237] ASSIGN server=4 reqID=651 svc=48 job=S
+[0002241] COMPLETE server=12 reqID=1094 queue=37
+[0002241] ASSIGN server=12 reqID=1091 svc=13 job=S
+[0002242] COMPLETE server=7 reqID=295 queue=36
+[0002242] ASSIGN server=7 reqID=827 svc=5 job=P
+[0002244] COMPLETE server=2 reqID=966 queue=35
+[0002244] COMPLETE server=10 reqID=587 queue=35
+[0002244] ASSIGN server=2 reqID=883 svc=34 job=P
+[0002244] ASSIGN server=10 reqID=894 svc=50 job=P
+[0002247] COMPLETE server=7 reqID=827 queue=33
+[0002247] ASSIGN server=7 reqID=978 svc=21 job=S
+[0002249] COMPLETE server=8 reqID=1043 queue=32
+[0002249] ASSIGN server=8 reqID=1049 svc=32 job=P
+[0002250] COMPLETE server=1 reqID=185 queue=31
+[0002250] ASSIGN server=1 reqID=95 svc=49 job=P
+[0002252] COMPLETE server=3 reqID=1102 queue=30
+[0002252] ASSIGN server=3 reqID=198 svc=36 job=P
+[0002254] COMPLETE server=12 reqID=1091 queue=29
+[0002254] ASSIGN server=12 reqID=268 svc=5 job=S
+[0002259] COMPLETE server=12 reqID=268 queue=28
+[0002259] ASSIGN server=12 reqID=1078 svc=32 job=S
+[0002265] COMPLETE server=5 reqID=274 queue=27
+[0002265] ASSIGN server=5 reqID=743 svc=34 job=P
+[0002268] COMPLETE server=7 reqID=978 queue=26
+[0002268] ASSIGN server=7 reqID=853 svc=23 job=P
+[0002272] COMPLETE server=11 reqID=1077 queue=25
+[0002272] ASSIGN server=11 reqID=994 svc=6 job=P
+[0002272] SCALE_DOWN newServers=12 queueSize=24
+[0002275] COMPLETE server=6 reqID=228 queue=24
+[0002275] ASSIGN server=6 reqID=1106 svc=6 job=S
+[0002277] COMPLETE server=9 reqID=474 queue=23
+[0002277] ASSIGN server=9 reqID=1103 svc=4 job=P
+[0002278] COMPLETE server=2 reqID=883 queue=22
+[0002278] COMPLETE server=11 reqID=994 queue=22
+[0002278] ASSIGN server=2 reqID=414 svc=25 job=S
+[0002278] ASSIGN server=11 reqID=440 svc=19 job=P
+[0002281] COMPLETE server=6 reqID=1106 queue=20
+[0002281] COMPLETE server=8 reqID=1049 queue=20
+[0002281] COMPLETE server=9 reqID=1103 queue=20
+[0002281] ASSIGN server=6 reqID=582 svc=37 job=P
+[0002281] ASSIGN server=8 reqID=1101 svc=4 job=P
+[0002281] ASSIGN server=9 reqID=1104 svc=10 job=P
+[0002285] COMPLETE server=4 reqID=651 queue=18
+[0002285] COMPLETE server=8 reqID=1101 queue=18
+[0002285] ASSIGN server=4 reqID=872 svc=21 job=S
+[0002285] ASSIGN server=8 reqID=909 svc=39 job=P
+[0002288] COMPLETE server=3 reqID=198 queue=17
+[0002288] ASSIGN server=3 reqID=79 svc=37 job=S
+[0002291] COMPLETE server=7 reqID=853 queue=17
+[0002291] COMPLETE server=9 reqID=1104 queue=17
+[0002291] COMPLETE server=12 reqID=1078 queue=17
+[0002291] ASSIGN server=7 reqID=1073 svc=21 job=P
+[0002291] ASSIGN server=9 reqID=1056 svc=21 job=S
+[0002291] ASSIGN server=12 reqID=1089 svc=26 job=P
+[0002294] COMPLETE server=10 reqID=894 queue=14
+[0002294] ASSIGN server=10 reqID=1105 svc=39 job=P
+[0002297] COMPLETE server=11 reqID=440 queue=13
+[0002297] ASSIGN server=11 reqID=917 svc=20 job=S
+[0002299] COMPLETE server=1 reqID=95 queue=12
+[0002299] COMPLETE server=5 reqID=743 queue=12
+[0002299] ASSIGN server=1 reqID=121 svc=18 job=P
+[0002299] ASSIGN server=5 reqID=1097 svc=12 job=P
+[0002303] COMPLETE server=2 reqID=414 queue=10
+[0002303] ASSIGN server=2 reqID=774 svc=38 job=P
+[0002306] COMPLETE server=4 reqID=872 queue=9
+[0002306] ASSIGN server=4 reqID=1108 svc=14 job=S
+[0002311] COMPLETE server=5 reqID=1097 queue=9
+[0002311] ASSIGN server=5 reqID=802 svc=18 job=P
+[0002312] COMPLETE server=7 reqID=1073 queue=8
+[0002312] COMPLETE server=9 reqID=1056 queue=8
+[0002312] ASSIGN server=7 reqID=911 svc=14 job=S
+[0002312] ASSIGN server=9 reqID=44 svc=25 job=P
+[0002317] COMPLETE server=1 reqID=121 queue=6
+[0002317] COMPLETE server=11 reqID=917 queue=6
+[0002317] COMPLETE server=12 reqID=1089 queue=6
+[0002317] ASSIGN server=1 reqID=1107 svc=42 job=P
+[0002317] ASSIGN server=11 reqID=1109 svc=19 job=P
+[0002317] ASSIGN server=12 reqID=218 svc=46 job=P
+[0002318] COMPLETE server=6 reqID=582 queue=3
+[0002318] ASSIGN server=6 reqID=652 svc=50 job=P
+[0002320] COMPLETE server=4 reqID=1108 queue=2
+[0002320] ASSIGN server=4 reqID=1110 svc=1 job=S
+[0002321] COMPLETE server=4 reqID=1110 queue=1
+[0002321] ASSIGN server=4 reqID=552 svc=37 job=P
+[0002322] SCALE_DOWN newServers=12 queueSize=0
+[0002324] COMPLETE server=8 reqID=909 queue=0
+[0002325] COMPLETE server=3 reqID=79 queue=0
+[0002326] COMPLETE server=7 reqID=911 queue=0
+[0002329] COMPLETE server=5 reqID=802 queue=1
+[0002329] ASSIGN server=3 reqID=1111 svc=8 job=P
+[0002333] COMPLETE server=10 reqID=1105 queue=0
+[0002336] COMPLETE server=11 reqID=1109 queue=0
+[0002337] COMPLETE server=3 reqID=1111 queue=1
+[0002337] COMPLETE server=9 reqID=44 queue=1
+[0002337] ASSIGN server=3 reqID=1112 svc=29 job=S
+[0002341] COMPLETE server=2 reqID=774 queue=1
+[0002341] ASSIGN server=2 reqID=1113 svc=1 job=P
+[0002342] COMPLETE server=2 reqID=1113 queue=0
+[0002344] ASSIGN server=2 reqID=1114 svc=12 job=S
+[0002356] COMPLETE server=2 reqID=1114 queue=0
+[0002358] COMPLETE server=4 reqID=552 queue=0
+[0002359] COMPLETE server=1 reqID=1107 queue=0
+[0002363] COMPLETE server=12 reqID=218 queue=0
+[0002366] COMPLETE server=3 reqID=1112 queue=0
+[0002368] COMPLETE server=6 reqID=652 queue=1
+[0002368] ASSIGN server=1 reqID=1115 svc=23 job=S
+[0002372] SCALE_DOWN newServers=11 queueSize=0
+[0002391] COMPLETE server=1 reqID=1115 queue=0
+[0002395] ASSIGN server=1 reqID=1116 svc=31 job=P
+[0002422] SCALE_DOWN newServers=10 queueSize=0
+[0002426] COMPLETE server=1 reqID=1116 queue=0
+[0002464] ASSIGN server=1 reqID=1117 svc=40 job=S
+[0002472] SCALE_DOWN newServers=9 queueSize=0
+[0002504] COMPLETE server=1 reqID=1117 queue=0
+[0002522] SCALE_DOWN newServers=8 queueSize=0
+[0002538] ASSIGN server=1 reqID=1118 svc=17 job=P
+[0002555] COMPLETE server=1 reqID=1118 queue=0
+[0002572] SCALE_DOWN newServers=7 queueSize=0
+[0002579] ASSIGN server=1 reqID=1119 svc=1 job=S
+[0002580] COMPLETE server=1 reqID=1119 queue=0
+[0002604] ASSIGN server=1 reqID=1120 svc=17 job=S
+[0002621] COMPLETE server=1 reqID=1120 queue=0
+[0002622] SCALE_DOWN newServers=6 queueSize=0
+[0002642] ASSIGN server=1 reqID=1121 svc=11 job=P
+[0002653] COMPLETE server=1 reqID=1121 queue=0
+[0002661] ASSIGN server=1 reqID=1122 svc=29 job=P
+[0002665] ASSIGN server=2 reqID=1123 svc=4 job=P
+[0002668] ASSIGN server=3 reqID=1124 svc=38 job=S
+[0002669] COMPLETE server=2 reqID=1123 queue=0
+[0002672] SCALE_DOWN newServers=5 queueSize=0
+[0002690] COMPLETE server=1 reqID=1122 queue=0
+[0002706] COMPLETE server=3 reqID=1124 queue=0
+[0002718] ASSIGN server=1 reqID=1125 svc=10 job=S
+[0002722] SCALE_DOWN newServers=4 queueSize=0
+[0002723] ASSIGN server=2 reqID=1126 svc=41 job=P
+[0002728] COMPLETE server=1 reqID=1125 queue=0
+[0002740] ASSIGN server=1 reqID=1127 svc=10 job=S
+[0002744] ASSIGN server=3 reqID=1128 svc=13 job=P
+[0002749] ASSIGN server=4 reqID=1129 svc=2 job=S
+[0002750] COMPLETE server=1 reqID=1127 queue=0
+[0002751] COMPLETE server=4 reqID=1129 queue=0
+[0002757] COMPLETE server=3 reqID=1128 queue=0
+[0002762] ASSIGN server=1 reqID=1130 svc=50 job=S
+[0002764] COMPLETE server=2 reqID=1126 queue=0
+[0002772] SCALE_DOWN newServers=3 queueSize=0
+[0002785] ASSIGN server=2 reqID=1131 svc=47 job=P
+[0002811] ASSIGN server=3 reqID=1132 svc=15 job=S
+[0002812] COMPLETE server=1 reqID=1130 queue=1
+[0002812] ASSIGN server=1 reqID=1133 svc=25 job=P
+[0002822] SCALE_DOWN newServers=3 queueSize=3
+[0002826] COMPLETE server=3 reqID=1132 queue=3
+[0002826] ASSIGN server=3 reqID=1135 svc=13 job=P
+[0002832] COMPLETE server=2 reqID=1131 queue=5
+[0002832] ASSIGN server=2 reqID=1137 svc=16 job=P
+[0002837] COMPLETE server=1 reqID=1133 queue=4
+[0002837] ASSIGN server=1 reqID=1136 svc=33 job=S
+[0002839] COMPLETE server=3 reqID=1135 queue=3
+[0002839] ASSIGN server=3 reqID=1138 svc=11 job=P
+[0002848] COMPLETE server=2 reqID=1137 queue=3
+[0002848] ASSIGN server=2 reqID=1134 svc=49 job=S
+[0002850] COMPLETE server=3 reqID=1138 queue=2
+[0002850] ASSIGN server=3 reqID=1139 svc=13 job=S
+[0002863] COMPLETE server=3 reqID=1139 queue=1
+[0002863] ASSIGN server=3 reqID=1140 svc=36 job=S
+[0002870] COMPLETE server=1 reqID=1136 queue=1
+[0002870] ASSIGN server=1 reqID=1141 svc=46 job=S
+[0002872] SCALE_DOWN newServers=3 queueSize=0
+[0002897] COMPLETE server=2 reqID=1134 queue=1
+[0002897] ASSIGN server=2 reqID=1142 svc=32 job=S
+[0002899] COMPLETE server=3 reqID=1140 queue=0
+[0002916] COMPLETE server=1 reqID=1141 queue=0
+[0002922] SCALE_DOWN newServers=2 queueSize=0
+[0002929] COMPLETE server=2 reqID=1142 queue=0
+[0002972] SCALE_DOWN newServers=1 queueSize=0
+[0003017] ASSIGN server=1 reqID=1143 svc=28 job=S
+[0003045] COMPLETE server=1 reqID=1143 queue=2
+[0003045] ASSIGN server=1 reqID=1144 svc=23 job=P
+[0003068] COMPLETE server=1 reqID=1144 queue=3
+[0003068] ASSIGN server=1 reqID=1147 svc=41 job=P
+[0003109] COMPLETE server=1 reqID=1147 queue=3
+[0003109] ASSIGN server=1 reqID=1145 svc=30 job=P
+[0003139] COMPLETE server=1 reqID=1145 queue=4
+[0003139] ASSIGN server=1 reqID=1149 svc=46 job=P
+[0003185] COMPLETE server=1 reqID=1149 queue=4
+[0003185] ASSIGN server=1 reqID=1148 svc=22 job=P
+[0003207] COMPLETE server=1 reqID=1148 queue=4
+[0003207] ASSIGN server=1 reqID=1152 svc=25 job=P
+[0003232] COMPLETE server=1 reqID=1152 queue=3
+[0003232] ASSIGN server=1 reqID=1150 svc=34 job=P
+[0003266] COMPLETE server=1 reqID=1150 queue=4
+[0003266] ASSIGN server=1 reqID=1153 svc=18 job=P
+[0003284] COMPLETE server=1 reqID=1153 queue=3
+[0003284] ASSIGN server=1 reqID=1151 svc=14 job=S
+[0003298] COMPLETE server=1 reqID=1151 queue=2
+[0003298] ASSIGN server=1 reqID=1154 svc=35 job=S
+[0003333] COMPLETE server=1 reqID=1154 queue=2
+[0003333] ASSIGN server=1 reqID=1155 svc=45 job=S
+[0003378] COMPLETE server=1 reqID=1155 queue=2
+[0003378] ASSIGN server=1 reqID=1156 svc=46 job=P
+[0003424] COMPLETE server=1 reqID=1156 queue=3
+[0003424] ASSIGN server=1 reqID=1157 svc=44 job=P
+[0003468] COMPLETE server=1 reqID=1157 queue=3
+[0003468] ASSIGN server=1 reqID=1158 svc=44 job=S
+[0003512] COMPLETE server=1 reqID=1158 queue=5
+[0003512] ASSIGN server=1 reqID=1160 svc=10 job=S
+[0003522] COMPLETE server=1 reqID=1160 queue=5
+[0003522] ASSIGN server=1 reqID=1163 svc=19 job=P
+[0003541] COMPLETE server=1 reqID=1163 queue=5
+[0003541] ASSIGN server=1 reqID=1161 svc=39 job=P
+[0003580] COMPLETE server=1 reqID=1161 queue=7
+[0003580] ASSIGN server=1 reqID=1166 svc=50 job=P
+[0003630] COMPLETE server=1 reqID=1166 queue=11
+[0003630] ASSIGN server=1 reqID=1165 svc=43 job=S
+[0003673] COMPLETE server=1 reqID=1165 queue=10
+[0003673] ASSIGN server=1 reqID=1162 svc=32 job=S
+[0003705] COMPLETE server=1 reqID=1162 queue=12
+[0003705] ASSIGN server=1 reqID=1159 svc=6 job=S
+[0003711] COMPLETE server=1 reqID=1159 queue=11
+[0003711] ASSIGN server=1 reqID=1169 svc=23 job=S
+[0003734] COMPLETE server=1 reqID=1169 queue=12
+[0003734] ASSIGN server=1 reqID=1175 svc=38 job=P
+[0003772] COMPLETE server=1 reqID=1175 queue=14
+[0003772] ASSIGN server=1 reqID=1178 svc=5 job=S
+[0003777] COMPLETE server=1 reqID=1178 queue=14
+[0003777] ASSIGN server=1 reqID=1177 svc=1 job=S
+[0003778] COMPLETE server=1 reqID=1177 queue=13
+[0003778] ASSIGN server=1 reqID=1176 svc=41 job=P
+[0003819] COMPLETE server=1 reqID=1176 queue=14
+[0003819] ASSIGN server=1 reqID=1182 svc=47 job=P
+[0003866] COMPLETE server=1 reqID=1182 queue=15
+[0003866] ASSIGN server=1 reqID=1172 svc=37 job=S
+[0003903] COMPLETE server=1 reqID=1172 queue=17
+[0003903] ASSIGN server=1 reqID=1179 svc=18 job=S
+[0003921] COMPLETE server=1 reqID=1179 queue=16
+[0003921] ASSIGN server=1 reqID=1170 svc=45 job=P
+[0003966] COMPLETE server=1 reqID=1170 queue=20
+[0003966] ASSIGN server=1 reqID=1173 svc=29 job=S
+[0003995] COMPLETE server=1 reqID=1173 queue=22
+[0003995] ASSIGN server=1 reqID=1183 svc=12 job=P
+[0004007] COMPLETE server=1 reqID=1183 queue=21
+[0004007] ASSIGN server=1 reqID=1190 svc=1 job=S
+[0004008] COMPLETE server=1 reqID=1190 queue=20
+[0004008] ASSIGN server=1 reqID=1195 svc=14 job=P
+[0004022] COMPLETE server=1 reqID=1195 queue=19
+[0004022] ASSIGN server=1 reqID=1167 svc=32 job=P
+[0004054] COMPLETE server=1 reqID=1167 queue=18
+[0004054] ASSIGN server=1 reqID=1191 svc=16 job=P
+[0004070] COMPLETE server=1 reqID=1191 queue=18
+[0004070] ASSIGN server=1 reqID=1188 svc=22 job=S
+[0004092] COMPLETE server=1 reqID=1188 queue=18
+[0004092] ASSIGN server=1 reqID=1164 svc=7 job=S
+[0004099] COMPLETE server=1 reqID=1164 queue=17
+[0004099] ASSIGN server=1 reqID=1198 svc=39 job=P
+[0004138] COMPLETE server=1 reqID=1198 queue=17
+[0004138] ASSIGN server=1 reqID=1185 svc=46 job=P
+[0004184] COMPLETE server=1 reqID=1185 queue=17
+[0004184] ASSIGN server=1 reqID=1168 svc=27 job=S
+[0004211] COMPLETE server=1 reqID=1168 queue=17
+[0004211] ASSIGN server=1 reqID=1187 svc=42 job=S
+[0004253] COMPLETE server=1 reqID=1187 queue=18
+[0004253] ASSIGN server=1 reqID=1146 svc=37 job=S
+[0004290] COMPLETE server=1 reqID=1146 queue=18
+[0004290] ASSIGN server=1 reqID=1204 svc=28 job=P
+[0004318] COMPLETE server=1 reqID=1204 queue=19
+[0004318] ASSIGN server=1 reqID=1193 svc=29 job=P
+[0004347] COMPLETE server=1 reqID=1193 queue=21
+[0004347] ASSIGN server=1 reqID=1194 svc=44 job=S
+[0004391] COMPLETE server=1 reqID=1194 queue=23
+[0004391] ASSIGN server=1 reqID=1174 svc=5 job=S
+[0004396] COMPLETE server=1 reqID=1174 queue=22
+[0004396] ASSIGN server=1 reqID=1207 svc=7 job=S
+[0004403] COMPLETE server=1 reqID=1207 queue=21
+[0004403] ASSIGN server=1 reqID=1209 svc=28 job=S
+[0004431] COMPLETE server=1 reqID=1209 queue=22
+[0004431] ASSIGN server=1 reqID=1208 svc=47 job=P
+[0004478] COMPLETE server=1 reqID=1208 queue=25
+[0004478] ASSIGN server=1 reqID=1218 svc=31 job=S
+[0004509] COMPLETE server=1 reqID=1218 queue=25
+[0004509] ASSIGN server=1 reqID=1199 svc=36 job=S
+[0004545] COMPLETE server=1 reqID=1199 queue=26
+[0004545] ASSIGN server=1 reqID=1180 svc=44 job=P
+[0004589] COMPLETE server=1 reqID=1180 queue=25
+[0004589] ASSIGN server=1 reqID=1212 svc=20 job=S
+[0004609] COMPLETE server=1 reqID=1212 queue=25
+[0004609] ASSIGN server=1 reqID=1200 svc=25 job=P
+[0004634] COMPLETE server=1 reqID=1200 queue=28
+[0004634] ASSIGN server=1 reqID=1223 svc=39 job=S
+[0004673] COMPLETE server=1 reqID=1223 queue=27
+[0004673] ASSIGN server=1 reqID=1192 svc=23 job=P
+[0004696] COMPLETE server=1 reqID=1192 queue=29
+[0004696] ASSIGN server=1 reqID=1210 svc=16 job=P
+[0004712] COMPLETE server=1 reqID=1210 queue=30
+[0004712] ASSIGN server=1 reqID=1220 svc=43 job=S
+[0004755] COMPLETE server=1 reqID=1220 queue=32
+[0004755] ASSIGN server=1 reqID=1221 svc=32 job=P
+[0004787] COMPLETE server=1 reqID=1221 queue=31
+[0004787] ASSIGN server=1 reqID=1215 svc=4 job=S
+[0004791] COMPLETE server=1 reqID=1215 queue=30
+[0004791] ASSIGN server=1 reqID=1222 svc=13 job=P
+[0004804] COMPLETE server=1 reqID=1222 queue=29
+[0004804] ASSIGN server=1 reqID=1228 svc=13 job=P
+[0004817] COMPLETE server=1 reqID=1228 queue=28
+[0004817] ASSIGN server=1 reqID=1233 svc=23 job=S
+[0004840] COMPLETE server=1 reqID=1233 queue=30
+[0004840] ASSIGN server=1 reqID=1203 svc=17 job=P
+[0004857] COMPLETE server=1 reqID=1203 queue=29
+[0004857] ASSIGN server=1 reqID=1216 svc=42 job=P
+[0004899] COMPLETE server=1 reqID=1216 queue=31
+[0004899] ASSIGN server=1 reqID=1226 svc=33 job=S
+[0004932] COMPLETE server=1 reqID=1226 queue=32
+[0004932] ASSIGN server=1 reqID=1219 svc=1 job=P
+[0004933] COMPLETE server=1 reqID=1219 queue=31
+[0004933] ASSIGN server=1 reqID=1202 svc=25 job=S
+[0004958] COMPLETE server=1 reqID=1202 queue=32
+[0004958] ASSIGN server=1 reqID=1171 svc=32 job=S
+[0004990] COMPLETE server=1 reqID=1171 queue=31
+[0004990] ASSIGN server=1 reqID=1227 svc=12 job=P
+[0005002] COMPLETE server=1 reqID=1227 queue=31
+[0005002] ASSIGN server=1 reqID=1201 svc=41 job=S
+[0005043] COMPLETE server=1 reqID=1201 queue=31
+[0005043] ASSIGN server=1 reqID=1238 svc=9 job=S
+[0005052] COMPLETE server=1 reqID=1238 queue=30
+[0005052] ASSIGN server=1 reqID=1211 svc=1 job=P
+[0005053] COMPLETE server=1 reqID=1211 queue=29
+[0005053] ASSIGN server=1 reqID=1181 svc=30 job=S
+[0005083] COMPLETE server=1 reqID=1181 queue=32
+[0005083] ASSIGN server=1 reqID=1235 svc=41 job=P
+[0005124] COMPLETE server=1 reqID=1235 queue=33
+[0005124] ASSIGN server=1 reqID=1217 svc=11 job=S
+[0005135] COMPLETE server=1 reqID=1217 queue=32
+[0005135] ASSIGN server=1 reqID=1239 svc=31 job=S
+[0005166] COMPLETE server=1 reqID=1239 queue=34
+[0005166] ASSIGN server=1 reqID=1196 svc=2 job=S
+[0005168] COMPLETE server=1 reqID=1196 queue=33
+[0005168] ASSIGN server=1 reqID=1240 svc=21 job=S
+[0005189] COMPLETE server=1 reqID=1240 queue=34
+[0005189] ASSIGN server=1 reqID=1255 svc=47 job=P
+[0005236] COMPLETE server=1 reqID=1255 queue=38
+[0005236] ASSIGN server=1 reqID=1250 svc=6 job=P
+[0005242] COMPLETE server=1 reqID=1250 queue=37
+[0005242] ASSIGN server=1 reqID=1214 svc=8 job=P
+[0005250] COMPLETE server=1 reqID=1214 queue=36
+[0005250] ASSIGN server=1 reqID=1251 svc=26 job=P
+[0005276] COMPLETE server=1 reqID=1251 queue=35
+[0005276] ASSIGN server=1 reqID=1259 svc=8 job=S
+[0005284] COMPLETE server=1 reqID=1259 queue=35
+[0005284] ASSIGN server=1 reqID=1248 svc=14 job=P
+[0005298] COMPLETE server=1 reqID=1248 queue=35
+[0005298] ASSIGN server=1 reqID=1252 svc=7 job=P
+[0005305] COMPLETE server=1 reqID=1252 queue=34
+[0005305] ASSIGN server=1 reqID=1253 svc=39 job=S
+[0005344] COMPLETE server=1 reqID=1253 queue=34
+[0005344] ASSIGN server=1 reqID=1236 svc=21 job=S
+[0005365] COMPLETE server=1 reqID=1236 queue=34
+[0005365] ASSIGN server=1 reqID=1234 svc=28 job=P
+[0005393] COMPLETE server=1 reqID=1234 queue=35
+[0005393] ASSIGN server=1 reqID=1265 svc=35 job=P
+[0005428] COMPLETE server=1 reqID=1265 queue=36
+[0005428] ASSIGN server=1 reqID=1225 svc=36 job=P
+[0005464] COMPLETE server=1 reqID=1225 queue=38
+[0005464] ASSIGN server=1 reqID=1262 svc=31 job=S
+[0005495] COMPLETE server=1 reqID=1262 queue=37
+[0005495] ASSIGN server=1 reqID=1241 svc=45 job=P
+[0005540] COMPLETE server=1 reqID=1241 queue=37
+[0005540] ASSIGN server=1 reqID=1186 svc=29 job=P
+[0005569] COMPLETE server=1 reqID=1186 queue=37
+[0005569] ASSIGN server=1 reqID=1274 svc=32 job=P
+[0005601] COMPLETE server=1 reqID=1274 queue=38
+[0005601] ASSIGN server=1 reqID=1273 svc=19 job=S
+[0005620] COMPLETE server=1 reqID=1273 queue=38
+[0005620] ASSIGN server=1 reqID=1232 svc=8 job=P
+[0005628] COMPLETE server=1 reqID=1232 queue=37
+[0005628] ASSIGN server=1 reqID=1266 svc=3 job=S
+[0005631] COMPLETE server=1 reqID=1266 queue=36
+[0005631] ASSIGN server=1 reqID=1277 svc=3 job=P
+[0005634] COMPLETE server=1 reqID=1277 queue=35
+[0005634] ASSIGN server=1 reqID=1244 svc=40 job=S
+[0005674] COMPLETE server=1 reqID=1244 queue=35
+[0005674] ASSIGN server=1 reqID=1242 svc=4 job=S
+[0005678] COMPLETE server=1 reqID=1242 queue=34
+[0005678] ASSIGN server=1 reqID=1279 svc=32 job=P
+[0005710] COMPLETE server=1 reqID=1279 queue=35
+[0005710] ASSIGN server=1 reqID=1206 svc=5 job=P
+[0005715] COMPLETE server=1 reqID=1206 queue=34
+[0005715] ASSIGN server=1 reqID=1275 svc=9 job=S
+[0005724] COMPLETE server=1 reqID=1275 queue=34
+[0005724] ASSIGN server=1 reqID=1257 svc=47 job=S
+[0005771] COMPLETE server=1 reqID=1257 queue=35
+[0005771] ASSIGN server=1 reqID=1237 svc=25 job=P
+[0005796] COMPLETE server=1 reqID=1237 queue=34
+[0005796] ASSIGN server=1 reqID=1284 svc=28 job=S
+[0005824] COMPLETE server=1 reqID=1284 queue=33
+[0005824] ASSIGN server=1 reqID=1276 svc=39 job=P
+[0005863] COMPLETE server=1 reqID=1276 queue=32
+[0005863] ASSIGN server=1 reqID=1268 svc=15 job=P
+[0005878] COMPLETE server=1 reqID=1268 queue=31
+[0005878] ASSIGN server=1 reqID=1247 svc=34 job=P
+[0005912] COMPLETE server=1 reqID=1247 queue=30
+[0005912] ASSIGN server=1 reqID=1272 svc=47 job=S
+[0005959] COMPLETE server=1 reqID=1272 queue=32
+[0005959] ASSIGN server=1 reqID=1189 svc=50 job=P
+[0006009] COMPLETE server=1 reqID=1189 queue=34
+[0006009] ASSIGN server=1 reqID=1197 svc=42 job=P
+[0006051] COMPLETE server=1 reqID=1197 queue=34
+[0006051] ASSIGN server=1 reqID=1264 svc=28 job=S
+[0006079] COMPLETE server=1 reqID=1264 queue=35
+[0006079] ASSIGN server=1 reqID=1229 svc=47 job=P
+[0006126] COMPLETE server=1 reqID=1229 queue=35
+[0006126] ASSIGN server=1 reqID=1280 svc=6 job=S
+[0006132] COMPLETE server=1 reqID=1280 queue=35
+[0006132] ASSIGN server=1 reqID=1290 svc=31 job=P
+[0006163] COMPLETE server=1 reqID=1290 queue=35
+[0006163] ASSIGN server=1 reqID=1293 svc=18 job=S
+[0006181] COMPLETE server=1 reqID=1293 queue=35
+[0006181] ASSIGN server=1 reqID=1258 svc=16 job=S
+[0006197] COMPLETE server=1 reqID=1258 queue=35
+[0006197] ASSIGN server=1 reqID=1269 svc=20 job=P
+[0006217] COMPLETE server=1 reqID=1269 queue=34
+[0006217] ASSIGN server=1 reqID=1230 svc=44 job=P
+[0006261] COMPLETE server=1 reqID=1230 queue=36
+[0006261] ASSIGN server=1 reqID=1205 svc=41 job=P
+[0006302] COMPLETE server=1 reqID=1205 queue=36
+[0006302] ASSIGN server=1 reqID=1286 svc=1 job=S
+[0006303] COMPLETE server=1 reqID=1286 queue=35
+[0006303] ASSIGN server=1 reqID=1213 svc=41 job=P
+[0006344] COMPLETE server=1 reqID=1213 queue=37
+[0006344] ASSIGN server=1 reqID=1249 svc=27 job=P
+[0006371] COMPLETE server=1 reqID=1249 queue=38
+[0006371] ASSIGN server=1 reqID=1260 svc=19 job=S
+[0006390] COMPLETE server=1 reqID=1260 queue=37
+[0006390] ASSIGN server=1 reqID=1299 svc=39 job=S
+[0006429] COMPLETE server=1 reqID=1299 queue=38
+[0006429] ASSIGN server=1 reqID=1231 svc=30 job=P
+[0006459] COMPLETE server=1 reqID=1231 queue=41
+[0006459] ASSIGN server=1 reqID=1294 svc=2 job=S
+[0006461] COMPLETE server=1 reqID=1294 queue=40
+[0006461] ASSIGN server=1 reqID=1291 svc=37 job=P
+[0006498] COMPLETE server=1 reqID=1291 queue=41
+[0006498] ASSIGN server=1 reqID=1245 svc=13 job=S
+[0006511] COMPLETE server=1 reqID=1245 queue=42
+[0006511] ASSIGN server=1 reqID=1304 svc=16 job=P
+[0006527] COMPLETE server=1 reqID=1304 queue=42
+[0006527] ASSIGN server=1 reqID=1246 svc=31 job=S
+[0006558] COMPLETE server=1 reqID=1246 queue=42
+[0006558] ASSIGN server=1 reqID=1263 svc=29 job=S
+[0006587] COMPLETE server=1 reqID=1263 queue=41
+[0006587] ASSIGN server=1 reqID=1316 svc=13 job=P
+[0006600] COMPLETE server=1 reqID=1316 queue=40
+[0006600] ASSIGN server=1 reqID=1270 svc=16 job=S
+[0006616] COMPLETE server=1 reqID=1270 queue=41
+[0006616] ASSIGN server=1 reqID=1292 svc=38 job=S
+[0006654] COMPLETE server=1 reqID=1292 queue=43
+[0006654] ASSIGN server=1 reqID=1278 svc=48 job=P
+[0006702] COMPLETE server=1 reqID=1278 queue=43
+[0006702] ASSIGN server=1 reqID=1306 svc=23 job=S
+[0006725] COMPLETE server=1 reqID=1306 queue=42
+[0006725] ASSIGN server=1 reqID=1309 svc=47 job=S
+[0006772] COMPLETE server=1 reqID=1309 queue=46
+[0006772] ASSIGN server=1 reqID=1315 svc=26 job=P
+[0006798] COMPLETE server=1 reqID=1315 queue=47
+[0006798] ASSIGN server=1 reqID=1307 svc=37 job=P
+[0006835] COMPLETE server=1 reqID=1307 queue=48
+[0006835] ASSIGN server=1 reqID=1317 svc=45 job=P
+[0006880] COMPLETE server=1 reqID=1317 queue=47
+[0006880] ASSIGN server=1 reqID=1298 svc=8 job=P
+[0006888] COMPLETE server=1 reqID=1298 queue=47
+[0006888] ASSIGN server=1 reqID=1288 svc=11 job=S
+[0006899] COMPLETE server=1 reqID=1288 queue=49
+[0006899] ASSIGN server=1 reqID=1318 svc=3 job=S
+[0006902] COMPLETE server=1 reqID=1318 queue=49
+[0006902] ASSIGN server=1 reqID=1325 svc=19 job=P
+[0006921] COMPLETE server=1 reqID=1325 queue=48
+[0006921] ASSIGN server=1 reqID=1311 svc=38 job=S
+[0006959] COMPLETE server=1 reqID=1311 queue=49
+[0006959] ASSIGN server=1 reqID=1271 svc=7 job=P
+[0006966] COMPLETE server=1 reqID=1271 queue=49
+[0006966] ASSIGN server=1 reqID=1334 svc=18 job=S
+[0006984] COMPLETE server=1 reqID=1334 queue=48
+[0006984] ASSIGN server=1 reqID=1340 svc=34 job=P
+[0007018] COMPLETE server=1 reqID=1340 queue=49
+[0007018] ASSIGN server=1 reqID=1267 svc=33 job=P
+[0007051] COMPLETE server=1 reqID=1267 queue=51
+[0007051] ASSIGN server=1 reqID=1243 svc=41 job=S
+[0007092] COMPLETE server=1 reqID=1243 queue=53
+[0007092] ASSIGN server=1 reqID=1261 svc=41 job=S
+[0007133] COMPLETE server=1 reqID=1261 queue=55
+[0007133] ASSIGN server=1 reqID=1338 svc=1 job=P
+[0007134] COMPLETE server=1 reqID=1338 queue=54
+[0007134] ASSIGN server=1 reqID=1345 svc=19 job=P
+[0007153] COMPLETE server=1 reqID=1345 queue=54
+[0007153] ASSIGN server=1 reqID=1300 svc=13 job=P
+[0007166] COMPLETE server=1 reqID=1300 queue=54
+[0007166] ASSIGN server=1 reqID=1327 svc=33 job=S
+[0007199] COMPLETE server=1 reqID=1327 queue=55
+[0007199] ASSIGN server=1 reqID=1283 svc=4 job=S
+[0007203] COMPLETE server=1 reqID=1283 queue=54
+[0007203] ASSIGN server=1 reqID=1352 svc=3 job=S
+[0007206] COMPLETE server=1 reqID=1352 queue=53
+[0007206] ASSIGN server=1 reqID=1310 svc=37 job=P
+[0007243] COMPLETE server=1 reqID=1310 queue=52
+[0007243] ASSIGN server=1 reqID=1320 svc=2 job=S
+[0007245] COMPLETE server=1 reqID=1320 queue=52
+[0007245] ASSIGN server=1 reqID=1281 svc=32 job=P
+[0007277] COMPLETE server=1 reqID=1281 queue=51
+[0007277] ASSIGN server=1 reqID=1303 svc=16 job=S
+[0007293] COMPLETE server=1 reqID=1303 queue=50
+[0007293] ASSIGN server=1 reqID=1313 svc=1 job=S
+[0007294] COMPLETE server=1 reqID=1313 queue=49
+[0007294] ASSIGN server=1 reqID=1184 svc=27 job=S
+[0007321] COMPLETE server=1 reqID=1184 queue=49
+[0007321] ASSIGN server=1 reqID=1312 svc=21 job=P
+[0007342] COMPLETE server=1 reqID=1312 queue=49
+[0007342] ASSIGN server=1 reqID=1351 svc=43 job=P
+[0007385] COMPLETE server=1 reqID=1351 queue=51
+[0007385] ASSIGN server=1 reqID=1330 svc=50 job=S
+[0007435] COMPLETE server=1 reqID=1330 queue=52
+[0007435] ASSIGN server=1 reqID=1343 svc=32 job=P
+[0007467] COMPLETE server=1 reqID=1343 queue=52
+[0007467] ASSIGN server=1 reqID=1353 svc=10 job=S
+[0007477] COMPLETE server=1 reqID=1353 queue=52
+[0007477] ASSIGN server=1 reqID=1224 svc=7 job=P
+[0007484] COMPLETE server=1 reqID=1224 queue=51
+[0007484] ASSIGN server=1 reqID=1350 svc=16 job=S
+[0007500] COMPLETE server=1 reqID=1350 queue=51
+[0007500] ASSIGN server=1 reqID=1319 svc=22 job=S
+[0007522] COMPLETE server=1 reqID=1319 queue=51
+[0007522] ASSIGN server=1 reqID=1341 svc=12 job=P
+[0007534] COMPLETE server=1 reqID=1341 queue=51
+[0007534] ASSIGN server=1 reqID=1357 svc=43 job=S
+[0007577] COMPLETE server=1 reqID=1357 queue=51
+[0007577] ASSIGN server=1 reqID=1339 svc=24 job=P
+[0007601] COMPLETE server=1 reqID=1339 queue=50
+[0007601] ASSIGN server=1 reqID=1302 svc=22 job=S
+[0007623] COMPLETE server=1 reqID=1302 queue=50
+[0007623] ASSIGN server=1 reqID=1370 svc=16 job=S
+[0007639] COMPLETE server=1 reqID=1370 queue=51
+[0007639] ASSIGN server=1 reqID=1332 svc=38 job=P
+[0007677] COMPLETE server=1 reqID=1332 queue=53
+[0007677] ASSIGN server=1 reqID=1323 svc=16 job=S
+[0007693] COMPLETE server=1 reqID=1323 queue=53
+[0007693] ASSIGN server=1 reqID=1376 svc=38 job=P
+[0007731] COMPLETE server=1 reqID=1376 queue=55
+[0007731] ASSIGN server=1 reqID=1321 svc=9 job=S
+[0007740] COMPLETE server=1 reqID=1321 queue=55
+[0007740] ASSIGN server=1 reqID=1375 svc=7 job=P
+[0007747] COMPLETE server=1 reqID=1375 queue=54
+[0007747] ASSIGN server=1 reqID=1344 svc=28 job=S
+[0007775] COMPLETE server=1 reqID=1344 queue=55
+[0007775] ASSIGN server=1 reqID=1285 svc=9 job=P
+[0007784] COMPLETE server=1 reqID=1285 queue=54
+[0007784] ASSIGN server=1 reqID=1301 svc=20 job=S
+[0007804] COMPLETE server=1 reqID=1301 queue=53
+[0007804] ASSIGN server=1 reqID=1369 svc=17 job=S
+[0007821] COMPLETE server=1 reqID=1369 queue=54
+[0007821] ASSIGN server=1 reqID=1329 svc=46 job=S
+[0007867] COMPLETE server=1 reqID=1329 queue=53
+[0007867] ASSIGN server=1 reqID=1367 svc=36 job=S
+[0007903] COMPLETE server=1 reqID=1367 queue=53
+[0007903] ASSIGN server=1 reqID=1359 svc=1 job=S
+[0007904] COMPLETE server=1 reqID=1359 queue=52
+[0007904] ASSIGN server=1 reqID=1328 svc=32 job=S
+[0007936] COMPLETE server=1 reqID=1328 queue=51
+[0007936] ASSIGN server=1 reqID=1347 svc=30 job=P
+[0007966] COMPLETE server=1 reqID=1347 queue=52
+[0007966] ASSIGN server=1 reqID=1362 svc=40 job=P
+[0008006] COMPLETE server=1 reqID=1362 queue=54
+[0008006] ASSIGN server=1 reqID=1336 svc=50 job=P
+[0008056] COMPLETE server=1 reqID=1336 queue=55
+[0008056] ASSIGN server=1 reqID=1349 svc=30 job=P
+[0008086] COMPLETE server=1 reqID=1349 queue=54
+[0008086] ASSIGN server=1 reqID=1373 svc=39 job=S
+[0008125] COMPLETE server=1 reqID=1373 queue=57
+[0008125] ASSIGN server=1 reqID=1337 svc=33 job=S
+[0008158] COMPLETE server=1 reqID=1337 queue=58
+[0008158] ASSIGN server=1 reqID=1322 svc=22 job=S
+[0008180] COMPLETE server=1 reqID=1322 queue=57
+[0008180] ASSIGN server=1 reqID=1390 svc=15 job=P
+[0008195] COMPLETE server=1 reqID=1390 queue=59
+[0008195] ASSIGN server=1 reqID=1324 svc=34 job=S
+[0008229] COMPLETE server=1 reqID=1324 queue=59
+[0008229] ASSIGN server=1 reqID=1381 svc=15 job=P
+[0008244] COMPLETE server=1 reqID=1381 queue=58
+[0008244] ASSIGN server=1 reqID=1287 svc=16 job=P
+[0008260] COMPLETE server=1 reqID=1287 queue=60
+[0008260] ASSIGN server=1 reqID=1342 svc=22 job=P
+[0008282] COMPLETE server=1 reqID=1342 queue=59
+[0008282] ASSIGN server=1 reqID=1385 svc=47 job=P
+[0008329] COMPLETE server=1 reqID=1385 queue=60
+[0008329] ASSIGN server=1 reqID=1308 svc=16 job=S
+[0008345] COMPLETE server=1 reqID=1308 queue=60
+[0008345] ASSIGN server=1 reqID=1408 svc=37 job=P
+[0008382] COMPLETE server=1 reqID=1408 queue=61
+[0008382] ASSIGN server=1 reqID=1392 svc=48 job=S
+[0008430] COMPLETE server=1 reqID=1392 queue=65
+[0008430] ASSIGN server=1 reqID=1394 svc=3 job=P
+[0008433] COMPLETE server=1 reqID=1394 queue=65
+[0008433] ASSIGN server=1 reqID=1395 svc=45 job=S
+[0008478] COMPLETE server=1 reqID=1395 queue=66
+[0008478] ASSIGN server=1 reqID=1365 svc=48 job=P
+[0008526] COMPLETE server=1 reqID=1365 queue=67
+[0008526] ASSIGN server=1 reqID=1419 svc=35 job=P
+[0008561] COMPLETE server=1 reqID=1419 queue=68
+[0008561] ASSIGN server=1 reqID=1396 svc=43 job=S
+[0008604] COMPLETE server=1 reqID=1396 queue=67
+[0008604] ASSIGN server=1 reqID=1393 svc=45 job=P
+[0008649] COMPLETE server=1 reqID=1393 queue=68
+[0008649] ASSIGN server=1 reqID=1297 svc=22 job=S
+[0008671] COMPLETE server=1 reqID=1297 queue=68
+[0008671] ASSIGN server=1 reqID=1354 svc=8 job=P
+[0008679] COMPLETE server=1 reqID=1354 queue=67
+[0008679] ASSIGN server=1 reqID=1424 svc=9 job=S
+[0008688] COMPLETE server=1 reqID=1424 queue=66
+[0008688] ASSIGN server=1 reqID=1368 svc=34 job=S
+[0008722] COMPLETE server=1 reqID=1368 queue=65
+[0008722] ASSIGN server=1 reqID=1386 svc=29 job=S
+[0008751] COMPLETE server=1 reqID=1386 queue=65
+[0008751] ASSIGN server=1 reqID=1371 svc=6 job=P
+[0008757] COMPLETE server=1 reqID=1371 queue=64
+[0008757] ASSIGN server=1 reqID=1421 svc=14 job=S
+[0008771] COMPLETE server=1 reqID=1421 queue=64
+[0008771] ASSIGN server=1 reqID=1426 svc=44 job=P
+[0008815] COMPLETE server=1 reqID=1426 queue=64
+[0008815] ASSIGN server=1 reqID=1254 svc=29 job=P
+[0008844] COMPLETE server=1 reqID=1254 queue=67
+[0008844] ASSIGN server=1 reqID=1387 svc=38 job=P
+[0008882] COMPLETE server=1 reqID=1387 queue=68
+[0008882] ASSIGN server=1 reqID=1388 svc=33 job=P
+[0008915] COMPLETE server=1 reqID=1388 queue=70
+[0008915] ASSIGN server=1 reqID=1391 svc=2 job=P
+[0008917] COMPLETE server=1 reqID=1391 queue=69
+[0008917] ASSIGN server=1 reqID=1411 svc=32 job=P
+[0008949] COMPLETE server=1 reqID=1411 queue=70
+[0008949] ASSIGN server=1 reqID=1429 svc=11 job=S
+[0008960] COMPLETE server=1 reqID=1429 queue=69
+[0008960] ASSIGN server=1 reqID=1361 svc=43 job=S
+[0009003] COMPLETE server=1 reqID=1361 queue=70
+[0009003] ASSIGN server=1 reqID=1399 svc=33 job=P
+[0009036] COMPLETE server=1 reqID=1399 queue=70
+[0009036] ASSIGN server=1 reqID=1356 svc=20 job=P
+[0009056] COMPLETE server=1 reqID=1356 queue=71
+[0009056] ASSIGN server=1 reqID=1405 svc=34 job=S
+[0009090] COMPLETE server=1 reqID=1405 queue=72
+[0009090] ASSIGN server=1 reqID=1379 svc=38 job=P
+[0009128] COMPLETE server=1 reqID=1379 queue=73
+[0009128] ASSIGN server=1 reqID=1430 svc=7 job=S
+[0009135] COMPLETE server=1 reqID=1430 queue=72
+[0009135] ASSIGN server=1 reqID=1443 svc=27 job=P
+[0009162] COMPLETE server=1 reqID=1443 queue=72
+[0009162] ASSIGN server=1 reqID=1305 svc=14 job=S
+[0009176] COMPLETE server=1 reqID=1305 queue=73
+[0009176] ASSIGN server=1 reqID=1439 svc=20 job=P
+[0009196] COMPLETE server=1 reqID=1439 queue=74
+[0009196] ASSIGN server=1 reqID=1406 svc=31 job=P
+[0009227] COMPLETE server=1 reqID=1406 queue=75
+[0009227] ASSIGN server=1 reqID=1282 svc=15 job=S
+[0009242] COMPLETE server=1 reqID=1282 queue=74
+[0009242] ASSIGN server=1 reqID=1453 svc=49 job=S
+[0009291] COMPLETE server=1 reqID=1453 queue=76
+[0009291] ASSIGN server=1 reqID=1441 svc=11 job=P
+[0009302] COMPLETE server=1 reqID=1441 queue=75
+[0009302] ASSIGN server=1 reqID=1366 svc=29 job=P
+[0009331] COMPLETE server=1 reqID=1366 queue=76
+[0009331] ASSIGN server=1 reqID=1416 svc=44 job=S
+[0009375] COMPLETE server=1 reqID=1416 queue=78
+[0009375] ASSIGN server=1 reqID=1380 svc=22 job=P
+[0009397] COMPLETE server=1 reqID=1380 queue=77
+[0009397] ASSIGN server=1 reqID=1402 svc=3 job=S
+[0009400] COMPLETE server=1 reqID=1402 queue=76
+[0009400] ASSIGN server=1 reqID=1415 svc=13 job=S
+[0009413] COMPLETE server=1 reqID=1415 queue=77
+[0009413] ASSIGN server=1 reqID=1403 svc=45 job=P
+[0009458] COMPLETE server=1 reqID=1403 queue=80
+[0009458] ASSIGN server=1 reqID=1449 svc=50 job=S
+[0009508] COMPLETE server=1 reqID=1449 queue=80
+[0009508] ASSIGN server=1 reqID=1348 svc=24 job=S
+[0009532] COMPLETE server=1 reqID=1348 queue=79
+[0009532] ASSIGN server=1 reqID=1384 svc=35 job=S
+[0009567] COMPLETE server=1 reqID=1384 queue=80
+[0009567] ASSIGN server=1 reqID=1425 svc=24 job=P
+[0009583] SCALE_UP newServers=2 queueSize=81
+[0009584] ASSIGN server=13 reqID=1447 svc=2 job=S
+[0009586] COMPLETE server=13 reqID=1447 queue=81
+[0009586] ASSIGN server=13 reqID=1397 svc=21 job=P
+[0009591] COMPLETE server=1 reqID=1425 queue=80
+[0009591] ASSIGN server=1 reqID=1404 svc=45 job=P
+[0009607] COMPLETE server=13 reqID=1397 queue=79
+[0009607] ASSIGN server=13 reqID=1462 svc=8 job=S
+[0009615] COMPLETE server=13 reqID=1462 queue=78
+[0009615] ASSIGN server=13 reqID=1420 svc=42 job=S
+[0009633] SCALE_DOWN newServers=2 queueSize=77
+[0009636] COMPLETE server=1 reqID=1404 queue=77
+[0009636] ASSIGN server=1 reqID=1455 svc=32 job=S
+[0009657] COMPLETE server=13 reqID=1420 queue=78
+[0009657] ASSIGN server=13 reqID=1476 svc=23 job=S
+[0009668] COMPLETE server=1 reqID=1455 queue=77
+[0009668] ASSIGN server=1 reqID=1413 svc=46 job=P
+[0009680] COMPLETE server=13 reqID=1476 queue=77
+[0009680] ASSIGN server=13 reqID=1471 svc=39 job=S
+[0009683] SCALE_DOWN newServers=2 queueSize=76
+[0009714] COMPLETE server=1 reqID=1413 queue=79
+[0009714] ASSIGN server=1 reqID=1256 svc=35 job=S
+[0009719] COMPLETE server=13 reqID=1471 queue=79
+[0009719] ASSIGN server=13 reqID=1464 svc=2 job=S
+[0009721] COMPLETE server=13 reqID=1464 queue=78
+[0009721] ASSIGN server=13 reqID=1465 svc=49 job=P
+[0009733] SCALE_DOWN newServers=2 queueSize=77
+[0009749] COMPLETE server=1 reqID=1256 queue=78
+[0009749] ASSIGN server=1 reqID=1432 svc=46 job=S
+[0009770] COMPLETE server=13 reqID=1465 queue=78
+[0009770] ASSIGN server=13 reqID=1482 svc=35 job=S
+[0009783] SCALE_DOWN newServers=2 queueSize=80
+[0009795] COMPLETE server=1 reqID=1432 queue=80
+[0009795] ASSIGN server=1 reqID=1457 svc=24 job=P
+[0009805] COMPLETE server=13 reqID=1482 queue=80
+[0009805] ASSIGN server=13 reqID=1448 svc=44 job=S
+[0009819] COMPLETE server=1 reqID=1457 queue=79
+[0009819] ASSIGN server=1 reqID=1410 svc=14 job=S
+[0009833] COMPLETE server=1 reqID=1410 queue=78
+[0009833] ASSIGN server=1 reqID=1458 svc=47 job=P
+[0009833] SCALE_DOWN newServers=2 queueSize=77
+[0009849] COMPLETE server=13 reqID=1448 queue=77
+[0009849] ASSIGN server=13 reqID=1488 svc=33 job=S
+[0009880] COMPLETE server=1 reqID=1458 queue=79
+[0009880] ASSIGN server=1 reqID=1490 svc=3 job=P
+[0009882] COMPLETE server=13 reqID=1488 queue=79
+[0009882] ASSIGN server=13 reqID=1469 svc=29 job=S
+[0009883] COMPLETE server=1 reqID=1490 queue=78
+[0009883] ASSIGN server=1 reqID=1409 svc=22 job=S
+[0009883] SCALE_DOWN newServers=2 queueSize=77
+[0009905] COMPLETE server=1 reqID=1409 queue=78
+[0009905] ASSIGN server=1 reqID=1363 svc=2 job=S
+[0009907] COMPLETE server=1 reqID=1363 queue=77
+[0009907] ASSIGN server=1 reqID=1377 svc=15 job=P
+[0009911] COMPLETE server=13 reqID=1469 queue=76
+[0009911] ASSIGN server=13 reqID=1326 svc=41 job=P
+[0009922] COMPLETE server=1 reqID=1377 queue=76
+[0009922] ASSIGN server=1 reqID=1423 svc=37 job=S
+[0009933] SCALE_DOWN newServers=2 queueSize=76
+[0009952] COMPLETE server=13 reqID=1326 queue=77
+[0009952] ASSIGN server=13 reqID=1400 svc=16 job=P
+[0009959] COMPLETE server=1 reqID=1423 queue=76
+[0009959] ASSIGN server=1 reqID=1422 svc=19 job=S
+[0009968] COMPLETE server=13 reqID=1400 queue=75
+[0009968] ASSIGN server=13 reqID=1480 svc=31 job=S
+[0009978] COMPLETE server=1 reqID=1422 queue=74
+[0009978] ASSIGN server=1 reqID=1481 svc=6 job=P
+[0009983] SCALE_DOWN newServers=2 queueSize=73
+[0009984] COMPLETE server=1 reqID=1481 queue=73
+[0009984] ASSIGN server=1 reqID=1427 svc=7 job=S
+[0009991] COMPLETE server=1 reqID=1427 queue=73
+[0009991] ASSIGN server=1 reqID=1460 svc=2 job=P
+[0009993] COMPLETE server=1 reqID=1460 queue=72
+[0009993] ASSIGN server=1 reqID=1346 svc=35 job=S
+[0009999] COMPLETE server=13 reqID=1480 queue=71
+[0009999] ASSIGN server=13 reqID=1483 svc=19 job=P
+SUMMARY:
+End queue size: 70
+Total # generated: 1499
+Total # completed: 1427
+Total # blocked: 0
+Total # rejected/discarded: 0
+Active servers (final): 2
+Inactive servers (scaled down): 11
+Peak queue size (pqs): 1000 at cycle 0
+Avg queue size (aqs): 145.1
+Avg server utilization: 7.1%
+Scale-up events: 3 Scale-down events: 50
+RunTime (rt): 10000 cycles
