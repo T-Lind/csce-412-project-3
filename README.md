@@ -1,6 +1,7 @@
-# Bizaco Load Balancer — Project 3
+# Bizaco Load Balancer -- Project 3
 Author: Tiernan Lindauer, UIN 134003853
 
+For CSCE 412, Project 3 - LB
 
 ## Build/Run:
 
